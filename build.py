@@ -53,7 +53,7 @@ def page(path, title, desc, body, active="", depth=None, extra_head="", scripts=
 <footer class="site-foot"><div class="wrap">
 <div class="foot-grid">
 <div><a class="brand" href="{r}" style="margin-bottom:12px">{LOGO}<span class="brand-name">Jalu Press</span></a>
-<p>Practical English ebooks and light tools, sold as instant digital downloads. Paid in USDC (Solana) or USDT (TRC20) only. Nothing physical is shipped.</p></div>
+<p>Practical English ebooks and light tools, sold as instant digital downloads. Paid in USDC (Solana or Polygon) or USDT (TRC20 or Polygon) only. Nothing physical is shipped.</p></div>
 <div><h3>Shop</h3><ul>
 <li><a href="{r}products/{P["slug"]}/">Household Binder</a></li>
 <li><a href="{r}how-to-buy/">How to buy</a></li>
@@ -81,7 +81,9 @@ def img(name, alt, cls="shot", w=1600, h=1200, eager=False, sizes="(max-width: 9
 
 PAY_BADGES = '''<ul class="pay-badges" aria-label="Accepted payment">
 <li class="badge"><span class="dot"></span>USDC on Solana</li>
+<li class="badge"><span class="dot"></span>USDC on Polygon</li>
 <li class="badge"><span class="dot"></span>USDT on TRC20 (Tron)</li>
+<li class="badge"><span class="dot"></span>USDT on Polygon</li>
 <li class="badge">Instant digital download</li></ul>'''
 
 # ---------- HOME ----------
@@ -110,7 +112,7 @@ home = f'''
 <li>44-page fillable PDF, in US Letter and A4</li>
 <li>Expiry and review tracker for Excel or Google Sheets</li>
 <li>Country-neutral, metric and imperial units</li></ul>
-<p class="price">$12 <small>Paid as 12 USDC (Solana) or 12 USDT (TRC20)</small></p>
+<p class="price">$12 <small>Paid as 12 USDC (Solana or Polygon) or 12 USDT (TRC20 or Polygon)</small></p>
 <div class="btn-row" style="margin-top:16px"><a class="btn" href="{{R}}products/{P["slug"]}/">View details</a></div>
 </div></div>
 </div></section>
@@ -120,7 +122,7 @@ home = f'''
 <div class="grid3" style="margin-top:22px">
 <div class="card"><h3>Made to be used</h3><p>Every product is built around a job you actually need to do, with clear fields, sensible order and pages that print cleanly at home.</p></div>
 <div class="card"><h3>Written for anywhere</h3><p>Plain English for readers worldwide. No single-country defaults where they would get in your way, and both metric and imperial where it matters.</p></div>
-<div class="card"><h3>Simple crypto checkout</h3><p>Pay with a stablecoin you already hold: USDC on Solana or USDT on TRC20. No cards, no accounts, no subscription.</p></div>
+<div class="card"><h3>Simple crypto checkout</h3><p>Pay with a stablecoin you already hold: USDC on Solana or Polygon, or USDT on TRC20 or Polygon. No cards, no accounts, no subscription.</p></div>
 </div></div></section>
 
 <section class="band"><div class="wrap">
@@ -134,7 +136,7 @@ home = f'''
 <p style="margin-top:22px"><a href="{{R}}how-to-buy/">Read the full buying guide &rarr;</a></p>
 </div></section>
 '''
-page("index.html", "Jalu Press", "Jalu Press makes practical English ebooks and light tools, sold as digital downloads and paid in USDC on Solana or USDT on TRC20.", home, "home", depth=0,
+page("index.html", "Jalu Press", "Jalu Press makes practical English ebooks and light tools, sold as digital downloads and paid in USDC or USDT on Solana, TRC20 or Polygon.", home, "home", depth=0,
      extra_head='<meta property="og:image" content="https://jalupress.com/assets/img/og-binder.jpg">\n')
 
 # ---------- PRODUCT ----------
@@ -156,7 +158,7 @@ prod = f'''
 <p class="eyebrow">Digital download</p>
 <h1 style="font-size:clamp(1.7rem,3.2vw,2.3rem)">{P["title"]}</h1>
 <p class="meta">{P["subtitle"]}</p>
-<p class="price">$12 <small>Pay 12 USDC on Solana or 12 USDT on TRC20 (Tron). No cards.</small></p>
+<p class="price">$12 <small>Pay 12 USDC (Solana or Polygon) or 12 USDT (TRC20 or Polygon). No cards.</small></p>
 <ul class="ticks" style="margin-top:16px">
 <li>Fillable PDF, 44 pages, US Letter + A4</li>
 <li>Expiry &amp; review tracker (.xlsx, works in Google Sheets)</li>
@@ -224,7 +226,7 @@ prod = f'''
 <tr><th>Works in</th><td>Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets</td></tr>
 <tr><th>Printing</th><td>Color or black and white, home-printer margins</td></tr>
 <tr><th>Language</th><td>English</td></tr>
-<tr><th>Price</th><td>$12, paid as 12 USDC (Solana) or 12 USDT (TRC20)</td></tr>
+<tr><th>Price</th><td>$12, paid as 12 USDC (Solana or Polygon) or 12 USDT (TRC20 or Polygon)</td></tr>
 <tr><th>License</th><td>Personal and household use. Print as many copies as your household needs. Please do not resell or share the files.</td></tr>
 </table>
 </div>
@@ -255,24 +257,26 @@ how = f'''
 <section><div class="wrap prose">
 <p class="eyebrow">Buying guide</p>
 <h1>How to buy</h1>
-<p class="lead">Jalu Press accepts two stablecoins only: <strong>USDC on the Solana network</strong> and <strong>USDT on the TRC20 (Tron) network</strong>. Prices are in US dollars and you pay the same number of tokens (for example, $12 = 12 USDC or 12 USDT).</p>
+<p class="lead">Jalu Press accepts two stablecoins only: <strong>USDC</strong> and <strong>USDT</strong>. USDC can be sent on Solana or Polygon, and USDT on TRC20 (Tron) or Polygon. Prices are in US dollars and you pay the same number of tokens (for example, $12 = 12 USDC or 12 USDT).</p>
 
 <h2>Step by step</h2>
 <ol>
 <li><strong>Pick your product</strong> and open its checkout.</li>
 <li><strong>Enter your email</strong> so we know where to send your files. A name is optional.</li>
-<li><strong>Choose a network:</strong> USDC on Solana or USDT on TRC20.</li>
+<li><strong>Choose a network:</strong> USDC on Solana or Polygon, or USDT on TRC20 or Polygon.</li>
 <li><strong>Send the exact amount</strong> shown, to the address shown, on the network shown. Network fees are paid by the sender and are on top of the price.</li>
 <li><strong>Send us your order reference and transaction ID</strong> using the button on the checkout page.</li>
 <li><strong>Receive your download.</strong> Once the payment is confirmed on-chain, we email you a private download link for your files.</li>
 </ol>
 
-<div class="note"><strong>Check the network before you send.</strong> USDC must be sent on <strong>Solana</strong> and USDT on <strong>Tron (TRC20)</strong>. Tokens sent on another network (such as Ethereum, BNB Chain or Polygon) or a different coin cannot be recovered. If you pay from an exchange, choose the matching network in its withdrawal screen.</div>
+<div class="note"><strong>Check the network before you send.</strong> Send only the token and network shown at checkout: USDC on <strong>Solana</strong> or <strong>Polygon</strong>, or USDT on <strong>Tron (TRC20)</strong> or <strong>Polygon</strong>. Tokens sent on another network (such as Ethereum or BNB Chain) or a different coin cannot be recovered. On Polygon, send native USDC, not the older bridged USDC.e. If you pay from an exchange, choose the matching network in its withdrawal screen.</div>
 
 <h2>Token details</h2>
 <table class="spec">
 <tr><th>USDC on Solana</th><td>Official USDC mint: <span class="mono">EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v</span></td></tr>
 <tr><th>USDT on TRC20</th><td>Official USDT contract on Tron: <span class="mono">TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t</span></td></tr>
+<tr><th>USDC on Polygon</th><td>Native USDC (not USDC.e): <span class="mono">0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359</span></td></tr>
+<tr><th>USDT on Polygon</th><td>Official USDT contract: <span class="mono">0xc2132D05D31c914a87C6611C10748AEb04B58e8F</span></td></tr>
 </table>
 <p class="small">Our receive addresses are shown only on the checkout page of this website. Jalu Press will never message you first with a payment address, and never asks for a seed phrase, private key or password.</p>
 
@@ -284,7 +288,7 @@ how = f'''
 <div class="btn-row" style="margin-top:20px"><a class="btn" href="{{R}}index.html#shop">Browse the shop</a></div>
 </div></section>
 '''
-page("how-to-buy/index.html", "How to buy", "How to buy from Jalu Press with USDC on Solana or USDT on TRC20.", how, "how")
+page("how-to-buy/index.html", "How to buy", "How to buy from Jalu Press with USDC or USDT on Solana, TRC20 or Polygon.", how, "how")
 
 # ---------- ABOUT ----------
 about = f'''
@@ -296,12 +300,12 @@ about = f'''
 <h2>How we work</h2>
 <ul>
 <li><strong>Digital only.</strong> Every product is a download. Nothing physical is shipped.</li>
-<li><strong>Crypto checkout.</strong> We accept USDC on Solana and USDT on TRC20 only.</li>
+<li><strong>Crypto checkout.</strong> We accept USDC on Solana or Polygon, and USDT on TRC20 or Polygon only.</li>
 <li><strong>Light on data.</strong> No accounts, no tracking scripts, no advertising cookies. See <a href="{{R}}privacy/">Privacy</a>.</li>
 <li><strong>For readers worldwide.</strong> Products are written in plain English and avoid single-country assumptions wherever they can.</li>
 </ul>
 <h2>Contact</h2>
-<p>A support email address will be listed here and on the checkout page before checkout opens.</p>
+<p>Questions and order support: <a href="mailto:info@jalupublishing.com">info@jalupublishing.com</a>.</p>
 </div></section>
 '''
 page("about/index.html", "About", "About Jalu Press: practical English ebooks and light tools, sold as digital downloads.", about, "about")
@@ -314,7 +318,7 @@ terms = f'''
 <h2>Delivery</h2>
 <p>All Jalu Press products are digital files. After your payment is confirmed on-chain, we email a private download link to the address you gave at checkout. Please check your spam folder if it has not arrived. Nothing physical is shipped.</p>
 <h2>Payment</h2>
-<p>We accept USDC on Solana and USDT on TRC20 (Tron) only. Prices are in US dollars, paid as the same number of tokens. Network fees are paid by the sender. Blockchain payments cannot be reversed by us or by you, so please check the amount, network and address before sending. See <a href="{{R}}how-to-buy/">How to buy</a>.</p>
+<p>We accept USDC on Solana or Polygon, and USDT on TRC20 (Tron) or Polygon only. Prices are in US dollars, paid as the same number of tokens. Network fees are paid by the sender. Blockchain payments cannot be reversed by us or by you, so please check the amount, network and address before sending. See <a href="{{R}}how-to-buy/">How to buy</a>.</p>
 <h2>Refunds and problems</h2>
 <ul>
 <li>If a file is faulty or will not open, tell us and we will fix it or send a replacement.</li>
@@ -327,7 +331,7 @@ terms = f'''
 <h2>Not professional advice</h2>
 <p>Jalu Press products are organizing and planning tools. They are not legal, medical, financial or emergency-services advice and do not replace guidance from qualified professionals or your local authorities.</p>
 <h2>Contact</h2>
-<p>A support email address will be published here before checkout opens.</p>
+<p>Questions and order support: <a href="mailto:info@jalupublishing.com">info@jalupublishing.com</a>.</p>
 </div></section>
 '''
 page("terms/index.html", "Help, license & refunds", "Delivery, payment, refund and license information for Jalu Press digital products.", terms, "terms")
@@ -364,7 +368,7 @@ co = f'''
 <div class="price" style="font-size:1.5rem;margin-top:8px" id="co-price" data-price="{P["price"]}">$12</div></div>
 </div>
 <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
-<p class="small" style="margin:0">Pay with USDC on Solana or USDT on TRC20 only. The price is paid as the same number of tokens. Network fees are paid by the sender.</p>
+<p class="small" style="margin:0">Pay with USDC (Solana or Polygon) or USDT (TRC20 or Polygon). The price is paid as the same number of tokens. Network fees are paid by the sender.</p>
 </div>
 <p class="small" style="margin-top:14px"><a href="{{R}}how-to-buy/">How buying works</a> &middot; <a href="{{R}}terms/">Refunds &amp; license</a></p>
 </div>
@@ -373,7 +377,7 @@ co = f'''
 <div class="card status-closed" id="co-closed">
 <p class="eyebrow">Opening soon</p>
 <h2 style="font-size:1.6rem">Checkout is not open yet</h2>
-<p>Our receive addresses for USDC (Solana) and USDT (TRC20) have not been published yet, so orders cannot be paid today. Please check back soon.</p>
+<p>Our receive addresses have not been published yet, so orders cannot be paid today. Please check back soon.</p>
 <div class="note">Please do not send crypto for a Jalu Press order to any address you received elsewhere. Our payment addresses will appear only on this page.</div>
 </div>
 
@@ -395,6 +399,7 @@ co = f'''
 <label>Receive address</label>
 <div class="addr mono" id="o-addr"></div>
 <div class="btn-row"><button class="btn alt" type="button" id="o-copy">Copy address</button><span class="small" id="o-copied"></span></div>
+<div class="qr-wrap hidden" id="o-qr"><img id="o-qr-img" alt="QR code for the receive address" width="180" height="180"></div>
 <p class="small" style="margin-top:12px" id="o-token"></p>
 <div class="note" style="margin:16px 0">Send only <strong id="o-tok2"></strong> on <strong id="o-net2"></strong>. Other tokens or networks cannot be recovered.</div>
 <h3>After you pay</h3>
@@ -407,7 +412,7 @@ co = f'''
 </div>
 '''
 co_js = '<script src="{R}assets/checkout.js" defer></script>'
-page("checkout/index.html", "Checkout", "Jalu Press checkout: pay with USDC on Solana or USDT on TRC20.", co, "", extra_head='<meta name="robots" content="noindex">\n', scripts=co_js)
+page("checkout/index.html", "Checkout", "Jalu Press checkout: pay with USDC or USDT on Solana, TRC20 or Polygon.", co, "", extra_head='<meta name="robots" content="noindex">\n', scripts=co_js)
 
 # ---------- 404 (served at any depth, so it computes its own base) ----------
 nf_body = '''

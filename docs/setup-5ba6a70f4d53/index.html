@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Payment setup</title>
+<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:30px auto;padding:0 16px}label{display:block;margin:14px 0 4px;font-weight:600}input{width:100%;padding:10px;font-size:15px;box-sizing:border-box}button{margin-top:20px;padding:12px 20px;font-size:16px}#st{margin-top:14px;font-weight:600}</style></head>
+<body><h1>Payment setup</h1>
+<form id="f" onsubmit="return false">
+<label for="orderEmail">Order email</label><input id="orderEmail" name="orderEmail" type="email" autocomplete="off">
+<label for="usdcSolanaAddress">USDC Solana</label><input id="usdcSolanaAddress" name="usdcSolanaAddress" type="text" autocomplete="off">
+<label for="usdtTronAddress">USDT TRC20</label><input id="usdtTronAddress" name="usdtTronAddress" type="text" autocomplete="off">
+<label for="usdcPolygonAddress">USDC Polygon</label><input id="usdcPolygonAddress" name="usdcPolygonAddress" type="text" autocomplete="off">
+<label for="usdtPolygonAddress">USDT Polygon</label><input id="usdtPolygonAddress" name="usdtPolygonAddress" type="text" autocomplete="off">
+<button id="dl" type="button">Download config</button></form><div id="st"></div>
+<script>
+document.getElementById('dl').onclick=function(){var o={};['orderEmail','usdcSolanaAddress','usdtTronAddress','usdcPolygonAddress','usdtPolygonAddress'].forEach(function(k){o[k]=document.getElementById(k).value.trim();});
+var b=new Blob([JSON.stringify(o,null,2)],{type:'application/json'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='jalupress-payment-config.json';document.body.appendChild(a);a.click();
+document.getElementById('st').textContent='Downloaded. Fields filled: '+Object.keys(o).filter(function(k){return o[k]}).length+' of 5';};
+</script></body></html>

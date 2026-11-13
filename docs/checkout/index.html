@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Checkout | Jalu Press</title>
-<meta name="description" content="Jalu Press checkout: pay with USDC on Solana or USDT on TRC20.">
+<meta name="description" content="Jalu Press checkout: pay with USDC or USDT on Solana, TRC20 or Polygon.">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta property="og:site_name" content="Jalu Press">
 <meta property="og:title" content="Checkout | Jalu Press">
-<meta property="og:description" content="Jalu Press checkout: pay with USDC on Solana or USDT on TRC20.">
+<meta property="og:description" content="Jalu Press checkout: pay with USDC or USDT on Solana, TRC20 or Polygon.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#16343a">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
@@ -34,7 +34,7 @@
 <div class="price" style="font-size:1.5rem;margin-top:8px" id="co-price" data-price="12">$12</div></div>
 </div>
 <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
-<p class="small" style="margin:0">Pay with USDC on Solana or USDT on TRC20 only. The price is paid as the same number of tokens. Network fees are paid by the sender.</p>
+<p class="small" style="margin:0">Pay with USDC (Solana or Polygon) or USDT (TRC20 or Polygon). The price is paid as the same number of tokens. Network fees are paid by the sender.</p>
 </div>
 <p class="small" style="margin-top:14px"><a href="../how-to-buy/">How buying works</a> &middot; <a href="../terms/">Refunds &amp; license</a></p>
 </div>
@@ -43,7 +43,7 @@
 <div class="card status-closed" id="co-closed">
 <p class="eyebrow">Opening soon</p>
 <h2 style="font-size:1.6rem">Checkout is not open yet</h2>
-<p>Our receive addresses for USDC (Solana) and USDT (TRC20) have not been published yet, so orders cannot be paid today. Please check back soon.</p>
+<p>Our receive addresses have not been published yet, so orders cannot be paid today. Please check back soon.</p>
 <div class="note">Please do not send crypto for a Jalu Press order to any address you received elsewhere. Our payment addresses will appear only on this page.</div>
 </div>
 
@@ -65,6 +65,7 @@
 <label>Receive address</label>
 <div class="addr mono" id="o-addr"></div>
 <div class="btn-row"><button class="btn alt" type="button" id="o-copy">Copy address</button><span class="small" id="o-copied"></span></div>
+<div class="qr-wrap hidden" id="o-qr"><img id="o-qr-img" alt="QR code for the receive address" width="180" height="180"></div>
 <p class="small" style="margin-top:12px" id="o-token"></p>
 <div class="note" style="margin:16px 0">Send only <strong id="o-tok2"></strong> on <strong id="o-net2"></strong>. Other tokens or networks cannot be recovered.</div>
 <h3>After you pay</h3>
@@ -80,7 +81,7 @@
 <footer class="site-foot"><div class="wrap">
 <div class="foot-grid">
 <div><a class="brand" href="../" style="margin-bottom:12px"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#16343a"/><path d="M18 14h22a6 6 0 0 1 6 6v30H24a6 6 0 0 1-6-6z" fill="#f6f1e7"/><path d="M18 44a6 6 0 0 1 6-6h22" fill="none" stroke="#16343a" stroke-width="3"/><path d="M36 14v14l-4-3-4 3V14" fill="#b9552a"/></svg><span class="brand-name">Jalu Press</span></a>
-<p>Practical English ebooks and light tools, sold as instant digital downloads. Paid in USDC (Solana) or USDT (TRC20) only. Nothing physical is shipped.</p></div>
+<p>Practical English ebooks and light tools, sold as instant digital downloads. Paid in USDC (Solana or Polygon) or USDT (TRC20 or Polygon) only. Nothing physical is shipped.</p></div>
 <div><h3>Shop</h3><ul>
 <li><a href="../products/grab-and-go-household-binder/">Household Binder</a></li>
 <li><a href="../how-to-buy/">How to buy</a></li>

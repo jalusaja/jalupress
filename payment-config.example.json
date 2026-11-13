@@ -1,5 +1,7 @@
 {
+  "orderEmail": "",
   "usdcSolanaAddress": "",
   "usdtTronAddress": "",
-  "orderEmail": ""
+  "usdcPolygonAddress": "",
+  "usdtPolygonAddress": ""
 }

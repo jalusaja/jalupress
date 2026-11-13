@@ -109,6 +109,8 @@ input:focus{border-color:var(--ink);outline:none}
 .radio-cards input{margin-top:4px}
 .radio-cards label:has(input:checked){border-color:var(--ink);box-shadow:0 0 0 2px rgba(22,52,58,.12)}
 .addr{background:#fff;border:1.5px dashed var(--ink);border-radius:8px;padding:14px;margin:8px 0 12px}
+.qr-wrap{margin:14px 0 4px;text-align:left}
+.qr-wrap img,.qr-wrap canvas{width:180px;height:180px;background:#fff;padding:8px;border:1px solid var(--line);border-radius:8px;image-rendering:pixelated;display:block}
 .status-closed{text-align:left}
 .hidden{display:none!important}
 .small{font-size:.88rem;color:var(--muted)}
