@@ -34,7 +34,7 @@
 <div class="price" style="font-size:1.5rem;margin-top:8px" id="co-price" data-price="12">$12</div></div>
 </div>
 <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
-<p class="small" style="margin:0">Pay with USDC (Solana or Polygon) or USDT (TRC20 or Polygon). The price is paid as the same number of tokens. Network fees are paid by the sender.</p>
+<p class="small" style="margin:0">Pay with USDC (Solana or Polygon) or USDT (TRC20 or Polygon). The price is paid as the same number of tokens, plus a few unique hundredths of a cent that identify your order. Network fees are paid by the sender.</p>
 </div>
 <p class="small" style="margin-top:14px"><a href="../how-to-buy/">How buying works</a> &middot; <a href="../terms/">Refunds &amp; license</a></p>
 </div>
@@ -58,9 +58,28 @@
 <p class="small" style="margin-top:12px">Nothing is charged or sent from this page. We never ask for passwords, card numbers, private keys or seed phrases.</p>
 </form>
 
+<div class="card hidden" id="co-resume">
+<p class="eyebrow">Order in progress</p>
+<h2 style="font-size:1.3rem">Order <span id="r-ref"></span></h2>
+<p>You started this order on this device: <strong id="r-amount"></strong>. If you already emailed it or paid, open it again instead of starting a new one, so the amounts match.</p>
+<div class="btn-row"><button class="btn" type="button" id="r-open">Open this order</button><button class="btn alt" type="button" id="r-new">Start a new order</button></div>
+</div>
+
 <div class="card hidden" id="co-pay" aria-live="polite">
 <p class="eyebrow">Order <span id="o-ref"></span></p>
 <h2 style="font-size:1.4rem">Send exactly <span id="o-amount"></span></h2>
+<p class="small">The last digits are unique to your order. They are how we match your payment automatically, so please send this exact amount (if your exchange takes a withdrawal fee, make sure the amount that arrives is exactly this).</p>
+
+<h3 style="margin-top:20px">Step 1 &middot; Email your order <span style="color:#a23b16">(required)</span></h3>
+<p><strong>Your files are sent automatically once we receive this email and your payment.</strong> Without this email we cannot match your payment to you. It goes to <span id="o-support"></span> and your files are sent to <strong id="o-email"></strong>.</p>
+<div class="btn-row"><a class="btn rust" id="o-mail" href="#">Email my order details</a></div>
+<details style="margin:10px 0 4px"><summary class="small">Email button not working? Copy the text instead</summary>
+<textarea id="o-mailtext" readonly rows="9" style="width:100%;font-family:monospace;font-size:.85rem;margin-top:8px"></textarea>
+<div class="btn-row"><button class="btn alt" type="button" id="o-copymail">Copy email text</button><span class="small" id="o-copiedmail"></span></div>
+<p class="small">Send it from any email account with the subject exactly as shown, including order <span id="o-ref2"></span>.</p>
+</details>
+
+<h3 style="margin-top:20px">Step 2 &middot; Send <span id="o-amount2"></span></h3>
 <p>Network: <strong id="o-net"></strong></p>
 <label>Receive address</label>
 <div class="addr mono" id="o-addr"></div>
@@ -68,11 +87,10 @@
 <div class="qr-wrap hidden" id="o-qr"><img id="o-qr-img" alt="QR code for the receive address" width="180" height="180"></div>
 <p class="small" style="margin-top:12px" id="o-token"></p>
 <div class="note" style="margin:16px 0">Send only <strong id="o-tok2"></strong> on <strong id="o-net2"></strong>. Other tokens or networks cannot be recovered.</div>
-<h3>After you pay</h3>
-<p>Email us your order reference and the transaction ID (hash). We confirm the payment on-chain and send your download link to <strong id="o-email"></strong>.</p>
-<div class="field"><label for="txid">Transaction ID <span class="small">(optional here, you can add it in the email)</span></label><input type="text" id="txid" autocomplete="off" spellcheck="false"></div>
-<div class="btn-row"><a class="btn rust" id="o-mail" href="#">Email my order details</a><span class="small">to <span id="o-support"></span></span></div>
-<p class="small" style="margin-top:14px">Your order is not complete until the payment is confirmed. Keep this order reference.</p>
+<div class="field"><label for="txid">Transaction ID <span class="small">(optional, add it before emailing if you already paid)</span></label><input type="text" id="txid" autocomplete="off" spellcheck="false"></div>
+
+<h3 style="margin-top:20px">Then</h3>
+<p>We check the blockchain every few minutes. Once your payment is final and your order email is in, your files arrive by email, usually within 30 minutes. Check your spam folder if you don't see it. Keep your order reference; it is valid for 72 hours.</p>
 </div>
 </div>
 </div>

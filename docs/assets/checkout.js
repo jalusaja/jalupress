@@ -46,11 +46,63 @@
       available.forEach(function (k, i) {
         var l = document.createElement('label');
         l.innerHTML = '<input type="radio" name="method" value="' + k + '"' + (i === 0 ? ' checked' : '') +
-          '><span><strong>' + METHODS[k].label + '</strong><br><span class="small">Pay ' + price + ' ' + METHODS[k].token + '</span></span>';
+          '><span><strong>' + METHODS[k].label + '</strong><br><span class="small">Pay about ' + price + ' ' + METHODS[k].token + ' (exact amount shown next)</span></span>';
         box.appendChild(l);
       });
       $('co-closed').classList.add('hidden');
       $('co-form').classList.remove('hidden');
+
+      var KEY = 'jp_order_v2';
+      var show = function (o) {
+        var m = METHODS[o.k]; var addr = cfg[m.key].trim();
+        var amt = o.amount + ' ' + m.token;
+        $('o-ref').textContent = o.ref; $('o-ref2').textContent = o.ref;
+        $('o-amount').textContent = amt; $('o-amount2').textContent = amt;
+        $('o-net').textContent = m.net; $('o-net2').textContent = m.net; $('o-tok2').textContent = m.token;
+        $('o-addr').textContent = addr; $('o-token').textContent = m.detail;
+        $('o-email').textContent = o.email; $('o-support').textContent = support;
+        if (cfg.qr && cfg.qr[o.k]) {
+          $('o-qr-img').src = cfg.qr[o.k];
+          $('o-qr').classList.remove('hidden');
+        } else {
+          $('o-qr').classList.add('hidden');
+          $('o-qr-img').removeAttribute('src');
+        }
+        var subject = 'Jalu Press order ' + o.ref;
+        var body = function () {
+          return 'Order reference: ' + o.ref + '\nProduct: ' + product + '\nAmount: ' + amt +
+            '\nNetwork: ' + m.net + '\nPaid to: ' + addr + '\nTransaction ID: ' + ($('txid').value.trim() || '(optional)') +
+            '\nDelivery email: ' + o.email + '\nName: ' + (o.name || '-') + '\nCreated: ' + new Date(o.created).toISOString() + '\n';
+        };
+        var mail = function () {
+          $('o-mail').href = 'mailto:' + support + '?subject=' + encodeURIComponent(subject) +
+            '&body=' + encodeURIComponent(body());
+          $('o-mailtext').value = 'To: ' + support + '\nSubject: ' + subject + '\n\n' + body();
+        };
+        mail(); $('txid').oninput = mail;
+        $('o-copymail').onclick = function () {
+          var t = $('o-mailtext').value;
+          (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject())
+            .then(function () { $('o-copiedmail').textContent = 'Copied. Paste it into a new email to ' + support + '.'; })
+            .catch(function () { $('o-mailtext').select(); $('o-copiedmail').textContent = 'Select the text above and copy it.'; });
+        };
+        $('co-form').classList.add('hidden'); $('co-resume').classList.add('hidden');
+        $('co-pay').classList.remove('hidden');
+        $('co-pay').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      };
+      var saved = null;
+      try { saved = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) { saved = null; }
+      if (saved && saved.ref && METHODS[saved.k] && available.indexOf(saved.k) >= 0 &&
+          Date.now() - saved.created < 72 * 3600 * 1000) {
+        $('r-ref').textContent = saved.ref;
+        $('r-amount').textContent = saved.amount + ' ' + METHODS[saved.k].token + ' (' + METHODS[saved.k].net + ')';
+        $('co-resume').classList.remove('hidden');
+        $('r-open').addEventListener('click', function () { show(saved); });
+        $('r-new').addEventListener('click', function () {
+          try { localStorage.removeItem(KEY); } catch (e) {}
+          $('co-resume').classList.add('hidden');
+        });
+      }
 
       $('co-form').addEventListener('submit', function (e) {
         e.preventDefault();
@@ -58,31 +110,18 @@
         if (!EMAIL.test(email)) { $('co-err').textContent = 'Please enter a valid email address for delivery.'; $('email').focus(); return; }
         $('co-err').textContent = '';
         var k = (document.querySelector('input[name=method]:checked') || {}).value;
-        var m = METHODS[k]; var addr = cfg[m.key].trim();
-        var ref = 'JP-' + Date.now().toString(36).toUpperCase().slice(-5) +
-          Math.random().toString(36).slice(2, 5).toUpperCase();
-        var amt = Number(price).toFixed(2) + ' ' + m.token;
-        $('o-ref').textContent = ref; $('o-amount').textContent = amt;
-        $('o-net').textContent = m.net; $('o-net2').textContent = m.net; $('o-tok2').textContent = m.token;
-        $('o-addr').textContent = addr; $('o-token').textContent = m.detail;
-        $('o-email').textContent = email; $('o-support').textContent = support;
-        if (cfg.qr && cfg.qr[k]) {
-          $('o-qr-img').src = cfg.qr[k];
-          $('o-qr').classList.remove('hidden');
-        } else {
-          $('o-qr').classList.add('hidden');
-          $('o-qr-img').removeAttribute('src');
-        }
-        var mail = function () {
-          var body = 'Order reference: ' + ref + '\nProduct: ' + product + '\nAmount: ' + amt +
-            '\nNetwork: ' + m.net + '\nPaid to: ' + addr + '\nTransaction ID: ' + ($('txid').value.trim() || '(add here)') +
-            '\nDelivery email: ' + email + '\nName: ' + ($('name').value.trim() || '-') + '\n';
-          $('o-mail').href = 'mailto:' + support + '?subject=' + encodeURIComponent('Jalu Press order ' + ref) +
-            '&body=' + encodeURIComponent(body);
-        };
-        mail(); $('txid').addEventListener('input', mail);
-        $('co-form').classList.add('hidden'); $('co-pay').classList.remove('hidden');
-        $('co-pay').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        var rnd = new Uint32Array(2);
+        (window.crypto || window.msCrypto).getRandomValues(rnd);
+        var A = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+        var ref = 'JP-';
+        for (var i = 0; i < 6; i++) ref += A.charAt((rnd[0] >>> (i * 5)) & 31);
+        var cents = 1 + (rnd[1] % 999); /* 0.0001 to 0.0999 */
+        var base = Math.round(Number(price) * 10000);
+        var units = base + cents;
+        var o = { ref: ref, k: k, email: email, name: $('name').value.trim(), created: Date.now(),
+          amount: Math.floor(units / 10000) + '.' + ('000' + (units % 10000)).slice(-4) };
+        try { localStorage.setItem(KEY, JSON.stringify(o)); } catch (err) {}
+        show(o);
       });
       $('o-copy').addEventListener('click', function () {
         var t = $('o-addr').textContent;

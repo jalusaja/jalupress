@@ -130,8 +130,8 @@ home = f'''
 <h2>Buying takes three steps</h2>
 <div class="grid3" style="margin-top:22px">
 <div class="card"><div class="step-n">1</div><h3>Choose a product</h3><p>Read the details and preview pages, and check it suits you before you pay.</p></div>
-<div class="card"><div class="step-n">2</div><h3>Pay in USDC or USDT</h3><p>Checkout shows the exact amount, the network and the receive address for your order.</p></div>
-<div class="card"><div class="step-n">3</div><h3>Get your files</h3><p>Once the payment is confirmed on-chain, your download is sent to the email you gave at checkout.</p></div>
+<div class="card"><div class="step-n">2</div><h3>Pay in USDC or USDT</h3><p>Checkout shows the exact amount for your order, the network and the receive address.</p></div>
+<div class="card"><div class="step-n">3</div><h3>Get your files</h3><p>Once the payment is confirmed on-chain, your files are emailed to you automatically.</p></div>
 </div>
 <p style="margin-top:22px"><a href="{{R}}how-to-buy/">Read the full buying guide &rarr;</a></p>
 </div></section>
@@ -257,16 +257,16 @@ how = f'''
 <section><div class="wrap prose">
 <p class="eyebrow">Buying guide</p>
 <h1>How to buy</h1>
-<p class="lead">Jalu Press accepts two stablecoins only: <strong>USDC</strong> and <strong>USDT</strong>. USDC can be sent on Solana or Polygon, and USDT on TRC20 (Tron) or Polygon. Prices are in US dollars and you pay the same number of tokens (for example, $12 = 12 USDC or 12 USDT).</p>
+<p class="lead">Jalu Press accepts two stablecoins only: <strong>USDC</strong> and <strong>USDT</strong>. USDC can be sent on Solana or Polygon, and USDT on TRC20 (Tron) or Polygon. Prices are in US dollars and you pay the same number of tokens, plus a few unique hundredths of a cent that identify your order (for example, $12 = 12.0347 USDC).</p>
 
 <h2>Step by step</h2>
 <ol>
 <li><strong>Pick your product</strong> and open its checkout.</li>
 <li><strong>Enter your email</strong> so we know where to send your files. A name is optional.</li>
 <li><strong>Choose a network:</strong> USDC on Solana or Polygon, or USDT on TRC20 or Polygon.</li>
-<li><strong>Send the exact amount</strong> shown, to the address shown, on the network shown. Network fees are paid by the sender and are on top of the price.</li>
-<li><strong>Send us your order reference and transaction ID</strong> using the button on the checkout page.</li>
-<li><strong>Receive your download.</strong> Once the payment is confirmed on-chain, we email you a private download link for your files.</li>
+<li><strong>Email us your order</strong> with the button on the checkout page. This step is required: it tells us which payment is yours.</li>
+<li><strong>Send the exact amount</strong> shown (for example 12.0347 USDC), to the address shown, on the network shown. The last digits are unique to your order. Network fees are paid by the sender and are on top of the price.</li>
+<li><strong>Receive your files.</strong> Our system checks the blockchain every few minutes. Once your payment is final, your files are emailed to you automatically as an attachment, usually within 30 minutes.</li>
 </ol>
 
 <div class="note"><strong>Check the network before you send.</strong> Send only the token and network shown at checkout: USDC on <strong>Solana</strong> or <strong>Polygon</strong>, or USDT on <strong>Tron (TRC20)</strong> or <strong>Polygon</strong>. Tokens sent on another network (such as Ethereum or BNB Chain) or a different coin cannot be recovered. On Polygon, send native USDC, not the older bridged USDC.e. If you pay from an exchange, choose the matching network in its withdrawal screen.</div>
@@ -305,7 +305,7 @@ about = f'''
 <li><strong>For readers worldwide.</strong> Products are written in plain English and avoid single-country assumptions wherever they can.</li>
 </ul>
 <h2>Contact</h2>
-<p>Questions and order support: <a href="mailto:info@jalupublishing.com">info@jalupublishing.com</a>.</p>
+<p>Questions and order support: <a href="mailto:hallo@jalupublishing.com">hallo@jalupublishing.com</a>.</p>
 </div></section>
 '''
 page("about/index.html", "About", "About Jalu Press: practical English ebooks and light tools, sold as digital downloads.", about, "about")
@@ -316,7 +316,7 @@ terms = f'''
 <p class="eyebrow">Help</p>
 <h1>Help, license &amp; refunds</h1>
 <h2>Delivery</h2>
-<p>All Jalu Press products are digital files. After your payment is confirmed on-chain, we email a private download link to the address you gave at checkout. Please check your spam folder if it has not arrived. Nothing physical is shipped.</p>
+<p>All Jalu Press products are digital files. After your payment is confirmed on-chain and we have your order email, your files are emailed automatically, as an attachment, to the address you gave at checkout. Please check your spam folder if it has not arrived. Nothing physical is shipped.</p>
 <h2>Payment</h2>
 <p>We accept USDC on Solana or Polygon, and USDT on TRC20 (Tron) or Polygon only. Prices are in US dollars, paid as the same number of tokens. Network fees are paid by the sender. Blockchain payments cannot be reversed by us or by you, so please check the amount, network and address before sending. See <a href="{{R}}how-to-buy/">How to buy</a>.</p>
 <h2>Refunds and problems</h2>
@@ -331,7 +331,7 @@ terms = f'''
 <h2>Not professional advice</h2>
 <p>Jalu Press products are organizing and planning tools. They are not legal, medical, financial or emergency-services advice and do not replace guidance from qualified professionals or your local authorities.</p>
 <h2>Contact</h2>
-<p>Questions and order support: <a href="mailto:info@jalupublishing.com">info@jalupublishing.com</a>.</p>
+<p>Questions and order support: <a href="mailto:hallo@jalupublishing.com">hallo@jalupublishing.com</a>.</p>
 </div></section>
 '''
 page("terms/index.html", "Help, license & refunds", "Delivery, payment, refund and license information for Jalu Press digital products.", terms, "terms")
@@ -368,7 +368,7 @@ co = f'''
 <div class="price" style="font-size:1.5rem;margin-top:8px" id="co-price" data-price="{P["price"]}">$12</div></div>
 </div>
 <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
-<p class="small" style="margin:0">Pay with USDC (Solana or Polygon) or USDT (TRC20 or Polygon). The price is paid as the same number of tokens. Network fees are paid by the sender.</p>
+<p class="small" style="margin:0">Pay with USDC (Solana or Polygon) or USDT (TRC20 or Polygon). The price is paid as the same number of tokens, plus a few unique hundredths of a cent that identify your order. Network fees are paid by the sender.</p>
 </div>
 <p class="small" style="margin-top:14px"><a href="{{R}}how-to-buy/">How buying works</a> &middot; <a href="{{R}}terms/">Refunds &amp; license</a></p>
 </div>
@@ -392,9 +392,28 @@ co = f'''
 <p class="small" style="margin-top:12px">Nothing is charged or sent from this page. We never ask for passwords, card numbers, private keys or seed phrases.</p>
 </form>
 
+<div class="card hidden" id="co-resume">
+<p class="eyebrow">Order in progress</p>
+<h2 style="font-size:1.3rem">Order <span id="r-ref"></span></h2>
+<p>You started this order on this device: <strong id="r-amount"></strong>. If you already emailed it or paid, open it again instead of starting a new one, so the amounts match.</p>
+<div class="btn-row"><button class="btn" type="button" id="r-open">Open this order</button><button class="btn alt" type="button" id="r-new">Start a new order</button></div>
+</div>
+
 <div class="card hidden" id="co-pay" aria-live="polite">
 <p class="eyebrow">Order <span id="o-ref"></span></p>
 <h2 style="font-size:1.4rem">Send exactly <span id="o-amount"></span></h2>
+<p class="small">The last digits are unique to your order. They are how we match your payment automatically, so please send this exact amount (if your exchange takes a withdrawal fee, make sure the amount that arrives is exactly this).</p>
+
+<h3 style="margin-top:20px">Step 1 &middot; Email your order <span style="color:#a23b16">(required)</span></h3>
+<p><strong>Your files are sent automatically once we receive this email and your payment.</strong> Without this email we cannot match your payment to you. It goes to <span id="o-support"></span> and your files are sent to <strong id="o-email"></strong>.</p>
+<div class="btn-row"><a class="btn rust" id="o-mail" href="#">Email my order details</a></div>
+<details style="margin:10px 0 4px"><summary class="small">Email button not working? Copy the text instead</summary>
+<textarea id="o-mailtext" readonly rows="9" style="width:100%;font-family:monospace;font-size:.85rem;margin-top:8px"></textarea>
+<div class="btn-row"><button class="btn alt" type="button" id="o-copymail">Copy email text</button><span class="small" id="o-copiedmail"></span></div>
+<p class="small">Send it from any email account with the subject exactly as shown, including order <span id="o-ref2"></span>.</p>
+</details>
+
+<h3 style="margin-top:20px">Step 2 &middot; Send <span id="o-amount2"></span></h3>
 <p>Network: <strong id="o-net"></strong></p>
 <label>Receive address</label>
 <div class="addr mono" id="o-addr"></div>
@@ -402,11 +421,10 @@ co = f'''
 <div class="qr-wrap hidden" id="o-qr"><img id="o-qr-img" alt="QR code for the receive address" width="180" height="180"></div>
 <p class="small" style="margin-top:12px" id="o-token"></p>
 <div class="note" style="margin:16px 0">Send only <strong id="o-tok2"></strong> on <strong id="o-net2"></strong>. Other tokens or networks cannot be recovered.</div>
-<h3>After you pay</h3>
-<p>Email us your order reference and the transaction ID (hash). We confirm the payment on-chain and send your download link to <strong id="o-email"></strong>.</p>
-<div class="field"><label for="txid">Transaction ID <span class="small">(optional here, you can add it in the email)</span></label><input type="text" id="txid" autocomplete="off" spellcheck="false"></div>
-<div class="btn-row"><a class="btn rust" id="o-mail" href="#">Email my order details</a><span class="small">to <span id="o-support"></span></span></div>
-<p class="small" style="margin-top:14px">Your order is not complete until the payment is confirmed. Keep this order reference.</p>
+<div class="field"><label for="txid">Transaction ID <span class="small">(optional, add it before emailing if you already paid)</span></label><input type="text" id="txid" autocomplete="off" spellcheck="false"></div>
+
+<h3 style="margin-top:20px">Then</h3>
+<p>We check the blockchain every few minutes. Once your payment is final and your order email is in, your files arrive by email, usually within 30 minutes. Check your spam folder if you don't see it. Keep your order reference; it is valid for 72 hours.</p>
 </div>
 </div>
 </div>
