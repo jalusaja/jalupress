@@ -12,7 +12,7 @@ img{max-width:100%;height:auto;display:block}
 a{color:var(--rust-d)}
 a:hover{color:var(--rust)}
 :focus-visible{outline:3px solid var(--rust);outline-offset:2px}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px;padding-left:max(22px, env(safe-area-inset-left, 0px));padding-right:max(22px, env(safe-area-inset-right, 0px))}
 .skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px 12px;z-index:9}
 .skip:focus{left:8px}
 h1,h2,h3{font-family:var(--serif);color:var(--ink);line-height:1.15;font-weight:600;margin:0 0 .5em}
@@ -24,13 +24,10 @@ p{margin:0 0 1em}
 .lead{font-size:1.15rem;color:var(--muted);max-width:40em}
 /* header */
 .site-head{background:var(--paper);border-bottom:1px solid var(--line)}
-.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
-.brand-mark{width:34px;height:34px}
+.site-head .wrap{display:flex;align-items:center;min-height:68px}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand-mark{width:34px;height:34px;flex:0 0 auto}
 .brand-name{font:600 1.35rem/1 var(--serif);letter-spacing:.01em}
-.nav{display:flex;gap:4px 18px;flex-wrap:wrap}
-.nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem;padding:6px 0;border-bottom:2px solid transparent}
-.nav a:hover,.nav a[aria-current=page]{border-bottom-color:var(--rust)}
 /* hero */
 .hero{padding:64px 0 56px}
 .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
@@ -141,7 +138,11 @@ input:focus{border-color:var(--ink);outline:none}
 }
 @media (max-width:520px){
   body{font-size:16px}
+  .wrap{padding-left:max(20px, env(safe-area-inset-left, 0px));padding-right:max(20px, env(safe-area-inset-right, 0px))}
+  .site-head .wrap{min-height:64px}
+  .brand-name{font-size:1.25rem}
   .radio-cards{grid-template-columns:1fr}
   .thumbs{gap:5px}
   section{padding:40px 0}
+  .hero{padding:32px 0 28px}
 }

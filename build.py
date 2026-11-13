@@ -67,16 +67,10 @@ def page_url(path):
 
 LOGO = '''<svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#16343a"/><path d="M18 14h22a6 6 0 0 1 6 6v30H24a6 6 0 0 1-6-6z" fill="#f6f1e7"/><path d="M18 44a6 6 0 0 1 6-6h22" fill="none" stroke="#16343a" stroke-width="3"/><path d="M36 14v14l-4-3-4 3V14" fill="#b9552a"/></svg>'''
 
-NAV = [("Shop", "index.html#shop", "home"), ("How to buy", "how-to-buy/", "how"),
-       ("About", "about/", "about"), ("Help & terms", "terms/", "terms")]
-
-
 def page(path, title, desc, body, active="", depth=None, extra_head="", scripts="",
          og_image=None, og_alt=None):
     depth = path.count("/") if depth is None else depth
     r = "../" * depth or "./"
-    nav = "".join(
-        f'<a href="{r}{h}"{" aria-current=page" if k==active else ""}>{t}</a>' for t, h, k in NAV)
     full_title = f"{title} | Jalu Press" if title != "Jalu Press" else "Jalu Press: practical English ebooks and light tools"
     url = page_url(path)
     image = og_image or og_for()
@@ -89,7 +83,7 @@ def page(path, title, desc, body, active="", depth=None, extra_head="", scripts=
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 {extra_head}<title>{esc(full_title)}</title>
 <meta name="description" content="{esc(desc)}">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -114,8 +108,7 @@ def page(path, title, desc, body, active="", depth=None, extra_head="", scripts=
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head"><div class="wrap">
-<a class="brand" href="{r}">{LOGO}<span class="brand-name">Jalu Press</span></a>
-<nav class="nav" aria-label="Main">{nav}</nav>
+<a class="brand" href="{r}" aria-label="Jalu Press home">{LOGO}<span class="brand-name">Jalu Press</span></a>
 </div></header>
 <main id="main">
 {body.replace("{R}", r)}
