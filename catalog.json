@@ -170,6 +170,177 @@
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Print the Letter or A4 version, whichever matches your paper.",
       "inside_heading": "Inside the binder"
+    },
+    {
+      "slug": "plan-ahead-meal-grocery-planner",
+      "title": "The Plan-Ahead Meal & Grocery Planner",
+      "subtitle": "Weekly Meal Plans, Aisle-Sorted Grocery Lists, Pantry Inventory & a Self-Building Grocery Spreadsheet",
+      "nav_label": "Meal & Grocery Planner",
+      "price_usd": 9,
+      "status": "for_sale",
+      "released": "2026-11-13",
+      "short": "Plan the week in about 20 minutes and shop once. Weekly meal plans, grocery lists sorted by store section, pantry and freezer pages, recipe cards, and a spreadsheet that writes your grocery list for you.",
+      "description": "A 23-page fillable meal and grocery planner (US Letter and A4) with a companion Excel / Google Sheets tool that builds your grocery list from your weekly plan. $9, paid in USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-plan-ahead-meal-grocery-planner.jpg",
+      "og_alt": "The Plan-Ahead Meal & Grocery Planner: weekly meal plan and grocery list pages with a companion spreadsheet",
+      "images": [
+        {
+          "file": "plan-ahead-meal-grocery-planner-cover",
+          "alt": "Cover of The Plan-Ahead Meal & Grocery Planner with a weekly meal plan, grocery list and the companion spreadsheet"
+        },
+        {
+          "file": "plan-ahead-meal-grocery-planner-preview-1-whats-inside",
+          "alt": "What's inside: 23 pages for planning, shopping and cooking"
+        },
+        {
+          "file": "plan-ahead-meal-grocery-planner-preview-2-plan-and-list",
+          "alt": "The weekly meal plan page next to the grocery list sorted by store section"
+        },
+        {
+          "file": "plan-ahead-meal-grocery-planner-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet: week plan drop-downs and the automatic grocery list"
+        },
+        {
+          "file": "plan-ahead-meal-grocery-planner-preview-4-kitchen",
+          "alt": "Pantry staples, recipe cards and kitchen conversions pages"
+        }
+      ],
+      "shop_ticks": [
+        "23-page fillable PDF, in US Letter and A4",
+        "Spreadsheet that builds your grocery list (Excel or Google Sheets)",
+        "Four weeks of meal plans and grocery lists included"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 23 pages, US Letter + A4",
+        "Meal & grocery tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "Decide once a week, not every evening",
+          "paragraphs": [
+            "The question \"what's for dinner?\" is easier to answer on a quiet Sunday than at six o'clock on a busy Tuesday. This planner turns it into a short weekly routine: check what you already have, choose the week's meals, write one grocery list, and shop once.",
+            "Start by filling in a few setup pages: who you cook for and what they love or avoid, which nights are busy, a handful of theme nights, and a bank of go-to meals your household already enjoys. After that, planning a week is mostly picking from your own list.",
+            "Every weekly plan has space for breakfast, lunch, dinner and snacks, a busy-night tick for each day, and boxes for what to prep ahead, what to use up first and how to handle leftovers. The facing grocery list is grouped by store section, so you walk each aisle once."
+          ]
+        },
+        {
+          "heading": "A spreadsheet that writes the grocery list",
+          "paragraphs": [
+            "The companion spreadsheet works in Microsoft Excel and Google Sheets. List your meals and their ingredients once, mark what you usually keep in stock, then choose the week's meals from drop-down lists. Every ingredient you need and don't have appears on the Grocery List tab, with its store section and the meal it is for.",
+            "There is also a pantry stock count that flags items to restock, and a simple spend log with weekly and monthly totals in any currency."
+          ],
+          "note_html": "<strong>Made for any kitchen.</strong> Units are flexible, a conversions page covers cups, grams, ounces and oven temperatures in Celsius, Fahrenheit and gas marks, and nothing assumes a particular country, store or diet."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Meal & Grocery Planner, US Letter",
+          "detail": "23 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Meal & Grocery Planner, A4",
+          "detail": "23 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Meal & grocery tool",
+          "detail": "Week plan, self-building grocery list, meals and ingredients, pantry, spend log (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the planner",
+      "inside": [
+        {
+          "strong": "Start here:",
+          "rest": "a five-step weekly routine and printing tips"
+        },
+        {
+          "strong": "Set up:",
+          "rest": "our household, theme nights and meal ideas, go-to meals bank"
+        },
+        {
+          "strong": "Inventory:",
+          "rest": "pantry staples checklist, fridge and freezer log"
+        },
+        {
+          "strong": "Weeks 1 to 4:",
+          "rest": "weekly meal plan with busy-night markers, prep, use-up and leftovers boxes, plus a grocery list by store section"
+        },
+        {
+          "strong": "Overview:",
+          "rest": "monthly dinner calendar"
+        },
+        {
+          "strong": "Cook:",
+          "rest": "prep session planner, use-it-up and leftovers tracker, four recipe cards"
+        },
+        {
+          "strong": "Track & reference:",
+          "rest": "grocery spend log, kitchen conversions, notes"
+        }
+      ],
+      "good_for": [
+        "Busy households that want fewer last-minute dinner decisions",
+        "Anyone trying to waste less food and make fewer trips to the store",
+        "Families who batch-cook or prep lunches ahead",
+        "People who like paper planning, spreadsheets, or both"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "23 per PDF, 1,200+ fillable fields, 400+ check boxes"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$9, paid as 9 USDC (Solana or Polygon) or 9 USDT (TRC20 or Polygon)"
+        ],
+        [
+          "License",
+          "Personal and household use. Print as many copies as your household needs. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This planner is an organizing tool for personal use. It is not nutrition, dietary, medical or financial advice.",
+        "It contains no meal plans for medical conditions or special diets. For allergies or special diets, read food labels yourself and follow the advice of your own doctor or dietitian.",
+        "Kitchen conversions are rounded for everyday cooking.",
+        "The example meals in the spreadsheet are placeholders to show how it works; replace them with your own."
+      ],
+      "zip": "The-Plan-Ahead-Meal-and-Grocery-Planner.zip",
+      "whats_inside": [
+        "The Plan-Ahead Meal & Grocery Planner, US Letter size (fillable PDF)",
+        "The Plan-Ahead Meal & Grocery Planner, A4 size (fillable PDF)",
+        "Plan-Ahead Meal & Grocery Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then use the Letter or A4 planner, whichever matches your paper."
     }
   ]
 }
