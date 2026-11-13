@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Checkout | Jalu Press</title>
+<meta name="description" content="Jalu Press checkout: pay with USDC on Solana or USDT on TRC20.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:site_name" content="Jalu Press">
+<meta property="og:title" content="Checkout | Jalu Press">
+<meta property="og:description" content="Jalu Press checkout: pay with USDC on Solana or USDT on TRC20.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#16343a">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="../"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#16343a"/><path d="M18 14h22a6 6 0 0 1 6 6v30H24a6 6 0 0 1-6-6z" fill="#f6f1e7"/><path d="M18 44a6 6 0 0 1 6-6h22" fill="none" stroke="#16343a" stroke-width="3"/><path d="M36 14v14l-4-3-4 3V14" fill="#b9552a"/></svg><span class="brand-name">Jalu Press</span></a>
+<nav class="nav" aria-label="Main"><a href="../index.html#shop">Shop</a><a href="../how-to-buy/">How to buy</a><a href="../about/">About</a><a href="../terms/">Help & terms</a></nav>
+</div></header>
+<main id="main">
+
+<div class="wrap"><p class="crumbs"><a href="../">Home</a> / Checkout</p></div>
+<div class="wrap co" id="checkout" data-config="../assets/payment-config.json">
+<div>
+<h1 style="font-size:2rem">Checkout</h1>
+<div class="card">
+<div class="summary-row">
+<img src="../assets/img/binder-cover-800.webp" width="800" height="600" alt="">
+<div><strong style="color:var(--ink)">The Grab-and-Go Household Binder</strong><div class="small">Digital download (PDF + XLSX)</div>
+<div class="price" style="font-size:1.5rem;margin-top:8px" id="co-price" data-price="12">$12</div></div>
+</div>
+<hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
+<p class="small" style="margin:0">Pay with USDC on Solana or USDT on TRC20 only. The price is paid as the same number of tokens. Network fees are paid by the sender.</p>
+</div>
+<p class="small" style="margin-top:14px"><a href="../how-to-buy/">How buying works</a> &middot; <a href="../terms/">Refunds &amp; license</a></p>
+</div>
+
+<div>
+<div class="card status-closed" id="co-closed">
+<p class="eyebrow">Opening soon</p>
+<h2 style="font-size:1.6rem">Checkout is not open yet</h2>
+<p>Our receive addresses for USDC (Solana) and USDT (TRC20) have not been published yet, so orders cannot be paid today. Please check back soon.</p>
+<div class="note">Please do not send crypto for a Jalu Press order to any address you received elsewhere. Our payment addresses will appear only on this page.</div>
+</div>
+
+<form class="card hidden" id="co-form" novalidate>
+<h2 style="font-size:1.4rem">Your details</h2>
+<div class="field"><label for="email">Email for delivery</label><input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com"></div>
+<div class="field"><label for="name">Name <span class="small">(optional)</span></label><input type="text" id="name" name="name" autocomplete="name"></div>
+<fieldset class="field" style="border:0;padding:0;margin:0 0 16px"><legend style="font-weight:600;color:var(--ink);margin-bottom:8px">Pay with</legend>
+<div class="radio-cards" id="methods"></div></fieldset>
+<p class="small" id="co-err" role="alert" style="color:#a23b16"></p>
+<button class="btn" type="submit">Show payment details</button>
+<p class="small" style="margin-top:12px">Nothing is charged or sent from this page. We never ask for passwords, card numbers, private keys or seed phrases.</p>
+</form>
+
+<div class="card hidden" id="co-pay" aria-live="polite">
+<p class="eyebrow">Order <span id="o-ref"></span></p>
+<h2 style="font-size:1.4rem">Send exactly <span id="o-amount"></span></h2>
+<p>Network: <strong id="o-net"></strong></p>
+<label>Receive address</label>
+<div class="addr mono" id="o-addr"></div>
+<div class="btn-row"><button class="btn alt" type="button" id="o-copy">Copy address</button><span class="small" id="o-copied"></span></div>
+<p class="small" style="margin-top:12px" id="o-token"></p>
+<div class="note" style="margin:16px 0">Send only <strong id="o-tok2"></strong> on <strong id="o-net2"></strong>. Other tokens or networks cannot be recovered.</div>
+<h3>After you pay</h3>
+<p>Email us your order reference and the transaction ID (hash). We confirm the payment on-chain and send your download link to <strong id="o-email"></strong>.</p>
+<div class="field"><label for="txid">Transaction ID <span class="small">(optional here, you can add it in the email)</span></label><input type="text" id="txid" autocomplete="off" spellcheck="false"></div>
+<div class="btn-row"><a class="btn rust" id="o-mail" href="#">Email my order details</a><span class="small">to <span id="o-support"></span></span></div>
+<p class="small" style="margin-top:14px">Your order is not complete until the payment is confirmed. Keep this order reference.</p>
+</div>
+</div>
+</div>
+
+</main>
+<footer class="site-foot"><div class="wrap">
+<div class="foot-grid">
+<div><a class="brand" href="../" style="margin-bottom:12px"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#16343a"/><path d="M18 14h22a6 6 0 0 1 6 6v30H24a6 6 0 0 1-6-6z" fill="#f6f1e7"/><path d="M18 44a6 6 0 0 1 6-6h22" fill="none" stroke="#16343a" stroke-width="3"/><path d="M36 14v14l-4-3-4 3V14" fill="#b9552a"/></svg><span class="brand-name">Jalu Press</span></a>
+<p>Practical English ebooks and light tools, sold as instant digital downloads. Paid in USDC (Solana) or USDT (TRC20) only. Nothing physical is shipped.</p></div>
+<div><h3>Shop</h3><ul>
+<li><a href="../products/grab-and-go-household-binder/">Household Binder</a></li>
+<li><a href="../how-to-buy/">How to buy</a></li>
+<li><a href="../checkout/?p=grab-and-go-household-binder">Checkout</a></li></ul></div>
+<div><h3>Info</h3><ul>
+<li><a href="../about/">About Jalu Press</a></li>
+<li><a href="../terms/">Help, license &amp; refunds</a></li>
+<li><a href="../privacy/">Privacy</a></li></ul></div>
+</div>
+<div class="foot-legal">&copy; 2026 Jalu Press. All products are original works. Jalu Press products are organizing tools, not legal, medical, financial or emergency-services advice.</div>
+</div></footer>
+<script src="../assets/checkout.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Never commit full product files
+*.pdf
+*.xlsx
+*.zip
+/products/
+__pycache__/
