@@ -72,7 +72,12 @@ section{padding:56px 0}
 .crumbs a{color:var(--muted)}
 .pp{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;padding:28px 0 40px;align-items:start}
 .gallery-main{margin-bottom:12px}
-.thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:22px}
+.product-teaser{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.product-teaser .teaser-body{padding:22px 22px 24px;flex:1;display:flex;flex-direction:column}
+.product-teaser .teaser-body .btn-row{margin-top:auto}
+.product-teaser h3{font-size:1.35rem;margin-bottom:.25em}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:8px}
 .thumbs button{padding:0;border:2px solid transparent;border-radius:6px;background:none;cursor:pointer;overflow:hidden}
 .thumbs button[aria-pressed=true]{border-color:var(--rust)}
 .buybox{position:sticky;top:18px}
@@ -112,6 +117,10 @@ input:focus{border-color:var(--ink);outline:none}
 .qr-wrap{margin:14px 0 4px;text-align:left}
 .qr-wrap img,.qr-wrap canvas{width:180px;height:180px;background:#fff;padding:8px;border:1px solid var(--line);border-radius:8px;image-rendering:pixelated;display:block}
 .status-closed{text-align:left}
+.product-pick{display:grid;gap:12px;margin-top:14px}
+.product-pick a{display:flex;gap:14px;align-items:center;border:1.5px solid var(--line);border-radius:10px;padding:12px;text-decoration:none;color:inherit;background:#fff}
+.product-pick a:hover{border-color:var(--ink)}
+.product-pick img{width:72px;height:auto;border-radius:6px;border:1px solid var(--line)}
 .hidden{display:none!important}
 .small{font-size:.88rem;color:var(--muted)}
 /* footer */
@@ -133,6 +142,6 @@ input:focus{border-color:var(--ink);outline:none}
 @media (max-width:520px){
   body{font-size:16px}
   .radio-cards{grid-template-columns:1fr}
-  .thumbs{grid-template-columns:repeat(5,1fr);gap:5px}
+  .thumbs{gap:5px}
   section{padding:40px 0}
 }

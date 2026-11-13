@@ -7,10 +7,20 @@
 <title>Checkout | Jalu Press</title>
 <meta name="description" content="Jalu Press checkout: pay with USDC or USDT on Solana, TRC20 or Polygon.">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://jalupress.com/checkout/">
 <meta property="og:site_name" content="Jalu Press">
 <meta property="og:title" content="Checkout | Jalu Press">
 <meta property="og:description" content="Jalu Press checkout: pay with USDC or USDT on Solana, TRC20 or Polygon.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://jalupress.com/checkout/">
+<meta property="og:image" content="https://jalupress.com/assets/img/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jalu Press: practical English ebooks and light tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Checkout | Jalu Press">
+<meta name="twitter:description" content="Jalu Press checkout: pay with USDC or USDT on Solana, TRC20 or Polygon.">
+<meta name="twitter:image" content="https://jalupress.com/assets/img/og-default.jpg">
 <meta name="theme-color" content="#16343a">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/style.css">
@@ -24,14 +34,14 @@
 <main id="main">
 
 <div class="wrap"><p class="crumbs"><a href="../">Home</a> / Checkout</p></div>
-<div class="wrap co" id="checkout" data-config="../assets/payment-config.json">
+<div class="wrap co" id="checkout" data-config="../assets/payment-config.json" data-catalog="../assets/catalog.json">
 <div>
 <h1 style="font-size:2rem">Checkout</h1>
-<div class="card">
+<div class="card" id="co-summary">
 <div class="summary-row">
-<img src="../assets/img/binder-cover-800.webp" width="800" height="600" alt="">
-<div><strong style="color:var(--ink)">The Grab-and-Go Household Binder</strong><div class="small">Digital download (PDF + XLSX)</div>
-<div class="price" style="font-size:1.5rem;margin-top:8px" id="co-price" data-price="12">$12</div></div>
+<img id="co-cover" src="" width="800" height="600" alt="">
+<div><strong style="color:var(--ink)" id="co-title">Choose a product</strong><div class="small" id="co-format">Digital download</div>
+<div class="price" style="font-size:1.5rem;margin-top:8px" id="co-price" data-price=""></div></div>
 </div>
 <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
 <p class="small" style="margin:0">Pay with USDC (Solana or Polygon) or USDT (TRC20 or Polygon). The price is paid as the same number of tokens, plus a few unique hundredths of a cent that identify your order. Network fees are paid by the sender.</p>
@@ -40,6 +50,19 @@
 </div>
 
 <div>
+<div class="card hidden" id="co-pick">
+<p class="eyebrow">Shop</p>
+<h2 style="font-size:1.6rem">Choose a product to buy</h2>
+<p>Open checkout from a product page, or pick one below.</p>
+<div class="product-pick" id="co-pick-list"></div>
+</div>
+
+<div class="card hidden" id="co-unknown">
+<p class="eyebrow">Not found</p>
+<h2 style="font-size:1.6rem">We could not find that product</h2>
+<p>It may have been renamed or is no longer for sale. <a href="../index.html#shop">Browse the shop</a>.</p>
+</div>
+
 <div class="card status-closed" id="co-closed">
 <p class="eyebrow">Opening soon</p>
 <h2 style="font-size:1.6rem">Checkout is not open yet</h2>
@@ -103,7 +126,7 @@
 <div><h3>Shop</h3><ul>
 <li><a href="../products/grab-and-go-household-binder/">Household Binder</a></li>
 <li><a href="../how-to-buy/">How to buy</a></li>
-<li><a href="../checkout/?p=grab-and-go-household-binder">Checkout</a></li></ul></div>
+<li><a href="../checkout/">Checkout</a></li></ul></div>
 <div><h3>Info</h3><ul>
 <li><a href="../about/">About Jalu Press</a></li>
 <li><a href="../terms/">Help, license &amp; refunds</a></li>
