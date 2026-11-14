@@ -341,6 +341,181 @@
         "Read Me First (PDF): how to fill in, print and use the spreadsheet"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then use the Letter or A4 planner, whichever matches your paper."
+    },
+    {
+      "slug": "holiday-gift-budget-planner",
+      "title": "The Holiday Gift & Budget Planner",
+      "subtitle": "Gift Lists per Person, a Spending Tracker Against Your Own Budget, Card List, Party & Holiday Meal Plans and a Countdown Checklist",
+      "nav_label": "Holiday Gift & Budget Planner",
+      "price_usd": 9,
+      "status": "for_sale",
+      "released": "2026-11-14",
+      "short": "Plan the whole holiday season in one place: a gift list for everyone you buy for, spending tracked against the budget you set, a holiday card list, party and meal planners, and a week-by-week countdown, plus a spreadsheet that adds it all up.",
+      "description": "A 25-page fillable holiday planner (US Letter and A4) for gifts, spending against your own budget, cards, parties and the holiday meal, with a companion Excel / Google Sheets tracker. $9, paid in USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-holiday-gift-budget-planner.jpg",
+      "og_alt": "The Holiday Gift & Budget Planner: cover and gift list pages on a cranberry background",
+      "images": [
+        {
+          "file": "holiday-gift-budget-planner-cover",
+          "alt": "Cover of The Holiday Gift & Budget Planner with the gift list, budget overview and companion spreadsheet"
+        },
+        {
+          "file": "holiday-gift-budget-planner-preview-1-whats-inside",
+          "alt": "What's inside: 25 pages to plan the whole holiday season"
+        },
+        {
+          "file": "holiday-gift-budget-planner-preview-2-gifts-and-budget",
+          "alt": "The gift list page next to the budget overview page"
+        },
+        {
+          "file": "holiday-gift-budget-planner-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet: gift list with spent per person and budget by category"
+        },
+        {
+          "file": "holiday-gift-budget-planner-preview-4-parties-and-countdown",
+          "alt": "Event planner, holiday meal plan and countdown checklist pages"
+        }
+      ],
+      "shop_ticks": [
+        "25-page fillable PDF, in US Letter and A4",
+        "Spreadsheet that totals spending by category and by person (Excel or Google Sheets)",
+        "Gifts, cards, parties, the holiday meal and a countdown in one planner"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 25 pages, US Letter + A4",
+        "Holiday gift & budget tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "One place for the whole season",
+          "paragraphs": [
+            "The holidays come with a lot of small lists: who you are buying for, what you have already bought, which cards still need stamps, who is bringing dessert. This planner gathers them into one binder, so you can see where things stand at a glance instead of keeping it all in your head.",
+            "Start with the big picture: key dates, traditions you want to keep, and the total you have decided to spend, split into categories like gifts, food, decorations and cards. Then add everyone you buy for to the gift list, with a planned amount, the gift, what it actually cost, and ticks for bought, wrapped and given.",
+            "Log purchases once in the spending tracker, keep parcels and return dates on the orders page, and work through the holiday card list. For gatherings there is an event planner, a guest list with RSVPs, a holiday meal plan, a cooking timeline and a grocery list by store section."
+          ]
+        },
+        {
+          "heading": "A countdown, a wrap-up, and a spreadsheet that adds it up",
+          "paragraphs": [
+            "A gentle week-by-week countdown runs from six weeks out to the day itself, with space for your own tasks. Afterwards, a thank-you tracker and a post-holiday wrap-up capture what worked, where decorations are stored and gift ideas for next year.",
+            "The companion spreadsheet works in Microsoft Excel and Google Sheets. Enter the amounts you choose, list the people on your gift list, and log each purchase with a category. Totals per category and per person, what is left of your own budget, and a one-screen dashboard update by themselves."
+          ],
+          "note_html": "<strong>Your numbers, your traditions.</strong> Works for any winter holiday and any currency. The planner never suggests what to spend; it simply keeps the plan you made in view."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Holiday Gift & Budget Planner, US Letter",
+          "detail": "25 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Holiday Gift & Budget Planner, A4",
+          "detail": "25 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Holiday gift & budget tool",
+          "detail": "Dashboard, budget by category, gift list with spent per person, spending log, card list, countdown (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the planner",
+      "inside": [
+        {
+          "strong": "Start here:",
+          "rest": "a five-step routine for the season and printing tips"
+        },
+        {
+          "strong": "Set up & budget:",
+          "rest": "our holiday season (key dates, traditions, hosting), budget overview by category with check-ins"
+        },
+        {
+          "strong": "Gifts:",
+          "rest": "two gift list pages, twelve gift-idea cards by person, online orders and returns"
+        },
+        {
+          "strong": "Spending:",
+          "rest": "two spending tracker pages with running totals"
+        },
+        {
+          "strong": "Cards:",
+          "rest": "two holiday card list pages with addresses and sent / received ticks"
+        },
+        {
+          "strong": "Gatherings & meal:",
+          "rest": "event planner, guest list and RSVPs, holiday meal plan, cooking timeline, holiday grocery list"
+        },
+        {
+          "strong": "Countdown:",
+          "rest": "week-by-week checklist, holiday calendar, decorations and visits"
+        },
+        {
+          "strong": "After the holidays:",
+          "rest": "thank-you tracker, post-holiday wrap-up, next year head start, notes"
+        }
+      ],
+      "good_for": [
+        "Anyone who buys for a long list of family, friends, teachers and neighbors",
+        "Households that want to stay within the holiday budget they set for themselves",
+        "Hosts planning parties or the main holiday meal",
+        "People who like paper planning, spreadsheets, or both"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "25 per PDF, 2,000+ fillable fields, 600+ check boxes"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$9"
+        ],
+        [
+          "License",
+          "Personal and household use. Print as many copies as your household needs. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This planner is an organizing tool for personal use. It is not financial, tax or legal advice.",
+        "It does not recommend how much to spend. Every budget amount is one you choose and enter yourself.",
+        "The example rows in the spreadsheet are placeholders to show how it works; replace them with your own.",
+        "Not tied to any one holiday, country or currency; dates and amounts are left blank for you."
+      ],
+      "zip": "The-Holiday-Gift-and-Budget-Planner.zip",
+      "whats_inside": [
+        "The Holiday Gift & Budget Planner, US Letter size (fillable PDF)",
+        "The Holiday Gift & Budget Planner, A4 size (fillable PDF)",
+        "Holiday Gift & Budget Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then use the Letter or A4 planner, whichever matches your paper."
     }
   ]
 }
