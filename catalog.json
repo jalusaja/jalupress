@@ -516,6 +516,181 @@
         "Read Me First (PDF): how to fill in, print and use the spreadsheet"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then use the Letter or A4 planner, whichever matches your paper."
+    },
+    {
+      "slug": "new-year-goal-habit-planner",
+      "title": "The New Year Goal & Habit Planner",
+      "subtitle": "A Year Review, Goal Action Plans, Quarterly, Monthly and Weekly Pages, Habit Trackers and a 100-Day Challenge",
+      "nav_label": "New Year Goal & Habit Planner",
+      "price_usd": 9,
+      "status": "for_sale",
+      "released": "2026-11-15",
+      "short": "Look back on last year, choose a few goals that matter, turn each one into milestones and first steps, and track the daily habits that carry them, with weekly, monthly and quarterly check-ins and a spreadsheet that adds up your progress.",
+      "description": "A 25-page undated, fillable goal and habit planner (US Letter and A4): year review, goal action plans, quarterly, monthly and weekly pages, habit trackers and a 100-day challenge, with a companion Excel / Google Sheets tracker. $9, paid in USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-new-year-goal-habit-planner.jpg",
+      "og_alt": "The New Year Goal & Habit Planner: cover and monthly habit tracker pages on a navy background",
+      "images": [
+        {
+          "file": "new-year-goal-habit-planner-cover",
+          "alt": "Cover of The New Year Goal & Habit Planner with the monthly habit tracker, a goal action plan and the companion spreadsheet"
+        },
+        {
+          "file": "new-year-goal-habit-planner-preview-1-whats-inside",
+          "alt": "What's inside: 25 pages to plan your year"
+        },
+        {
+          "file": "new-year-goal-habit-planner-preview-2-goals-and-plans",
+          "alt": "The Goals at a Glance page next to a Goal Action Plan page"
+        },
+        {
+          "file": "new-year-goal-habit-planner-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet: goal progress from milestones and habit days done by month"
+        },
+        {
+          "file": "new-year-goal-habit-planner-preview-4-habit-trackers",
+          "alt": "Monthly habit tracker, year-in-habits grid and 100-day challenge pages"
+        }
+      ],
+      "shop_ticks": [
+        "25-page undated, fillable PDF, in US Letter and A4",
+        "Spreadsheet that tracks goal progress and habit days for you (Excel or Google Sheets)",
+        "Year review, goal plans, weekly and monthly pages and habit trackers in one planner"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 25 pages, US Letter + A4",
+        "Goal & habit tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "A few goals, with a real plan behind each one",
+          "paragraphs": [
+            "A fresh year makes it tempting to write a long list of resolutions and hope for the best. This planner takes a calmer route: look back first, choose a small number of goals that genuinely matter to you, and give each one a plan you can start this week.",
+            "It opens with a year review and a check-in on eight areas of life, so you can see where a small change would help most. Then you pick a word for the year, list up to eight goals, and turn the important ones into goal action plans: what done looks like, why it matters, milestones with dates, the first three steps, and what you will do if something gets in the way.",
+            "A year-by-quarter page spreads the milestones across four seasons, and monthly and weekly pages keep the next step in front of you without turning the year into one giant to-do list."
+          ]
+        },
+        {
+          "heading": "Habits you can actually keep, and a spreadsheet that keeps count",
+          "paragraphs": [
+            "Goals move forward through small, repeated actions. The habit builder helps you design a habit before you start it, with a cue, a tiny first version and a way to track it. Then tick boxes on the monthly tracker for up to twelve habits, fill a whole year of one habit on the year-in-habits grid, or take on a 100-day challenge.",
+            "Weekly, monthly and quarterly reviews and a mid-year reset help you adjust without starting over. The companion spreadsheet works in Microsoft Excel and Google Sheets: list goals and milestones, tick daily habits, and goal progress, habit totals by month and a one-screen dashboard update by themselves."
+          ],
+          "note_html": "<strong>Undated, so it starts when you do.</strong> Begin in January, on a birthday or on any Monday. The planner never tells you what your goals should be; it simply helps you follow through on the ones you choose."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "New Year Goal & Habit Planner, US Letter",
+          "detail": "25 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "New Year Goal & Habit Planner, A4",
+          "detail": "25 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Goal & habit tool",
+          "detail": "Dashboard, goals with progress, milestones, habits, a dated daily habit log and a savings goal tab (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the planner",
+      "inside": [
+        {
+          "strong": "Start here:",
+          "rest": "a five-step routine for the year and printing tips"
+        },
+        {
+          "strong": "Reflect:",
+          "rest": "looking back on last year, life areas check-in"
+        },
+        {
+          "strong": "Dream:",
+          "rest": "my year ahead (word of the year, vision space), 25 things for this year"
+        },
+        {
+          "strong": "Goals:",
+          "rest": "goals at a glance, four goal action plans with milestones, first steps and obstacle plans"
+        },
+        {
+          "strong": "Plan:",
+          "rest": "the year by quarter, monthly plan with mini calendar, weekly plan"
+        },
+        {
+          "strong": "Habits:",
+          "rest": "habit builder, monthly habit tracker, the year in habits, 100-day challenge"
+        },
+        {
+          "strong": "Grow & save:",
+          "rest": "reading and learning list, savings goal tracker"
+        },
+        {
+          "strong": "Review:",
+          "rest": "weekly review, monthly review, quarterly review, mid-year reset, notes"
+        }
+      ],
+      "good_for": [
+        "Anyone who wants a fresh start without a long list of resolutions",
+        "People building new routines one small habit at a time",
+        "Students, freelancers and busy parents who like a weekly rhythm",
+        "People who like paper planning, spreadsheets, or both"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "25 per PDF, 1,100+ fillable fields, 1,200+ check boxes"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$9"
+        ],
+        [
+          "License",
+          "Personal and household use. Print as many copies as your household needs. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This planner is a personal planning tool. It is not medical, financial, legal or professional advice.",
+        "It does not tell you what your goals, habits or savings amounts should be; every goal and number is one you choose.",
+        "The example rows in the spreadsheet are placeholders to show how it works; replace them with your own.",
+        "All pages are undated, so the planner works for any year and any start date."
+      ],
+      "zip": "The-New-Year-Goal-and-Habit-Planner.zip",
+      "whats_inside": [
+        "The New Year Goal & Habit Planner, US Letter size (fillable PDF)",
+        "The New Year Goal & Habit Planner, A4 size (fillable PDF)",
+        "New Year Goal & Habit Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then use the Letter or A4 planner, whichever matches your paper."
     }
   ]
 }
