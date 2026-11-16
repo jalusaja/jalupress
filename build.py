@@ -82,6 +82,7 @@ def page(path, title, desc, body, active="", depth=None, extra_head="", scripts=
     doc = f'''<!doctype html>
 <html lang="en">
 <head>
+<meta name="p:domain_verify" content="a39d20201d1c6e6ccf937fa8591ae1ad"/>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 {extra_head}<title>{esc(full_title)}</title>
