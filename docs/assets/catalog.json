@@ -691,6 +691,185 @@
         "Read Me First (PDF): how to fill in, print and use the spreadsheet"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then use the Letter or A4 planner, whichever matches your paper."
+    },
+    {
+      "slug": "just-engaged-wedding-planner",
+      "title": "The Just-Engaged Wedding Planner",
+      "subtitle": "Budget, Guest List & RSVP, Vendor Tracker and Timeline",
+      "nav_label": "Just-Engaged Wedding Planner",
+      "price_usd": 12,
+      "status": "for_sale",
+      "released": "2026-11-16",
+      "short": "Set your wedding date, currency, budget and guest cap once, then plan everything from one place: money left by category, payments coming due, live RSVP counts and a to-do list whose dates count back from your big day.",
+      "description": "A 27-page fillable wedding planner (US Letter and A4) with budget and payment pages, guest list and RSVP tracker, vendor comparison and question sheets, a planning timeline, seating plan and wedding-day run sheet, plus an Excel / Google Sheets tool with a dashboard and automatic task dates. Any currency. $12, paid in USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-just-engaged-wedding-planner.jpg",
+      "og_alt": "The Just-Engaged Wedding Planner: cover and budget overview pages on a plum background",
+      "images": [
+        {
+          "file": "just-engaged-wedding-planner-cover",
+          "alt": "Cover of The Just-Engaged Wedding Planner with the budget overview, vendor comparison page and the spreadsheet dashboard"
+        },
+        {
+          "file": "just-engaged-wedding-planner-preview-1-whats-inside",
+          "alt": "What's inside: 27 pages to plan the whole wedding"
+        },
+        {
+          "file": "just-engaged-wedding-planner-preview-2-budget-and-vendors",
+          "alt": "The Budget Overview page next to a Vendor Comparison page with three quotes side by side"
+        },
+        {
+          "file": "just-engaged-wedding-planner-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet: a dashboard with payments due in the next 30 days and a timeline with automatic due dates"
+        },
+        {
+          "file": "just-engaged-wedding-planner-preview-4-the-day",
+          "alt": "Seating plan, wedding-day run sheet and day-of contacts pages"
+        }
+      ],
+      "shop_ticks": [
+        "27-page fillable PDF, in US Letter and A4",
+        "Spreadsheet with a dashboard and task dates that count back from your wedding date (Excel or Google Sheets)",
+        "Works in any currency, for any size of wedding"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 27 pages, US Letter + A4",
+        "Wedding planner tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "Just engaged? Start here, calmly",
+          "paragraphs": [
+            "The first weeks after a proposal are full of questions: how much can we spend, how many people can we invite, and what needs booking first? This planner gives those questions an order, so you can enjoy being engaged while the plan quietly takes shape.",
+            "You begin with the big picture and your priorities, written separately and then compared, so the money and energy go where you both care most. Then come the budget, the guest list, the suppliers and a planning timeline that runs from the first conversations to the thank-you notes.",
+            "Every page is fillable on screen and prints cleanly in Letter or A4. Print the vendor, seating and run-sheet pages to share with family, a planner or the friend who will hold the phone on the day."
+          ]
+        },
+        {
+          "heading": "A spreadsheet that keeps the whole plan up to date",
+          "paragraphs": [
+            "Type your wedding date, currency symbol, budget, guest cap and meal options once on the Setup tab. The Budget tab works out balances, the next payment and its date for every line. Guests & RSVP counts yes, no and pending replies, meals and travel needs as you type. The Vendors tab keeps quotes, contracts and payment dates together.",
+            "The Timeline tab comes with a starter task list whose due dates are counted back from your wedding date, with overdue tasks flagged. The Dashboard puts days to go, budget used and left, payments due in the next 30 days, the RSVP summary and the tasks that need attention on one screen."
+          ],
+          "note_html": "<strong>Made for any wedding, anywhere.</strong> Any currency, any guest count, and an optional page for destination weddings and families in two countries. It gives no legal, contract or tax advice; there is simply a space to note what your local registrar tells you."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Just-Engaged Wedding Planner, US Letter",
+          "detail": "27 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Just-Engaged Wedding Planner, A4",
+          "detail": "27 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Wedding planner tool",
+          "detail": "Setup, Dashboard, Budget, Guests & RSVP, Vendors and Timeline tabs (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the planner",
+      "inside": [
+        {
+          "strong": "Start here:",
+          "rest": "where to begin, in five steps"
+        },
+        {
+          "strong": "Dream:",
+          "rest": "the big picture, our priorities (spend more, standard or keep it simple), a legal-paperwork reminder space"
+        },
+        {
+          "strong": "Money:",
+          "rest": "budget overview with contributors and cost per guest, budget category detail, payment schedule"
+        },
+        {
+          "strong": "Guests:",
+          "rest": "guest count planner and ground rules, guest list pages, RSVP tracker"
+        },
+        {
+          "strong": "Vendors:",
+          "rest": "vendor comparison (three quotes per service), questions to ask, our booked vendors"
+        },
+        {
+          "strong": "Timeline:",
+          "rest": "a planning timeline from the first conversations to after the wedding, with target dates"
+        },
+        {
+          "strong": "The day:",
+          "rest": "seating plan, wedding-day run sheet, day-of contacts and a day-bag checklist"
+        },
+        {
+          "strong": "After & extras:",
+          "rest": "gift and thank-you log, destination and two-country families page, notes"
+        }
+      ],
+      "good_for": [
+        "Couples who have just got engaged and want a clear place to start",
+        "Parents, friends or a maid of honor helping to plan",
+        "Destination weddings and families in two countries",
+        "People who like paper planning, spreadsheets, or both"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "27 per PDF, 1,700+ fillable fields, 460+ check boxes"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Currency",
+          "Any: you choose the symbol in the spreadsheet"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$12"
+        ],
+        [
+          "License",
+          "Personal and household use. Print as many copies as you need for your own wedding. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This planner is a personal planning tool. It is not legal, contract, financial or tax advice.",
+        "Marriage paperwork differs between countries and regions. Check what applies to you with your local registrar, and read every supplier contract yourself.",
+        "The example rows in the spreadsheet are made up to show how it works; replace them with your own.",
+        "The timeline is a suggested order, not a rule. Dates are calculated from the wedding date you enter."
+      ],
+      "zip": "The-Just-Engaged-Wedding-Planner.zip",
+      "whats_inside": [
+        "The Just-Engaged Wedding Planner, US Letter size (fillable PDF)",
+        "The Just-Engaged Wedding Planner, A4 size (fillable PDF)",
+        "Just-Engaged Wedding Planner Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the Setup tab of the spreadsheet and use the Letter or A4 planner, whichever matches your paper."
     }
   ]
 }
