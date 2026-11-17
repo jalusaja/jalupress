@@ -870,6 +870,185 @@
         "Read Me First (PDF): how to fill in, print and use the spreadsheet"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the Setup tab of the spreadsheet and use the Letter or A4 planner, whichever matches your paper."
+    },
+    {
+      "slug": "reading-year-journal-book-tracker",
+      "title": "The Reading Year Journal & Book Tracker",
+      "subtitle": "Reading Log, Book Reviews, TBR List and Yearly Stats",
+      "nav_label": "Reading Year Journal",
+      "price_usd": 9,
+      "status": "for_sale",
+      "released": "2026-11-17",
+      "short": "Log each book as you finish it, write a short or long review when one stays with you, and keep a TBR list and a yearly dashboard of books, pages, genres and ratings — in a fillable journal and a spreadsheet.",
+      "description": "A 25-page fillable reading journal (US Letter and A4) with a reading log, two review layouts, TBR shelves, monthly wrap-ups, a year in review, book-club notes and a public-domain classics checklist, plus an Excel / Google Sheets tool with a dashboard. $9, paid in USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-reading-year-journal-book-tracker.jpg",
+      "og_alt": "The Reading Year Journal & Book Tracker: cover and a review page on a forest-green background",
+      "images": [
+        {
+          "file": "reading-year-journal-book-tracker-cover",
+          "alt": "Cover of The Reading Year Journal & Book Tracker, with a review page and a reading log fanned beside it"
+        },
+        {
+          "file": "reading-year-journal-book-tracker-preview-1-whats-inside",
+          "alt": "What's inside: year at a glance, reading log, a book review page and TBR shelves"
+        },
+        {
+          "file": "reading-year-journal-book-tracker-preview-2-log-and-reviews",
+          "alt": "The reading log next to a long-form book review page"
+        },
+        {
+          "file": "reading-year-journal-book-tracker-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet dashboard, with goal progress, books by month, a genre split and a top five"
+        },
+        {
+          "file": "reading-year-journal-book-tracker-preview-4-shelves-and-year",
+          "alt": "Colour-in TBR shelves and the year-in-review page"
+        }
+      ],
+      "shop_ticks": [
+        "25-page fillable PDF, in US Letter and A4",
+        "Spreadsheet with a dashboard for books, pages, genres, ratings and a top five (Excel or Google Sheets)",
+        "Tracks print, ebook and audiobook reading"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 25 pages, US Letter + A4",
+        "Reading tracker tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "A quiet place for the year of books ahead",
+          "paragraphs": [
+            "Some years of reading disappear into a stack of finished titles and a vague sense that you read “quite a lot”. This journal gives those books a home: a log you can keep as you go, review pages for the ones that stay with you, and a look back at the end of the month and the year.",
+            "It is made for adult readers, book clubs and the person buying a gift for someone who always has a book on the go. Write in the PDF, type on the page, or keep the running totals in the spreadsheet. Use one, the other, or both.",
+            "Every page is fillable on screen and prints cleanly in Letter or A4. Reprint the log, the reviews, the TBR shelves and the wrap-ups as often as you need."
+          ]
+        },
+        {
+          "heading": "A spreadsheet that adds the year up as you go",
+          "paragraphs": [
+            "Type the reading year and an optional book, page or hours goal once on the Setup tab. Log each book with its format, dates, genre and rating. Days to finish fill in when both dates are there. The Dashboard then shows goal progress, books and pages by month, a genre and format split, your average rating and a top five.",
+            "There are tabs for a TBR list, a series tracker and book-club meetings. Rows marked “Example” show how it works; type over them or clear them. A book counts toward the goal when it has a finish date in the reading year and is not marked DNF."
+          ],
+          "note_html": "<strong>Print, ebook or audio — and no app tie-in.</strong> The journal and the spreadsheet are yours to keep. They do not connect to any bookstore, library app or reading site, and they do not import a library for you."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Reading Year Journal & Book Tracker, US Letter",
+          "detail": "25 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Reading Year Journal & Book Tracker, A4",
+          "detail": "25 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Reading tracker tool",
+          "detail": "Setup, Log, TBR, Series, Book Club and Dashboard tabs (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the journal",
+      "inside": [
+        {
+          "strong": "Start here:",
+          "rest": "how to use the journal and the spreadsheet, in five steps"
+        },
+        {
+          "strong": "The year:",
+          "rest": "year at a glance, reading-only aims, monthly wrap-ups and a year in review"
+        },
+        {
+          "strong": "The log:",
+          "rest": "a running reading log, plus long and short book review sheets"
+        },
+        {
+          "strong": "To be read:",
+          "rest": "colour-in TBR shelves and a straight TBR list"
+        },
+        {
+          "strong": "Ongoing reading:",
+          "rest": "a series tracker and authors you want to read more of"
+        },
+        {
+          "strong": "Together:",
+          "rest": "book club notes, books lent and borrowed, and a wishlist you can share"
+        },
+        {
+          "strong": "Bonus:",
+          "rest": "a checklist of thirty public-domain classics, with a short original note on each"
+        },
+        {
+          "strong": "Notes:",
+          "rest": "spare lined pages, plus credits and a short license note"
+        }
+      ],
+      "good_for": [
+        "Readers who want a record of the year, without a school-style log",
+        "Book-club members who like a page to take to the meeting",
+        "People who read in print, ebook, audio, or a mix of all three",
+        "A December gift for someone starting a year of reading"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "25 per PDF, 2,200+ fillable fields"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Formats tracked",
+          "Print, ebook and audiobook"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$9"
+        ],
+        [
+          "License",
+          "Personal and household use. Print as many copies as you need for yourself, your family or your book club. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This is a personal reading journal. It is not connected to any bookstore, library app or reading site, and it does not import a library for you.",
+        "The example rows in the spreadsheet are made up to show how it works; replace them with your own.",
+        "The “Classics to try” list names works that are in the public domain in the United States. The short descriptions are ours. Public-domain status can differ in other countries. Free editions of many of those titles are published at standardebooks.org; those files are not included.",
+        "A book goal is optional. The journal will not tell you how much you “should” read."
+      ],
+      "zip": "The-Reading-Year-Journal-and-Book-Tracker.zip",
+      "whats_inside": [
+        "The Reading Year Journal & Book Tracker, US Letter size (fillable PDF)",
+        "The Reading Year Journal & Book Tracker, A4 size (fillable PDF)",
+        "Reading Year Journal & Book Tracker Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the Setup tab of the spreadsheet and use the Letter or A4 journal, whichever matches your paper."
     }
   ]
 }
