@@ -1049,6 +1049,179 @@
         "Read Me First (PDF): how to fill in, print and use the spreadsheet"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the Setup tab of the spreadsheet and use the Letter or A4 journal, whichever matches your paper."
+    },
+    {
+      "slug": "strength-workout-log",
+      "title": "The Strength & Workout Log",
+      "subtitle": "12-Week Training Planner, Gym Tracker and Progress Dashboard",
+      "nav_label": "Strength & Workout Log",
+      "price_usd": 9,
+      "status": "for_sale",
+      "released": "2026-11-18",
+      "short": "Plan a 12-week training block, log every strength session and cardio minutes, and watch weekly volume and personal bests add up — in a fillable journal and a spreadsheet, in kilograms or pounds.",
+      "description": "A 25-page fillable training log (US Letter and A4) with a 12-week calendar, a weekly split planner, session sheets in two layouts, a cardio log, a personal-best tracker and four-weekly check-ins, plus an Excel / Google Sheets tool with a progress dashboard. $9, paid in USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-strength-workout-log.jpg",
+      "og_alt": "The Strength & Workout Log: cover and a session sheet on a slate background",
+      "images": [
+        {
+          "file": "strength-workout-log-cover",
+          "alt": "Cover of The Strength & Workout Log, with a how-to-use page, a strength session sheet and a 12-week calendar fanned beside it"
+        },
+        {
+          "file": "strength-workout-log-preview-1-whats-inside",
+          "alt": "What's inside: a 12-week calendar, a strength session sheet, a mixed session sheet and a personal-best tracker"
+        },
+        {
+          "file": "strength-workout-log-preview-2-session-sheets",
+          "alt": "The strength session sheet next to the mixed session layout, which includes a cardio block"
+        },
+        {
+          "file": "strength-workout-log-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet dashboard, with weekly volume, cardio minutes and a personal-best table"
+        },
+        {
+          "file": "strength-workout-log-preview-4-calendar-and-checkin",
+          "alt": "The 12-week calendar next to a four-weekly check-in page"
+        }
+      ],
+      "shop_ticks": [
+        "25-page fillable PDF, in US Letter and A4",
+        "Spreadsheet with a 12-week program builder and a dashboard for volume, personal bests and cardio (Excel or Google Sheets)",
+        "Works in kilograms or pounds"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 25 pages, US Letter + A4",
+        "Strength and workout log tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "A log for the next twelve weeks of training",
+          "paragraphs": [
+            "A new training block is easier to keep when the plan and the record live in the same place. This log gives you a 12-week calendar, a weekly split planner, and session sheets you can reprint — plus a spreadsheet that adds up volume, personal bests and cardio minutes as you go.",
+            "It is made for gym sessions, home training or a mix of both, in kilograms or pounds. Write in the PDF, type on the page, or keep the running totals in the spreadsheet. Use one, the other, or both.",
+            "Every page is fillable on screen and prints cleanly in Letter or A4. Reprint the session sheets, the cardio log and the notes pages as often as you need."
+          ]
+        },
+        {
+          "heading": "A spreadsheet that keeps the totals",
+          "paragraphs": [
+            "Choose kilograms or pounds, how many days you train each week, a start date and a split — full-body, upper-lower, push-pull-legs, or your own. The Exercise Library lists forty common movements you can edit. The Program Builder holds twelve weeks of up to six sessions.",
+            "Log each exercise with sets, reps, load and an optional RPE. Volume (sets × reps × load) and an estimated 1-rep max fill in automatically. The estimate uses the Epley formula, load × (1 + reps/30), and is labelled “estimated (Epley)”. A “PB” flag appears when that row is your best estimated 1-rep max for the exercise in this file. The Dashboard then shows weekly volume, a personal-best table, sessions per week, and strength days next to cardio minutes.",
+            "Rows marked “Example” show how it works; type over them or clear them."
+          ],
+          "note_html": "<strong>Yours to keep, with no app tie-in.</strong> The journal and the spreadsheet do not connect to any training or health app, and they do not import or sync a history for you. Consult a professional before starting a new exercise program."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Strength & Workout Log, US Letter",
+          "detail": "25 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Strength & Workout Log, A4",
+          "detail": "25 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Strength and workout log tool",
+          "detail": "Start Here, Setup, Exercise Library, Program Builder, Session Log, Cardio Log, Body Measurements and Dashboard tabs (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the log",
+      "inside": [
+        {
+          "strong": "Start here:",
+          "rest": "how to use the journal and the spreadsheet, your 12-week block setup, and a public-health activity benchmark quoted from the CDC"
+        },
+        {
+          "strong": "The twelve weeks:",
+          "rest": "a 12-week calendar and a reusable weekly split planner"
+        },
+        {
+          "strong": "Session sheets:",
+          "rest": "a strength layout and a mixed layout with a cardio block, ready to reprint"
+        },
+        {
+          "strong": "Cardio and personal bests:",
+          "rest": "a cardio log and a tracker for the best load you have logged"
+        },
+        {
+          "strong": "Check-ins:",
+          "rest": "pages at weeks 4, 8 and 12, plus an end-of-block review"
+        },
+        {
+          "strong": "Notes:",
+          "rest": "spare lined pages, plus credits and a short license note"
+        }
+      ],
+      "good_for": [
+        "Adults starting or restarting a 12-week training block",
+        "Gym-goers and people who train at home and prefer paper or a spreadsheet to an app",
+        "Anyone who wants to log in kilograms or pounds",
+        "A December gift for someone who already trains, or is about to start"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "25 per PDF, 2,700+ fillable fields"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Units",
+          "Kilograms or pounds"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$9"
+        ],
+        [
+          "License",
+          "Personal and household use. Print as many copies as you need for yourself or your household. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This is a training log, not a coaching, medical or diet program. Consult a professional before starting a new exercise program.",
+        "The example rows in the spreadsheet are made up to show how it works; replace them with your own.",
+        "Estimated 1-rep max figures use the Epley formula, load × (1 + reps/30). They are estimates, not a measured one-rep max.",
+        "The “Weekly activity benchmark” box quotes, unchanged, a paragraph from the CDC page “Adult Activity: An Overview.” Source: CDC. The text is available free at cdc.gov. This product is not affiliated with, or endorsed by, the CDC or the U.S. Department of Health and Human Services.",
+        "This log does not connect to any training or health app, and it does not import or sync a history for you."
+      ],
+      "zip": "The-Strength-and-Workout-Log.zip",
+      "whats_inside": [
+        "The Strength & Workout Log, US Letter size (fillable PDF)",
+        "The Strength & Workout Log, A4 size (fillable PDF)",
+        "Strength & Workout Log Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the Setup tab of the spreadsheet and use the Letter or A4 log, whichever matches your paper."
     }
   ]
 }
