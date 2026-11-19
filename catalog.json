@@ -1222,6 +1222,179 @@
         "Read Me First (PDF): how to fill in, print and use the spreadsheet"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the Setup tab of the spreadsheet and use the Letter or A4 log, whichever matches your paper."
+    },
+    {
+      "slug": "pet-care-record-book",
+      "title": "The Pet Care Log & Record Book",
+      "subtitle": "Vet and Vaccine Records, Daily Care, Pet-Sitter Pages and a Care-Schedule Spreadsheet",
+      "nav_label": "Pet Care Log",
+      "price_usd": 9,
+      "status": "for_sale",
+      "released": "2026-11-19",
+      "short": "Keep every vet visit, vaccine, medicine, meal, weight check and sitter note for your dog, cat or any pet in one fillable book, with a spreadsheet that flags what is due soon.",
+      "description": "A 25-page fillable pet care record book (US Letter and A4) with a pet profile, contacts, a year of due dates, daily care and feeding pages, vaccination, preventive, medication, weight and vet-visit records, pet-sitter and travel pages, a lost-pet sheet and expenses, plus an Excel / Google Sheets care-schedule tool. $9, paid in USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-pet-care-record-book.jpg",
+      "og_alt": "The Pet Care Log & Record Book: a pet profile page and a vaccination record on a teal background",
+      "images": [
+        {
+          "file": "pet-care-record-book-cover",
+          "alt": "Cover of The Pet Care Log & Record Book, with a pet profile page, a pet-sitter routine page and a vaccination record fanned beside it"
+        },
+        {
+          "file": "pet-care-record-book-preview-1-whats-inside",
+          "alt": "What's inside: a pet profile, a daily care checklist, a vaccination record and an emergency and lost-pet sheet"
+        },
+        {
+          "file": "pet-care-record-book-preview-2-health-records",
+          "alt": "The vaccination record next to the vet visit before-and-after page"
+        },
+        {
+          "file": "pet-care-record-book-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet dashboard, with tasks due soon or overdue, latest weights and spending by pet"
+        },
+        {
+          "file": "pet-care-record-book-preview-4-sitter-and-lost-pet",
+          "alt": "The pet-sitter daily routine page next to the emergency and lost-pet sheet"
+        }
+      ],
+      "shop_ticks": [
+        "25-page fillable PDF, in US Letter and A4",
+        "Spreadsheet that flags care tasks as due soon or overdue and totals pet spending (Excel or Google Sheets)",
+        "For dogs, cats and any other pet; reprint pages for each animal"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 25 pages, US Letter + A4",
+        "Pet care tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "Everything about your pet, in one place",
+          "paragraphs": [
+            "Vaccine certificates in a drawer, the vet's number in one phone, feeding instructions on a sticky note, a receipt for flea treatment somewhere in an inbox. This record book gathers it all: who your pet is, who looks after them, what they eat, what was given and when, and what comes next.",
+            "There are pages for everyday care (a weekly checklist, a feeding plan, grooming, walks and training) and for health records (weight, vaccinations, preventives, a medication dose tracker, a vet-visit log and a before-and-after page for each appointment).",
+            "When you travel, two pet-sitter pages and a travel and boarding checklist are ready to fill in and leave on the counter. An emergency and lost-pet sheet keeps a photo, markings, microchip number and first steps on one page. Every page is fillable on screen and prints cleanly in Letter or A4."
+          ]
+        },
+        {
+          "heading": "A spreadsheet that knows what is due",
+          "paragraphs": [
+            "List up to eight pets. On the Care Schedule tab, add each repeating task (a check-up, a monthly preventive, a nail trim, a license renewal) with the date it was last done and how many days until the next one, as your vet or routine says. The next due date, days left and an OK, Due soon or Overdue status fill in for you.",
+            "The Health Log, Weight Log and Expenses tabs keep the rest. The Dashboard shows each pet's age, latest weight, next task and spending this year, plus spending by month and category.",
+            "Rows marked “Example” show how it works; type over them or clear them."
+          ],
+          "note_html": "<strong>A record book, not veterinary advice.</strong> It does not recommend any vaccine, medicine, food or schedule; the intervals you enter come from your vet or your own routine. Follow your veterinarian’s instructions, and contact your vet or an emergency clinic if your pet seems unwell."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Pet Care Log & Record Book, US Letter",
+          "detail": "25 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Pet Care Log & Record Book, A4",
+          "detail": "25 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Pet care tool",
+          "detail": "Start Here, Dashboard, Setup, Pets, Care Schedule, Health Log, Weight Log and Expenses tabs (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the record book",
+      "inside": [
+        {
+          "strong": "About your pet:",
+          "rest": "a pet profile with a photo box, and important contacts (vet, emergency clinic, groomer, sitter, insurance, microchip registry)"
+        },
+        {
+          "strong": "Planning:",
+          "rest": "a year at a glance for vaccines, check-ups, preventives and renewals"
+        },
+        {
+          "strong": "Everyday care:",
+          "rest": "a weekly daily-care checklist, a feeding plan and food log, grooming, walks and activity, and training goals"
+        },
+        {
+          "strong": "Health records:",
+          "rest": "weight, vaccinations, preventives, a medication dose tracker, a vet-visit log, a before-and-after visit page and observation notes"
+        },
+        {
+          "strong": "When you are away:",
+          "rest": "two pet-sitter instruction pages and a travel and boarding checklist"
+        },
+        {
+          "strong": "Just in case, costs and memories:",
+          "rest": "an emergency and lost-pet sheet, an expenses tracker, a year in review, milestones and notes"
+        }
+      ],
+      "good_for": [
+        "Dog and cat owners, and anyone with a rabbit, bird or other pet",
+        "New pet parents who want a tidy record from day one",
+        "Households where several people feed, walk or medicate the same pet",
+        "Anyone handing their pet to a sitter, a boarding place or family over the holidays",
+        "A thoughtful gift for a friend who just adopted"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "25 per PDF, 2,300+ fillable fields and checkboxes"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Pets",
+          "Reprint pages for each pet; the spreadsheet holds up to eight"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$9"
+        ],
+        [
+          "License",
+          "Personal and household use. Print as many copies as you need for yourself or your household. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This is a record-keeping tool, not veterinary advice. Follow your veterinarian’s instructions for vaccines, medicines, food and care.",
+        "The spreadsheet does not suggest care intervals; it calculates the next due date from the interval you enter.",
+        "The example rows and example pets in the spreadsheet are made up to show how it works; replace them with your own.",
+        "This record book does not connect to any vet, insurance or pet app, and it does not import or sync records for you."
+      ],
+      "zip": "The-Pet-Care-Log-and-Record-Book.zip",
+      "whats_inside": [
+        "The Pet Care Log & Record Book, US Letter size (fillable PDF)",
+        "The Pet Care Log & Record Book, A4 size (fillable PDF)",
+        "Pet Care Log Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the Pets tab of the spreadsheet and the Pet profile page of the Letter or A4 book, whichever matches your paper."
     }
   ]
 }
