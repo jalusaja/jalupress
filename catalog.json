@@ -1395,6 +1395,183 @@
         "Read Me First (PDF): how to fill in, print and use the spreadsheet"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the Pets tab of the spreadsheet and the Pet profile page of the Letter or A4 book, whichever matches your paper."
+    },
+    {
+      "slug": "trip-ready-travel-planner",
+      "title": "The Trip Ready Travel Planner",
+      "subtitle": "Itinerary, Packing List, Travel Budget & Booking Tracker",
+      "nav_label": "Travel Planner",
+      "price_usd": 9,
+      "status": "for_sale",
+      "released": "2026-11-20",
+      "short": "Plan the itinerary, tick off packing, track bookings and split the budget for a trip in any currency, with a fillable book and a spreadsheet dashboard.",
+      "description": "A 25-page fillable travel planner (US Letter and A4) with a trip overview, an 8-week pre-trip countdown, bookings and itinerary pages, packing lists, a travel budget and expense log, a places-visited world map and journal pages, plus an Excel / Google Sheets tool for multi-currency spending, a three-traveller cost splitter and a dashboard. $9, paid in USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-trip-ready-travel-planner.jpg",
+      "og_alt": "The Trip Ready Travel Planner: a trip overview page and a places-visited world map on a navy background",
+      "images": [
+        {
+          "file": "trip-ready-travel-planner-cover",
+          "alt": "Cover of The Trip Ready Travel Planner, with a trip overview page, a places-visited world map and a compact itinerary table fanned beside it"
+        },
+        {
+          "file": "trip-ready-travel-planner-preview-1-whats-inside",
+          "alt": "What's inside: a trip overview, an 8-week countdown, a carry-on packing list and a places-visited world map"
+        },
+        {
+          "file": "trip-ready-travel-planner-preview-2-itinerary-and-bookings",
+          "alt": "A compact day-by-day itinerary table next to a transport bookings page"
+        },
+        {
+          "file": "trip-ready-travel-planner-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet dashboard, with days to go, budget used, packing progress and a three-traveller cost split"
+        },
+        {
+          "file": "trip-ready-travel-planner-preview-4-packing-and-map",
+          "alt": "A carry-on packing list next to a colour-in places-visited world map"
+        }
+      ],
+      "shop_ticks": [
+        "25-page fillable PDF, in US Letter and A4",
+        "Spreadsheet with a multi-currency budget, a three-traveller cost splitter and a trip dashboard (Excel or Google Sheets)",
+        "Reusable for any destination and any home currency"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 25 pages, US Letter + A4",
+        "Travel planner tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "The trip, in one place",
+          "paragraphs": [
+            "Dates in a messages thread, booking references in four different inboxes, a packing list started on the back of an envelope, and a running total that nobody quite trusts. This planner gathers it: where you are going, who is coming, how you are getting there, what you will do each day, what goes in the bag, and what it is costing.",
+            "There is a trip overview, a page for travellers and document expiry dates (not passport or card numbers), and a countdown from eight weeks out to departure day. Bookings for transport, stays, tours and car hire sit next to a cancellation deadline and whether they are paid. Two itinerary layouts cover a busy city day and a slower one that needs more room.",
+            "Packing lists cover a carry-on, a checked bag, kids, and beach or cold-weather add-ons. A travel budget and expense log keep planned and actual figures side by side. Colour in a places-visited world map, then use the journal and notes pages for what you want to remember. Every page is fillable on screen and prints cleanly in Letter or A4."
+          ]
+        },
+        {
+          "heading": "A spreadsheet that does the arithmetic",
+          "paragraphs": [
+            "On Setup, name the trip, enter the dates, choose a home currency and list up to three travellers. Type exchange rates yourself, as “one unit of that currency equals this many units of your home currency”. The file does not fetch live rates and does not connect to any booking site.",
+            "The Itinerary and Bookings tabs keep the plan and the reservations. The Budget tab compares what you meant to spend with actuals from the Expense Log, after each amount is converted at the rate you entered. Cancellation deadlines in the next fourteen days, or already passed, are highlighted. A packing master list tracks what you intend to take and what is already in the bag.",
+            "The Cost Splitter reads who paid and how each expense is shared, then suggests who should pay whom. The Dashboard shows days to go, how much of the budget is used, unconfirmed bookings, unpaid booking totals and packing progress.",
+            "Rows marked “Example” show how it works; type over them or clear them."
+          ],
+          "note_html": "<strong>A planning tool, not travel advice.</strong> It does not give visa, entry, vaccine, insurance or legal advice, and it does not state country-specific rules. Check official entry requirements for your nationality, and check health advice for your destination (for example, CDC Travelers’ Health or your own country’s health ministry). Keep passport numbers, card numbers and passwords out of the file and out of any copy you share."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Trip Ready Travel Planner, US Letter",
+          "detail": "25 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Trip Ready Travel Planner, A4",
+          "detail": "25 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Travel planner tool",
+          "detail": "Start Here, Setup, Itinerary, Bookings, Budget, Expense Log, Packing, Cost Splitter and Dashboard tabs (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the planner",
+      "inside": [
+        {
+          "strong": "Getting started:",
+          "rest": "how to use the book, a trip overview, and a travellers page that holds a passport expiry date — not a document or card number"
+        },
+        {
+          "strong": "Before you go:",
+          "rest": "an 8-week pre-trip countdown through to departure day, with room for your own reminders"
+        },
+        {
+          "strong": "Bookings and days:",
+          "rest": "transport, stays, tours and car hire, plus two itinerary layouts (a compact table and a fuller day page)"
+        },
+        {
+          "strong": "Packing:",
+          "rest": "carry-on, checked bag, kids, and beach or cold-weather add-ons, each with space to add your own items"
+        },
+        {
+          "strong": "Money:",
+          "rest": "a planned-versus-actual travel budget and an expense log, in any currency, using rates you type in"
+        },
+        {
+          "strong": "Memories and notes:",
+          "rest": "a places-to-see and food-to-try list, a colour-in places-visited world map, journal pages and lined notes"
+        }
+      ],
+      "good_for": [
+        "Travellers planning a holiday, a city break, a family trip or a multi-stop journey",
+        "Friends or family who want to split shared costs fairly",
+        "Anyone who would rather keep the plan on paper or in a spreadsheet than in an app",
+        "A practical gift for someone with a trip coming up"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "25 per PDF, 1,900+ fillable fields and checkboxes"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Currency",
+          "Any home currency; conversion uses rates you type in, not live feeds"
+        ],
+        [
+          "Travellers",
+          "Up to three on the cost splitter; reprint PDF pages for more"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$9"
+        ],
+        [
+          "License",
+          "Personal and household use. Print as many copies as you need for yourself or your household. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This is a planning tool, not travel, visa, entry, health or legal advice. Rules change and vary by nationality — check official sources for your own situation.",
+        "The spreadsheet does not fetch live exchange rates or connect to any airline, stay, booking site or map app.",
+        "The example rows in the spreadsheet are made up to show how it works; replace them with your own.",
+        "Keep passport numbers, card numbers and passwords out of the files and out of any copy you share. A passport expiry date and a booking reference are enough."
+      ],
+      "zip": "The-Trip-Ready-Travel-Planner.zip",
+      "whats_inside": [
+        "The Trip Ready Travel Planner, US Letter size (fillable PDF)",
+        "The Trip Ready Travel Planner, A4 size (fillable PDF)",
+        "Trip Ready Travel Planner Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the Setup tab of the spreadsheet and the Trip overview page of the Letter or A4 book, whichever matches your paper."
     }
   ]
 }
