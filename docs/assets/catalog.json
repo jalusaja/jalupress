@@ -1572,6 +1572,184 @@
         "Read Me First (PDF): how to fill in, print and use the spreadsheet"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the Setup tab of the spreadsheet and the Trip overview page of the Letter or A4 book, whichever matches your paper."
+    },
+    {
+      "slug": "moving-day-relocation-planner",
+      "title": "The Moving Day Planner & Relocation Checklist",
+      "subtitle": "Moving Timeline, Budget, Box Inventory & Address-Change Tracker",
+      "nav_label": "Moving Planner",
+      "price_usd": 9,
+      "status": "for_sale",
+      "released": "2026-11-21",
+      "short": "Plan a move from eight weeks out to the first week in the new home: a week-by-week timeline, moving budget, numbered box inventory and address-change tracker, in a fillable book and a spreadsheet.",
+      "description": "A 25-page fillable moving planner (US Letter and A4) with a move overview, an 8-week moving timeline, an hour-by-hour moving-day plan, mover quotes, a moving budget and expense log, address-change and utilities trackers, a box inventory, essentials-box and move-out checklists, a floor-plan grid and an unpacking plan, plus an Excel / Google Sheets tool with due dates from your moving date, quote comparison, box progress and a dashboard. $9, paid in USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-moving-day-relocation-planner.jpg",
+      "og_alt": "The Moving Day Planner & Relocation Checklist: a week-by-week moving timeline page and a box inventory on a pine-green background",
+      "images": [
+        {
+          "file": "moving-day-relocation-planner-cover",
+          "alt": "Cover of The Moving Day Planner & Relocation Checklist, with a moving timeline page, a box inventory and an address-change tracker fanned beside it"
+        },
+        {
+          "file": "moving-day-relocation-planner-preview-1-whats-inside",
+          "alt": "What's inside: a move overview, an 8-week timeline, a box inventory and a floor-plan grid"
+        },
+        {
+          "file": "moving-day-relocation-planner-preview-2-timeline-and-moving-day",
+          "alt": "A week-by-week moving timeline next to an hour-by-hour moving-day plan"
+        },
+        {
+          "file": "moving-day-relocation-planner-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet dashboard, with days to go, tasks done, budget used and boxes by room"
+        },
+        {
+          "file": "moving-day-relocation-planner-preview-4-boxes-and-address",
+          "alt": "A numbered box inventory with fragile and open-first columns next to an address-change tracker"
+        }
+      ],
+      "shop_ticks": [
+        "25-page fillable PDF, in US Letter and A4",
+        "Spreadsheet with a dated moving timeline, quote comparison, budget, box inventory and dashboard (Excel or Google Sheets)",
+        "Works for apartments, houses, local moves and long-distance relocations"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 25 pages, US Letter + A4",
+        "Moving planner tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "The whole move, in one folder",
+          "paragraphs": [
+            "Quotes in one inbox, a half-finished list on the fridge, boxes labelled “misc”, and a nagging feeling that someone still has the old address. This planner pulls a move together: when it happens, who is helping, what it costs, what is in every box, and who needs to know where you have gone.",
+            "Start with a move overview, then work through a week-by-week timeline from eight weeks out to moving week. Compare mover and van quotes with the questions worth asking, keep a moving budget and an expense log, and track address changes and utility stop and start dates — with room for the last four digits of a reference, never a full account number.",
+            "For packing there is a supplies list, a declutter plan, a sell-and-donate tracker, two pages of numbered box inventory and an open-first essentials box. Moving day gets an hour-by-hour plan, a kids-and-pets page and move-out and move-in checks. In the new home, a floor-plan grid, an unpacking plan, a contacts list and a getting-to-know-the-area page help you settle. Every page is fillable on screen and prints cleanly in Letter or A4."
+          ]
+        },
+        {
+          "heading": "A spreadsheet that keeps the move on track",
+          "paragraphs": [
+            "On Setup, enter the moving date, a total budget and the towns you are moving from and to. The Timeline tab holds a starter list of tasks, each set a number of weeks before moving day; due dates are worked out for you, and overdue tasks or tasks due in the next seven days are highlighted.",
+            "The Quotes tab compares base price, extras and deposit and highlights the lowest total. The Budget tab compares what you planned with actuals from the Expense Log. The Box Inventory tracks each box from packed to arrived to unpacked, and flags a box number used twice. The Address Changes tab lists the kinds of organisations that usually need your new address.",
+            "The Dashboard shows days to go, tasks done, overdue tasks, budget used, box progress, address changes completed and boxes by room.",
+            "Rows marked “Example” show how it works; type over them or clear them."
+          ],
+          "note_html": "<strong>A planning tool, not professional advice.</strong> It does not give legal, financial, tax or insurance advice, and it does not state the rules for any lease, deposit, mover contract or address-change service. Check your own documents and official sources. Keep full account numbers, ID numbers, door codes and passwords out of the files and out of any copy you share."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Moving Day Planner, US Letter",
+          "detail": "25 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Moving Day Planner, A4",
+          "detail": "25 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Moving planner tool",
+          "detail": "Start Here, Setup, Timeline, Quotes, Budget, Expense Log, Box Inventory, Address Changes and Dashboard tabs (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the planner",
+      "inside": [
+        {
+          "strong": "Getting started:",
+          "rest": "how to use the book and a move overview for dates, both homes, who is moving and who is helping"
+        },
+        {
+          "strong": "Timeline:",
+          "rest": "week-by-week checklists from eight weeks out to moving week, with blank lines for your own tasks"
+        },
+        {
+          "strong": "Planning and money:",
+          "rest": "mover and van quotes with questions to ask, a moving budget and an expense log"
+        },
+        {
+          "strong": "Paperwork:",
+          "rest": "an address-change tracker and a utilities and services page for stop and start dates"
+        },
+        {
+          "strong": "Packing:",
+          "rest": "a declutter plan, a sell-and-donate tracker, supplies and room plan, two box-inventory pages and an open-first essentials box"
+        },
+        {
+          "strong": "Moving day and after:",
+          "rest": "an hour-by-hour plan, kids and pets, move-out and move-in checks, a floor-plan grid, an unpacking plan, contacts, the new area and a first-month list"
+        }
+      ],
+      "good_for": [
+        "Renters and homeowners moving across town or across the country",
+        "Families coordinating kids, pets, helpers and a moving date",
+        "First-time movers who want a clear week-by-week plan",
+        "A practical gift for someone who has just signed a lease or bought a home"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "25 per PDF, 2,400+ fillable fields and checkboxes"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Spreadsheet",
+          "Due dates from your moving date, quote comparison, budget vs actual, 300-row box inventory, dashboard"
+        ],
+        [
+          "Currency",
+          "Any; amounts use the currency you type"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$9"
+        ],
+        [
+          "License",
+          "Personal and household use. Print as many copies as you need for yourself or your household. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This is a planning tool, not legal, financial, tax or insurance advice. Lease terms, deposits, mover contracts and address-change rules vary by place and provider — check your own documents and official sources.",
+        "Checklists are general starting points, not a complete list for every move.",
+        "The spreadsheet does not connect to any mover, bank, utility, postal service or government site.",
+        "The example rows in the spreadsheet are made up to show how it works; replace them with your own.",
+        "Keep full account numbers, ID numbers, door and alarm codes and passwords out of the files and out of any copy you share."
+      ],
+      "zip": "The-Moving-Day-Planner.zip",
+      "whats_inside": [
+        "The Moving Day Planner & Relocation Checklist, US Letter size (fillable PDF)",
+        "The Moving Day Planner & Relocation Checklist, A4 size (fillable PDF)",
+        "Moving Day Planner Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then enter your moving date on the Setup tab of the spreadsheet and fill in the Move overview page of the Letter or A4 book, whichever matches your paper."
     }
   ]
 }
