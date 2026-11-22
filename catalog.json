@@ -1750,6 +1750,184 @@
         "Read Me First (PDF): how to fill in, print and use the spreadsheet"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then enter your moving date on the Setup tab of the spreadsheet and fill in the Move overview page of the Letter or A4 book, whichever matches your paper."
+    },
+    {
+      "slug": "holiday-hosting-dinner-planner",
+      "title": "The Holiday Hosting Planner",
+      "subtitle": "Guest List & RSVPs, Dietary Needs, Menu, Prep Countdown & Seating Plan for Thanksgiving, Christmas and New Year",
+      "nav_label": "Hosting Planner",
+      "price_usd": 9,
+      "status": "for_sale",
+      "released": "2026-11-22",
+      "short": "Host Thanksgiving, Christmas or New Year without the last-minute scramble: guest list and RSVPs, dietary needs, menu and recipe cards, a grocery list by aisle, a two-week prep countdown and a seating plan, in a fillable book and a spreadsheet.",
+      "description": "A 25-page fillable holiday hosting planner (US Letter and A4) with an event overview, guest list and RSVPs, a dietary needs tracker, a menu planner, recipe cards, a grocery list by aisle, a prep countdown from two weeks out, an hour-by-hour plan and oven schedule for the day, a seating plan, house-prep and overnight-guest checklists, a drinks planner, a leftovers log, a thank-you tracker and post-event notes, plus an Excel / Google Sheets tool with RSVP headcount, a dated countdown, a cooking start-time schedule and a dashboard. $9, paid in USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-holiday-hosting-dinner-planner.jpg",
+      "og_alt": "The Holiday Hosting Planner: a prep countdown page and a seating plan on a cranberry background",
+      "images": [
+        {
+          "file": "holiday-hosting-dinner-planner-cover",
+          "alt": "Cover of The Holiday Hosting Planner, with a prep countdown page, a menu planner and a seating plan fanned beside a serving-dome icon"
+        },
+        {
+          "file": "holiday-hosting-dinner-planner-preview-1-whats-inside",
+          "alt": "What's inside: an event overview, a dietary needs tracker, a grocery list by aisle and a seating plan"
+        },
+        {
+          "file": "holiday-hosting-dinner-planner-preview-2-countdown-and-day-of",
+          "alt": "A two-week prep countdown checklist next to an hour-by-hour plan for the day of the gathering"
+        },
+        {
+          "file": "holiday-hosting-dinner-planner-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet dashboard, with days to go, confirmed guests, jobs done, oven start time, menu by course and groceries by aisle"
+        },
+        {
+          "file": "holiday-hosting-dinner-planner-preview-4-menu-and-seating",
+          "alt": "A course-by-course menu planner with dietary ticks next to a seating plan with a name box for every seat"
+        }
+      ],
+      "shop_ticks": [
+        "25-page fillable PDF, in US Letter and A4",
+        "Spreadsheet with RSVP headcount, a dated prep countdown, a cooking start-time schedule, grocery list and dashboard (Excel or Google Sheets)",
+        "Works for Thanksgiving, Friendsgiving, Christmas, New Year and any holiday dinner or party you host"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 25 pages, US Letter + A4",
+        "Holiday hosting tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "The whole gathering, on paper before the doorbell rings",
+          "paragraphs": [
+            "Replies scattered across texts, a menu in your head, one oven and five dishes that all need it at four o'clock, and a cousin who mentioned an allergy you cannot quite remember. This planner puts a holiday gathering in one place: who is coming, what they can eat, what you are serving, what to buy, and what needs doing when.",
+            "Start with an event overview and a guest list with RSVPs and party sizes. A dietary needs tracker keeps what each guest has told you next to the dishes that suit them. Plan the menu course by course, decide who is bringing what, copy recipes onto fillable recipe cards, and turn it all into a grocery list sorted by store aisle.",
+            "A prep countdown runs from two weeks out to the night before, then an hour-by-hour plan and an oven and stovetop schedule carry you through the day. There is a seating plan with a name box for every seat, a place-setting check, a house-prep checklist, overnight-guest pages with a house-info card, a drinks planner with alcohol-free options, and a helpers-and-jobs list. Afterwards, log leftovers, track thank-you notes and write down what to keep for next year. A season-at-a-glance page covers Thanksgiving through New Year's Day. Every page is fillable on screen and prints cleanly in Letter or A4."
+          ]
+        },
+        {
+          "heading": "A spreadsheet that keeps the gathering on track",
+          "paragraphs": [
+            "On Setup, enter the date, the time the meal is served and when guests arrive. The Guests tab tracks invitations, RSVPs, party sizes, kids, dietary needs, what each guest is bringing and who is staying over; confirmed headcount is added up for you.",
+            "The Countdown tab holds a starter list of hosting jobs, each set a number of days before the event; due dates are worked out and overdue or due-soon jobs are highlighted. The Cooking Schedule works out when each dish should start from its cooking and resting minutes and the time you want it ready. The Grocery List sorts items by aisle and totals what is still to buy, and the Leftovers tab shows a use-by date from the number of days you choose.",
+            "The Dashboard shows days to go, confirmed guests, dietary needs, overnight guests, menu coverage by course, countdown progress, groceries left to buy and the first oven start time.",
+            "Rows marked “(example)” show how it works; type over them or clear them."
+          ],
+          "note_html": "<strong>A planning tool, not professional advice.</strong> It does not give medical, nutrition or food-safety advice. Always confirm allergies and dietary needs directly with each guest, read ingredient labels, and follow your own recipes and official food-safety guidance for cooking times, temperatures and storing leftovers. Keep door codes and passwords out of the files."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Holiday Hosting Planner, US Letter",
+          "detail": "25 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Holiday Hosting Planner, A4",
+          "detail": "25 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Holiday hosting tool",
+          "detail": "Start Here, Setup, Guests, Menu, Countdown, Cooking Schedule, Grocery List, Leftovers, Thank-Yous and Dashboard tabs (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the planner",
+      "inside": [
+        {
+          "strong": "Getting started:",
+          "rest": "how to use the book and an event overview for the date, times, guest count, style, hosts and helpers"
+        },
+        {
+          "strong": "Guests:",
+          "rest": "a two-page guest list with invitations, RSVPs and party sizes, and a dietary needs tracker"
+        },
+        {
+          "strong": "The food:",
+          "rest": "a course-by-course menu planner, who's bringing what, serving ware, four recipe cards and a grocery list by aisle"
+        },
+        {
+          "strong": "Countdown and the day:",
+          "rest": "checklists from two weeks out to the night before, an hour-by-hour plan, an oven and stovetop schedule, and helpers and jobs"
+        },
+        {
+          "strong": "Table and house:",
+          "rest": "a seating plan and place-setting check, a cleaning and house-prep checklist, overnight-guest prep with a house-info card, meals while guests stay, and a drinks planner"
+        },
+        {
+          "strong": "Afterwards and the season:",
+          "rest": "a leftovers log, a thank-you tracker, post-event notes, a season-at-a-glance page and lined notes"
+        }
+      ],
+      "good_for": [
+        "First-time hosts taking on Thanksgiving or Christmas dinner",
+        "Families hosting several gatherings between Thanksgiving and New Year's Day",
+        "Friendsgivings and potlucks where everyone brings a dish",
+        "Hosts cooking for guests with allergies or different diets"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "25 per PDF, 2,400+ fillable fields and checkboxes"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Spreadsheet",
+          "RSVP headcount, dated prep countdown, cooking start times, 150-row grocery list by aisle, leftovers, dashboard"
+        ],
+        [
+          "Currency",
+          "Any; grocery costs use the currency you type"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$9"
+        ],
+        [
+          "License",
+          "Personal and household use. Print as many copies as you need for yourself or your household. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This is a planning tool, not medical, nutrition or food-safety advice. Always confirm allergies and dietary needs directly with each guest and read ingredient labels.",
+        "Cooking times, temperatures and how long leftovers keep must come from your own recipes, packaging and official food-safety guidance. The spreadsheet only does the arithmetic.",
+        "Checklists are general starting points, not a complete list for every gathering.",
+        "The example rows in the spreadsheet are made up to show how it works; replace them with your own.",
+        "Not the same as The Holiday Gift & Budget Planner, which covers gift lists and holiday spending. This planner is about hosting the gathering itself."
+      ],
+      "zip": "The-Holiday-Hosting-Planner.zip",
+      "whats_inside": [
+        "The Holiday Hosting Planner, US Letter size (fillable PDF)",
+        "The Holiday Hosting Planner, A4 size (fillable PDF)",
+        "Holiday Hosting Planner Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then enter your event date and serving time on the Setup tab of the spreadsheet and fill in the Event overview page of the Letter or A4 book, whichever matches your paper."
     }
   ]
 }
