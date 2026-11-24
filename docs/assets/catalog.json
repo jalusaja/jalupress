@@ -2102,6 +2102,179 @@
         "Read Me First (PDF): how to fill in, print and use the spreadsheet"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then enter your last spring frost and first autumn frost on the Setup tab of the spreadsheet and on the frost-dates page of the Letter or A4 book, whichever matches your paper."
+    },
+    {
+      "slug": "newborn-baby-tracker",
+      "title": "The Newborn Baby Tracker",
+      "subtitle": "Feeding, Sleep & Diaper Log, Pumping Tracker and Baby's First-Year Records",
+      "nav_label": "Baby Tracker",
+      "price_usd": 9,
+      "status": "for_sale",
+      "released": "2026-11-24",
+      "short": "A practical first-months record: feeds, sleep, diapers and pumping, with daily totals and a few first-year pages to keep, in a fillable book and a spreadsheet that works in ml or oz.",
+      "description": "A 25-page fillable newborn tracker (US Letter and A4) with 24-hour daily log sheets for feeds, sleep and diapers, a weekly overview, a pumping log, a growth record you fill in from your own appointments, appointment notes, a blank medication and fever record, a caregiver handover sheet, firsts and monthly photo-and-notes pages, plus an Excel / Google Sheets tool that totals the day and the week, calculates sleep duration (including stretches that continue past midnight), and shows a dashboard with today’s totals and the time of the last feed. $9, paid in USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-newborn-baby-tracker.jpg",
+      "og_alt": "The Newborn Baby Tracker: a 24-hour daily log and a weekly overview on a dusk-teal background",
+      "images": [
+        {
+          "file": "newborn-baby-tracker-cover",
+          "alt": "Cover of The Newborn Baby Tracker, with a 24-hour daily log, a weekly overview and a monthly notes page fanned beside a moon-and-clock mark"
+        },
+        {
+          "file": "newborn-baby-tracker-preview-1-whats-inside",
+          "alt": "What's inside: baby information, a 24-hour daily log, a weekly overview and a firsts page"
+        },
+        {
+          "file": "newborn-baby-tracker-preview-2-daily-and-weekly",
+          "alt": "A 24-hour daily log sheet next to a weekly overview"
+        },
+        {
+          "file": "newborn-baby-tracker-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet dashboard, with a last-feed time, daily totals and an example log"
+        },
+        {
+          "file": "newborn-baby-tracker-preview-4-records-and-handover",
+          "alt": "A growth record next to a caregiver handover sheet"
+        }
+      ],
+      "shop_ticks": [
+        "25-page fillable PDF, in US Letter and A4",
+        "Spreadsheet with daily and weekly totals, sleep duration (including stretches past midnight), a last-feed time and a dashboard (Excel or Google Sheets)",
+        "Units you choose: ml or oz, and kg or lb"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 25 pages, US Letter + A4",
+        "Newborn tracker tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "A day you can actually keep up with",
+          "paragraphs": [
+            "Night feeds, a sleep stretch that runs past midnight, a bottle, a diaper, and the wish that yesterday’s notes were still in one place. This tracker keeps the first months in one book: what happened, when, and a total you can glance at before a visit or a handover.",
+            "The core page is a 24-hour daily log, designed to be printed many times. One sheet holds breast minutes on the left and right, a bottle amount and type, sleep start and end, and wet or dirty marks, plus a box for the day’s totals. A weekly overview, a pumping log, and a caregiver handover sheet sit alongside it.",
+            "Growth, appointments, visits and vaccinations, contacts and firsts are running lists you fill in from your own appointments and memories. The vaccination page has blank fields only — it does not include a schedule. Monthly photo-and-notes pages, and a year at a glance, are there as a light first-year keepsake, written in your own words. Every page is fillable on screen and prints cleanly in Letter or A4."
+          ]
+        },
+        {
+          "heading": "A spreadsheet that adds up the day",
+          "paragraphs": [
+            "On Setup, enter a name, a birth date, and the units you want to use: millilitres or fluid ounces, kilograms or pounds, and centimetres or inches. Type later figures in those units. If you switch units later, existing numbers are not converted for you.",
+            "The Daily Log is a time-stamped list of feeds, sleep and diapers. If a sleep stretch continues past midnight, enter the start and end times on the same row, on the date the sleep began; the duration is calculated across midnight automatically. The Pumping Log totals left and right amounts. Daily and Weekly Summary adds up feeds, breast minutes, bottle amounts, sleep, diapers and pumping, and shows simple charts for the last 14 days. The Dashboard shows today’s totals, the time of the last feed, and a few records you have entered yourself.",
+            "Rows marked “(example)” show how it works; they are made up. Type over them or clear them."
+          ],
+          "note_html": "<strong>This tracker is a record-keeping tool, not medical advice.</strong> Ask your doctor, midwife or health visitor about your baby's health. It does not recommend feeding amounts, sleep schedules, “normal” ranges, growth percentiles, vaccine timetables, medicine doses or sleep arrangements, and it does not connect to any baby app."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Newborn Baby Tracker, US Letter",
+          "detail": "25 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Newborn Baby Tracker, A4",
+          "detail": "25 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Newborn tracker tool",
+          "detail": "Start Here, Setup, Daily Log, Pumping Log, Daily and Weekly Summary, Growth Record, Appointments and Questions, Visit and Vaccination Record, Care Contacts, Firsts and Dashboard tabs (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the tracker",
+      "inside": [
+        {
+          "strong": "Getting started:",
+          "rest": "how to use the book, and a baby information page for the name, birth date and a few facts you may want in one place"
+        },
+        {
+          "strong": "Everyday log:",
+          "rest": "24-hour daily log sheets (feeds, sleep and diapers on one page, designed to be printed many times), a weekly overview, and a pumping log"
+        },
+        {
+          "strong": "Records:",
+          "rest": "a growth record you copy from your own appointments (no percentile chart), appointment notes, and a blank medication and fever record"
+        },
+        {
+          "strong": "When someone else is caring:",
+          "rest": "a caregiver handover sheet for a sitter, a grandparent or anyone sharing care"
+        },
+        {
+          "strong": "Keepsake pages:",
+          "rest": "firsts and moments to remember, written in your own words (no age-target checklist), monthly photo-and-notes pages, a year at a glance, and lined notes"
+        }
+      ],
+      "good_for": [
+        "New and expecting parents who want a paper or spreadsheet record of feeds, sleep and diapers",
+        "Families who share care with a partner, a grandparent or a sitter",
+        "A baby-shower or new-baby gift",
+        "Households that use millilitres or fluid ounces, and kilograms or pounds"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "25 per PDF, 2,900+ fillable fields and checkboxes"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Spreadsheet",
+          "Daily and weekly totals, sleep duration including stretches past midnight, last-feed time, pumping totals, growth and appointment lists, charts and a dashboard"
+        ],
+        [
+          "Units",
+          "You choose ml or oz, kg or lb, and cm or in"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$9"
+        ],
+        [
+          "License",
+          "Personal and household use. Print as many copies as you need for yourself or your household. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This tracker is a record-keeping tool, not medical advice. Ask your doctor, midwife or health visitor about your baby's health.",
+        "It does not recommend feeding amounts, sleep schedules, “normal” ranges, growth percentiles, vaccine timetables, medicine doses or sleep arrangements.",
+        "The Growth Record has no percentile chart and no typical range. The Visit and Vaccination Record has blank fields only, and no schedule.",
+        "The example rows in the spreadsheet are made up to show how it works; replace them with your own.",
+        "If you share a copy with a caregiver, leave out door codes, account passwords and any other numbers you would not want copied."
+      ],
+      "zip": "The-Newborn-Baby-Tracker.zip",
+      "whats_inside": [
+        "The Newborn Baby Tracker, US Letter size (fillable PDF)",
+        "The Newborn Baby Tracker, A4 size (fillable PDF)",
+        "Newborn Baby Tracker Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then enter your baby’s name, birth date and units on the Setup tab of the spreadsheet and on the baby information page of the Letter or A4 book, whichever matches your paper."
     }
   ]
 }
