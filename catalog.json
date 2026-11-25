@@ -2275,6 +2275,184 @@
         "Read Me First (PDF): how to fill in, print and use the spreadsheet"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then enter your baby’s name, birth date and units on the Setup tab of the spreadsheet and on the baby information page of the Letter or A4 book, whichever matches your paper."
+    },
+    {
+      "slug": "small-business-planner-makers",
+      "title": "The Small Business Planner for Makers & Online Sellers",
+      "subtitle": "Orders, Inventory, Product Pricing & Profit Tracker",
+      "nav_label": "Small Business Planner",
+      "price_usd": 9,
+      "status": "for_sale",
+      "released": "2026-11-25",
+      "short": "One organised system for a one-person product business: orders, stock, product pricing, income and expenses and the month ahead, in a fillable book and a spreadsheet that works in any currency.",
+      "description": "A 25-page fillable small business planner (US Letter and A4) for makers and online sellers: business snapshot, 12 monthly planner pages, order log and made-to-order cards, inventory and materials sheets, product costing worksheets, supplier contacts, a launch checklist and a monthly review, plus an Excel / Google Sheets tool with order tracking and ship-by flags, LOW STOCK warnings, a pricing calculator (unit cost, suggested price from your target margin, and margin at your price), an income and expense log, a monthly profit summary with charts and a dashboard. Fee fields are blank for you to fill in. $9, paid in USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-small-business-planner-makers.jpg",
+      "og_alt": "The Small Business Planner for Makers & Online Sellers: a monthly planner page, a product costing worksheet and a spreadsheet dashboard on a deep green background",
+      "images": [
+        {
+          "file": "small-business-planner-makers-cover",
+          "alt": "Cover of The Small Business Planner for Makers & Online Sellers, with a monthly planner page, an order log, a product costing worksheet and a spreadsheet dashboard beside a price-tag mark"
+        },
+        {
+          "file": "small-business-planner-makers-preview-1-whats-inside",
+          "alt": "What's inside: business snapshot, monthly planner, order log, inventory, product costing, suppliers, launch checklist and monthly review pages"
+        },
+        {
+          "file": "small-business-planner-makers-preview-2-product-pricing",
+          "alt": "A product costing worksheet next to the Product Pricing tab of the spreadsheet and the Orders tab"
+        },
+        {
+          "file": "small-business-planner-makers-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet: a dashboard with income, expenses, profit and open orders, and a monthly profit summary"
+        },
+        {
+          "file": "small-business-planner-makers-preview-4-planning-and-orders",
+          "alt": "A monthly planner page, made-to-order cards, a product launch checklist and the launch and content calendar tab"
+        }
+      ],
+      "shop_ticks": [
+        "25-page fillable PDF, in US Letter and A4",
+        "Spreadsheet with order and ship-by tracking, LOW STOCK flags, a product pricing calculator, a monthly profit summary with charts and a dashboard (Excel or Google Sheets)",
+        "Any currency, any country, any online shop or market stall"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 25 pages, US Letter + A4",
+        "Small business planner tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "Know your costs, ship on time, see where the money goes",
+          "paragraphs": [
+            "Orders in one place, stock in another, prices in your head, and receipts in a drawer. This planner brings a one-person product business together: what you make, what it costs, what you charge, what is waiting to ship and what is left at the end of the month.",
+            "The book starts with a business snapshot and a year at a glance, then gives you twelve monthly planner pages with a calendar, a list of orders to ship, things to make or restock, posts and market dates, and a money check. Order log sheets and made-to-order cards keep each order and its due date visible. Inventory and materials sheets track what is on hand against a reorder level, and product costing worksheets turn materials, your time, packaging and any fee % you type into a unit cost and a suggested price.",
+            "Supplier contacts, a product launch checklist and a one-page monthly review finish the book. Everything is fillable on screen and prints cleanly in Letter or A4."
+          ]
+        },
+        {
+          "heading": "A spreadsheet that does the adding up",
+          "paragraphs": [
+            "On Setup, enter your business name, currency symbol, the month your business year starts, an hourly rate for your own time, a default target margin, and your own sales channels and cost categories. Everything else reads from there.",
+            "Product Pricing works out unit cost (materials, labour hours × rate, packaging and other costs), a suggested price for your target margin, and the margin at the price you choose, and flags products that fall below target. Orders tracks each order with quantity, price, shipping, the fees you paid, a status and a ship-by date; open orders past their date show OVERDUE and those coming up show DUE SOON. Inventory & Materials shows LOW STOCK when on hand reaches the reorder level.",
+            "Income & Expenses holds your other income and every business cost. The Monthly Profit Summary adds up twelve months of order sales, other income, fees, expenses and profit, with a breakdown by cost category and charts, and the Dashboard pulls it into one view for the month you choose. A Launch & Content Calendar adds a countdown checklist and a posting calendar.",
+            "Fee % and fixed fee fields are blank on purpose, because fees differ between shops and change over time: you type the figures you actually pay. Rows marked “Example” are made up to show how it works; type over them or clear them."
+          ],
+          "note_html": "<strong>This planner is an organising tool, not tax, legal or accounting advice.</strong> Check your local rules or ask a qualified professional. It does not recommend prices, fees or tax treatment, contains no tax rates or platform fee figures, and does not connect to or sync with any shop, payment or accounting service."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Small Business Planner, US Letter",
+          "detail": "25 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Small Business Planner, A4",
+          "detail": "25 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Small business planner tool",
+          "detail": "Start Here, Setup, Orders, Inventory & Materials, Product Pricing, Income & Expenses, Monthly Profit Summary, Launch & Content Calendar and Dashboard tabs (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the planner",
+      "inside": [
+        {
+          "strong": "Getting started:",
+          "rest": "how to use the book, a business snapshot page, and a year at a glance"
+        },
+        {
+          "strong": "Monthly planning:",
+          "rest": "12 monthly planner pages, each with a calendar, orders to ship, things to make or restock, posts and market dates, and a money check"
+        },
+        {
+          "strong": "Orders:",
+          "rest": "an order log and made-to-order cards with due dates and tick boxes for made, packed, shipped and paid"
+        },
+        {
+          "strong": "Inventory and costs:",
+          "rest": "an inventory sheet with reorder levels, a materials and supply cost sheet, and product costing worksheets with the formula written out"
+        },
+        {
+          "strong": "Suppliers and launches:",
+          "rest": "supplier contacts, a product launch checklist with before, launch-day and one-week-after steps"
+        },
+        {
+          "strong": "Review:",
+          "rest": "a one-page monthly review, plus lined notes"
+        }
+      ],
+      "good_for": [
+        "Solo makers and online sellers who want one place for orders, stock, prices and profit",
+        "Handmade, print-on-demand and digital product sellers working in any currency",
+        "Anyone setting up the business year, a new product or a market-stall season",
+        "A gift for a crafty friend starting a small shop"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "25 per PDF, 2,900+ fillable fields and checkboxes"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Spreadsheet",
+          "Orders with ship-by flags, inventory with LOW STOCK flags, pricing calculator, income and expenses, monthly profit summary with charts, launch and content calendar, dashboard"
+        ],
+        [
+          "Currency",
+          "Any: you type the symbol once on Setup"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$9"
+        ],
+        [
+          "License",
+          "Personal and household use, for your own business planning. Print as many copies as you need. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This planner is an organising tool, not tax, legal or accounting advice. Check your local rules or ask a qualified professional.",
+        "It contains no tax rates and no platform fee figures. Fee % and fixed fee fields are blank for you to fill in with the figures you actually pay.",
+        "The planner does not connect to, import from or sync with any shop, payment or accounting service. Its profit view is a simple planning summary based on the dates and amounts you type.",
+        "The example rows in the spreadsheet are made up to show how it works; replace them with your own.",
+        "Keep customer details private: use an order number or short reference, and leave full names, addresses and payment details out of shared copies."
+      ],
+      "zip": "The-Small-Business-Planner.zip",
+      "whats_inside": [
+        "The Small Business Planner, US Letter size (fillable PDF)",
+        "The Small Business Planner, A4 size (fillable PDF)",
+        "Small Business Planner Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then enter your business name, currency symbol and the month your business year starts on the Setup tab of the spreadsheet and on the business snapshot page of the Letter or A4 book, whichever matches your paper."
     }
   ]
 }
