@@ -2453,6 +2453,188 @@
         "Read Me First (PDF): how to fill in, print and use the spreadsheet"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then enter your business name, currency symbol and the month your business year starts on the Setup tab of the spreadsheet and on the business snapshot page of the Letter or A4 book, whichever matches your paper."
+    },
+    {
+      "slug": "job-search-tracker-career-planner",
+      "title": "The Job Search Tracker & Career Planner",
+      "subtitle": "Job Application Log, Interview Prep, Networking Tracker & Follow-Up Dashboard",
+      "nav_label": "Job Search Tracker",
+      "price_usd": 9,
+      "status": "for_sale",
+      "released": "2026-11-26",
+      "short": "One organised system for a job search: an application log with follow-up dates, interview prep with STAR story builders, a networking log and an offer comparison, in a fillable book and a spreadsheet that works in any country.",
+      "description": "A 25-page fillable job search planner (US Letter and A4): search goals, weekly planner, application logs and a pipeline board, company research sheets, an interview prep sheet, STAR story builders with sixteen original prompts, an interview log, post-interview reflection, networking log, conversation planner, offer comparison, a skills and achievements inventory and a follow-up checklist, plus an Excel / Google Sheets tool with a status list, OVERDUE follow-up flags, a weekly summary against your own goal, a response rate and a dashboard with a status funnel. Pay fields are blank for you to fill in. $9, paid in USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-job-search-tracker-career-planner.jpg",
+      "og_alt": "The Job Search Tracker & Career Planner: an application log, an interview prep sheet and a spreadsheet dashboard on a deep blue background",
+      "images": [
+        {
+          "file": "job-search-tracker-career-planner-cover",
+          "alt": "Cover of The Job Search Tracker & Career Planner, with a search goals page, an interview prep sheet, a STAR story builder and a spreadsheet dashboard beside a rising-path mark"
+        },
+        {
+          "file": "job-search-tracker-career-planner-preview-1-whats-inside",
+          "alt": "What's inside: search goals, weekly planner, application log, pipeline board, company research, STAR story builder, networking log and offer comparison pages"
+        },
+        {
+          "file": "job-search-tracker-career-planner-preview-2-interview-prep",
+          "alt": "An interview prep sheet, a STAR story builder and a story prompt bank page"
+        },
+        {
+          "file": "job-search-tracker-career-planner-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet: a dashboard with a status funnel, follow-up flags and weekly numbers, and the Applications tab"
+        },
+        {
+          "file": "job-search-tracker-career-planner-preview-4-weekly-planning",
+          "alt": "A weekly planner page, a networking log, a follow-up checklist and the Weekly Summary tab of the spreadsheet"
+        }
+      ],
+      "shop_ticks": [
+        "25-page fillable PDF, in US Letter and A4",
+        "Spreadsheet with a status list, OVERDUE follow-up flags, a weekly summary against your own goal, response rate and a dashboard (Excel or Google Sheets)",
+        "Any country, any industry, any currency"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 25 pages, US Letter + A4",
+        "Job search tracker tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "See every application, follow up on time, walk in prepared",
+          "paragraphs": [
+            "Applications in one tab, interview notes in another, names of contacts in your head. A job search is a lot to keep track of, and the follow-ups are the first thing to slip. This planner puts the whole search in one place: what you are aiming for, where you have applied, what needs a nudge, how to prepare for each conversation and how to compare what you are offered.",
+            "The book starts with a goals page for your target roles, work setup and weekly numbers, then a search plan with a space for a short introduction. A weekly planner and application logs keep the week and every application on paper, and a pipeline board shows the whole search at a glance. Company research sheets ask you to match what a role asks for with something you have actually done.",
+            "For interviews there is a prep sheet, STAR story builders and a bank of sixteen original story prompts to get you started on your own true stories, plus an interview log and a post-interview reflection page. A skills and achievements inventory helps you find the stories. A networking log and conversation planner keep track of who you spoke to and what you promised, an offer comparison sheet lines up what each offer actually says, and a follow-up checklist ties it together. Everything is fillable on screen and prints cleanly in Letter or A4."
+          ]
+        },
+        {
+          "heading": "A spreadsheet that keeps count",
+          "paragraphs": [
+            "On Setup, enter the date your search starts, a weekly application goal, a weekly contacts goal and how many days ahead you want a follow-up warning, then list your target roles and the places you look.",
+            "Applications has a drop-down status (Saved, Applied, Screening, Interview, Offer, Rejected, Withdrawn), a date applied and a next follow-up date. A follow-up in the past shows OVERDUE and one inside your warning window shows DUE SOON. Interviews, with a SEND THANK-YOU reminder for a week after each one, and Networking, with its own reach-out dates, work the same way.",
+            "The Weekly Summary counts each week of your search: applications sent against your goal, replies, response rate (replies divided by applications sent), interviews held and people contacted. The Dashboard shows counts by status as a funnel chart, this week against your goal, the next follow-ups due and a twelve-week chart.",
+            "Pay fields are free text, blank for you to fill in as listed. Rows marked “Example” are made up to show how it works; type over them or clear them."
+          ],
+          "note_html": "<strong>This planner is an organising tool, not legal, immigration, tax or salary advice.</strong> Rules differ by country; check local sources or ask a qualified professional. It makes no promise about interviews, offers or hiring results, contains no salary figures, and does not connect to or sync with any job board, email or calendar."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Job Search Tracker & Career Planner, US Letter",
+          "detail": "25 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Job Search Tracker & Career Planner, A4",
+          "detail": "25 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Job search tracker tool",
+          "detail": "How to use, Setup, Applications, Interviews, Networking, Weekly Summary and Dashboard tabs (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the planner",
+      "inside": [
+        {
+          "strong": "Getting started:",
+          "rest": "how to use the book, a goals page for roles, work setup and weekly numbers, and a search plan with a 30-second introduction"
+        },
+        {
+          "strong": "Weekly rhythm:",
+          "rest": "two weekly planner pages with a scoreboard, and three application log sheets"
+        },
+        {
+          "strong": "Pipeline and research:",
+          "rest": "a pipeline board by status, and two company research sheets that match what a role asks for with your own proof"
+        },
+        {
+          "strong": "Skills:",
+          "rest": "an achievements inventory and a skills inventory"
+        },
+        {
+          "strong": "Interviews:",
+          "rest": "an interview prep sheet, two STAR story builder pages, a bank of sixteen original story prompts, an interview log and two post-interview reflection pages"
+        },
+        {
+          "strong": "Networking:",
+          "rest": "a networking log with a privacy reminder, and a conversation planner"
+        },
+        {
+          "strong": "Offers and follow-up:",
+          "rest": "an offer comparison sheet with every figure left blank for you, a follow-up checklist and tracker, and lined notes"
+        }
+      ],
+      "good_for": [
+        "Job seekers in any country and any field who are sending many applications",
+        "Graduates, career changers, people between jobs and anyone planning a move in the new year",
+        "People who like to prepare: stories, research and questions ready before each interview",
+        "A gift for a friend who has just started looking"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "25 per PDF, 2,200+ fillable fields and checkboxes"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Spreadsheet",
+          "Application tracker with a status list and OVERDUE follow-up flags, interview log, networking log, weekly summary with response rate, dashboard with a status funnel chart"
+        ],
+        [
+          "Currency",
+          "Any: pay fields are free text for you to fill in"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$9"
+        ],
+        [
+          "License",
+          "Personal and household use, for your own job search. Print as many copies as you need. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This planner is an organising tool, not legal, immigration, tax or salary advice. Rules differ by country; check local sources or ask a qualified professional.",
+        "It makes no promise about interviews, offers or hiring results, and it contains no salary figures: pay fields are blank for you to fill in with what each posting or offer says.",
+        "The planner does not connect to, import from or sync with any job board, email or calendar. Its counts are a simple summary of the dates and statuses you type.",
+        "The example rows in the spreadsheet are made up to show how it works; replace them with your own.",
+        "Keep contacts' personal data private: note a name or initials and how you know them, and leave private phone numbers, home addresses and personal details out of shared copies."
+      ],
+      "zip": "The-Job-Search-Tracker-and-Career-Planner.zip",
+      "whats_inside": [
+        "The Job Search Tracker & Career Planner, US Letter size (fillable PDF)",
+        "The Job Search Tracker & Career Planner, A4 size (fillable PDF)",
+        "Job Search Tracker Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the goals page of the Letter or A4 book, whichever matches your paper, and the Setup tab of the spreadsheet: the date your search starts and your weekly goals."
     }
   ]
 }
