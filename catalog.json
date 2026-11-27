@@ -2812,6 +2812,698 @@
         "Read Me First (PDF): how to fill in, print and use the spreadsheet"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the home profile of the Letter or A4 book, whichever matches your paper, and the Setup tab of the spreadsheet: your units, currency and vehicles."
+    },
+    {
+      "slug": "home-household-starter-bundle",
+      "kind": "bundle",
+      "includes": [
+        "grab-and-go-household-binder",
+        "home-maintenance-planner-car-service-log",
+        "moving-day-relocation-planner",
+        "plan-ahead-meal-grocery-planner",
+        "pet-care-record-book"
+      ],
+      "list_price_usd": 48.0,
+      "title": "The Home & Household Starter Bundle",
+      "subtitle": "5 planners for emergencies, home upkeep, moving, meals and pets",
+      "nav_label": "Home & Household Bundle",
+      "price_usd": 24,
+      "status": "for_sale",
+      "released": "2026-11-27",
+      "short": "The five planners most households reach for: the emergency binder, home maintenance and car service log, moving-day planner, meal and grocery planner, and the pet care record book. Together: $24 instead of $48, so you save $24. Lifetime access, no subscription.",
+      "description": "5 Jalu Press planners in one download for $24 instead of $48 (save $24, 50% off): The Grab-and-Go Household Binder; The Home Maintenance Planner & Car Service Log; The Moving Day Planner & Relocation Checklist; The Plan-Ahead Meal & Grocery Planner; The Pet Care Log & Record Book. Fillable PDFs in US Letter and A4, plus spreadsheets. Lifetime access, no subscription. Paid with PayPal, or USDC or USDT.",
+      "format_blurb": "Digital download (5 planners: PDFs + XLSX)",
+      "og_image": "assets/img/og-home-household-starter-bundle.jpg",
+      "og_alt": "The Home & Household Starter Bundle: five Jalu Press planners for $24 instead of $48",
+      "images": [
+        {
+          "file": "home-household-starter-bundle-cover",
+          "alt": "Cover of The Home & Household Starter Bundle: 5 Jalu Press planners in one download, $24 instead of $48"
+        },
+        {
+          "file": "binder-cover",
+          "alt": "Cover of The Grab-and-Go Household Binder, included in the bundle"
+        },
+        {
+          "file": "home-maintenance-planner-car-service-log-cover",
+          "alt": "Cover of The Home Maintenance Planner & Car Service Log, included in the bundle"
+        },
+        {
+          "file": "moving-day-relocation-planner-cover",
+          "alt": "Cover of The Moving Day Planner & Relocation Checklist, included in the bundle"
+        },
+        {
+          "file": "plan-ahead-meal-grocery-planner-cover",
+          "alt": "Cover of The Plan-Ahead Meal & Grocery Planner, included in the bundle"
+        },
+        {
+          "file": "pet-care-record-book-cover",
+          "alt": "Cover of The Pet Care Log & Record Book, included in the bundle"
+        }
+      ],
+      "shop_ticks": [
+        "5 planners, 142 fillable pages per paper size, Letter and A4",
+        "Save $24 (50% off) compared with buying them one by one",
+        "Lifetime access: pay once, keep the files for good"
+      ],
+      "buy_ticks": [
+        "5 planners in one ZIP, each with Letter + A4 fillable PDFs, a spreadsheet and a read-me",
+        "Save $24 compared with buying them separately ($48)",
+        "Lifetime access: pay once, keep the files forever, no subscription",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "Everything a home runs on, in one download",
+          "paragraphs": [
+            "A household is a lot of small jobs: knowing who to call in an emergency, remembering when the smoke alarms were last tested, planning dinners, keeping vet records straight, and, now and then, moving the whole lot to a new address. These five planners cover those jobs, with the same clear layout in each.",
+            "Every planner is a fillable PDF you can type into on screen or print and write on, in US Letter and A4, with a spreadsheet that does the adding up and the date-checking for you. Use one this week and the others as the need comes up."
+          ]
+        },
+        {
+          "heading": "One price, yours for good",
+          "paragraphs": [
+            "Bought one by one, these five planners cost $48. As a bundle they cost $24, which is half price. You pay once and there is no subscription, no login and nothing that expires.",
+            "Keep the files on your computer, print as many copies as your household needs, and start fresh each year. That is lifetime access to the files, for less than a healthy lunch and a coffee."
+          ]
+        }
+      ],
+      "included": [
+        {
+          "type": "ZIP",
+          "name": "5 planners, one folder each",
+          "detail": "Letter and A4 fillable PDFs, a spreadsheet for Excel or Google Sheets, and a read-me for every planner"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "00-Start-Here.pdf",
+          "detail": "A one-page guide to what is in each folder"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside": [],
+      "good_for": [
+        "New homeowners and first-time renters setting up their household systems",
+        "Anyone about to move who also wants a home that stays organized afterwards",
+        "Families with pets who like to keep every vet record in one place",
+        "A housewarming or new-home gift that is useful all year"
+      ],
+      "specs": [
+        [
+          "Format",
+          "One ZIP with 5 folders: fillable PDFs (Letter and A4), XLSX spreadsheets and read-me PDFs"
+        ],
+        [
+          "Planners",
+          "The Grab-and-Go Household Binder; The Home Maintenance Planner & Car Service Log; The Moving Day Planner & Relocation Checklist; The Plan-Ahead Meal & Grocery Planner; The Pet Care Log & Record Book"
+        ],
+        [
+          "Pages",
+          "142 fillable pages per paper size across the 5 planners"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Regular price if bought separately",
+          "$48"
+        ],
+        [
+          "You save",
+          "$24 (50%)"
+        ],
+        [
+          "Price",
+          "$24"
+        ],
+        [
+          "Access",
+          "Lifetime: pay once, keep the files forever. No subscription, no login, nothing expires."
+        ],
+        [
+          "License",
+          "Personal and household use, not for resale or sharing"
+        ]
+      ],
+      "please_note": [
+        "This is a bundle of the products listed above; the files are identical to the individual products, so you do not need to buy any of them separately.",
+        "The planners are organizing and record-keeping tools, not legal, medical, financial, veterinary or emergency-services advice.",
+        "Files are delivered by email as a ZIP, usually within 15 minutes of payment. Save the attachment and unzip it (double-click on most computers).",
+        "Personal and household license: print as many copies as your household needs, but do not share, upload or resell the files."
+      ],
+      "zip": "The-Home-and-Household-Starter-Bundle.zip",
+      "whats_inside": [
+        "The Grab-and-Go Household Binder (Letter and A4 fillable PDFs, spreadsheet, read-me)",
+        "The Home Maintenance Planner & Car Service Log (Letter and A4 fillable PDFs, spreadsheet, read-me)",
+        "The Moving Day Planner & Relocation Checklist (Letter and A4 fillable PDFs, spreadsheet, read-me)",
+        "The Plan-Ahead Meal & Grocery Planner (Letter and A4 fillable PDFs, spreadsheet, read-me)",
+        "The Pet Care Log & Record Book (Letter and A4 fillable PDFs, spreadsheet, read-me)",
+        "00-Start-Here.pdf: a one-page guide to what is in each folder"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with 00-Start-Here.pdf: it lists what is in each folder. These files are yours to keep for good.",
+      "related": [
+        {
+          "slug": "printable-car-maintenance-log",
+          "blurb": "Only need one piece? The car maintenance log is available on its own."
+        },
+        {
+          "slug": "weekly-meal-plan-grocery-list-printable",
+          "blurb": "Only need one piece? The weekly meal plan and grocery list is available on its own."
+        }
+      ]
+    },
+    {
+      "slug": "holiday-and-fresh-start-bundle",
+      "kind": "bundle",
+      "includes": [
+        "holiday-gift-budget-planner",
+        "holiday-hosting-dinner-planner",
+        "new-year-goal-habit-planner"
+      ],
+      "list_price_usd": 27.0,
+      "title": "The Holiday & Fresh-Start Bundle",
+      "subtitle": "3 planners: gifts and budget, hosting, and your new-year goals",
+      "nav_label": "Holiday & Fresh-Start Bundle",
+      "price_usd": 19,
+      "status": "for_sale",
+      "released": "2026-11-27",
+      "short": "Everything for the holiday season and the new year: gifts and budget, hosting dinner, and goals and habits. Together: $19 instead of $27, so you save $8. Lifetime access, no subscription.",
+      "description": "3 Jalu Press planners in one download for $19 instead of $27 (save $8, 30% off): The Holiday Gift & Budget Planner; The Holiday Hosting Planner; The New Year Goal & Habit Planner. Fillable PDFs in US Letter and A4, plus spreadsheets. Lifetime access, no subscription. Paid with PayPal, or USDC or USDT.",
+      "format_blurb": "Digital download (3 planners: PDFs + XLSX)",
+      "og_image": "assets/img/og-holiday-and-fresh-start-bundle.jpg",
+      "og_alt": "The Holiday & Fresh-Start Bundle: three Jalu Press planners for $19 instead of $27",
+      "images": [
+        {
+          "file": "holiday-and-fresh-start-bundle-cover",
+          "alt": "Cover of The Holiday & Fresh-Start Bundle: 3 Jalu Press planners in one download, $19 instead of $27"
+        },
+        {
+          "file": "holiday-gift-budget-planner-cover",
+          "alt": "Cover of The Holiday Gift & Budget Planner, included in the bundle"
+        },
+        {
+          "file": "holiday-hosting-dinner-planner-cover",
+          "alt": "Cover of The Holiday Hosting Planner, included in the bundle"
+        },
+        {
+          "file": "new-year-goal-habit-planner-cover",
+          "alt": "Cover of The New Year Goal & Habit Planner, included in the bundle"
+        }
+      ],
+      "shop_ticks": [
+        "3 planners, 75 fillable pages per paper size, Letter and A4",
+        "Save $8 (30% off) compared with buying them one by one",
+        "Lifetime access: pay once, keep the files for good"
+      ],
+      "buy_ticks": [
+        "3 planners in one ZIP, each with Letter + A4 fillable PDFs, a spreadsheet and a read-me",
+        "Save $8 compared with buying them separately ($27)",
+        "Lifetime access: pay once, keep the files forever, no subscription",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "From the first gift to the first of January",
+          "paragraphs": [
+            "The holiday season has a lot of moving parts: who you are buying for and what you can spend, who is coming to dinner and what they can eat, and then, once it is over, a fresh start. These three planners walk you through all of it in order.",
+            "Each planner is a fillable PDF you can type into on screen or print and write on, in US Letter and A4, with a spreadsheet that adds up the money and the progress for you."
+          ]
+        },
+        {
+          "heading": "One price, yours for good",
+          "paragraphs": [
+            "Bought one by one, the three planners cost $27. As a bundle they cost $19. You pay once and there is no subscription, no login and nothing that expires.",
+            "Keep the files, print as many copies as your household needs, and use them again next season. That is lifetime access to the files for less than a nice lunch."
+          ]
+        }
+      ],
+      "included": [
+        {
+          "type": "ZIP",
+          "name": "3 planners, one folder each",
+          "detail": "Letter and A4 fillable PDFs, a spreadsheet for Excel or Google Sheets, and a read-me for every planner"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "00-Start-Here.pdf",
+          "detail": "A one-page guide to what is in each folder"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside": [],
+      "good_for": [
+        "Anyone who wants the holiday season to feel calmer and less expensive",
+        "Hosts of Thanksgiving, Christmas or New Year dinners",
+        "People who like to start January with a plan and a way to track it",
+        "A thoughtful gift for a friend who is always organizing everyone else"
+      ],
+      "specs": [
+        [
+          "Format",
+          "One ZIP with 3 folders: fillable PDFs (Letter and A4), XLSX spreadsheets and read-me PDFs"
+        ],
+        [
+          "Planners",
+          "The Holiday Gift & Budget Planner; The Holiday Hosting Planner; The New Year Goal & Habit Planner"
+        ],
+        [
+          "Pages",
+          "75 fillable pages per paper size across the 3 planners"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Regular price if bought separately",
+          "$27"
+        ],
+        [
+          "You save",
+          "$8 (30%)"
+        ],
+        [
+          "Price",
+          "$19"
+        ],
+        [
+          "Access",
+          "Lifetime: pay once, keep the files forever. No subscription, no login, nothing expires."
+        ],
+        [
+          "License",
+          "Personal and household use, not for resale or sharing"
+        ]
+      ],
+      "please_note": [
+        "This is a bundle of the products listed above; the files are identical to the individual products, so you do not need to buy any of them separately.",
+        "The planners are organizing and record-keeping tools, not legal, medical, financial, veterinary or emergency-services advice.",
+        "Files are delivered by email as a ZIP, usually within 15 minutes of payment. Save the attachment and unzip it (double-click on most computers).",
+        "Personal and household license: print as many copies as your household needs, but do not share, upload or resell the files."
+      ],
+      "zip": "The-Holiday-and-Fresh-Start-Bundle.zip",
+      "whats_inside": [
+        "The Holiday Gift & Budget Planner (Letter and A4 fillable PDFs, spreadsheet, read-me)",
+        "The Holiday Hosting Planner (Letter and A4 fillable PDFs, spreadsheet, read-me)",
+        "The New Year Goal & Habit Planner (Letter and A4 fillable PDFs, spreadsheet, read-me)",
+        "00-Start-Here.pdf: a one-page guide to what is in each folder"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with 00-Start-Here.pdf: it lists what is in each folder. These files are yours to keep for good."
+    },
+    {
+      "slug": "printable-car-maintenance-log",
+      "kind": "mini",
+      "related": [
+        {
+          "slug": "home-household-starter-bundle",
+          "blurb": "Want the whole home covered? This log is a small part of the Home & Household Starter Bundle: 5 planners, including a full home maintenance planner and car service log, for one price."
+        },
+        {
+          "slug": "home-maintenance-planner-car-service-log",
+          "blurb": "Want more? The full planner adds home checklists, appliance records, repair log and a spreadsheet that works out what is due next."
+        }
+      ],
+      "title": "Printable Car Maintenance Log: Vehicle Service Record PDF",
+      "subtitle": "Fillable vehicle profile, service log and tire & fluid check sheet, in US Letter and A4",
+      "nav_label": "Car Maintenance Log",
+      "price_usd": 3,
+      "status": "for_sale",
+      "released": "2026-11-27",
+      "short": "A printable, fillable car maintenance log: a vehicle profile page, three pages of service log for services, repairs and tire jobs, and a tire and fluid check sheet. US Letter and A4.",
+      "description": "A printable, fillable car maintenance log: a vehicle profile page, three pages of service log for services, repairs and tire jobs, and a tire and fluid check sheet. US Letter and A4. $3, paid with PayPal, or USDC or USDT. Delivered by email.",
+      "format_blurb": "Digital download (fillable PDF, Letter + A4)",
+      "og_image": "assets/img/og-printable-car-maintenance-log.jpg",
+      "og_alt": "Printable Car Maintenance Log: Vehicle Service Record PDF: a printable fillable PDF for $3",
+      "images": [
+        {
+          "file": "printable-car-maintenance-log-cover",
+          "alt": "Cover of Printable Car Maintenance Log: Vehicle Service Record PDF: a printable PDF, $3"
+        },
+        {
+          "file": "printable-car-maintenance-log-preview-1-vehicle-profile",
+          "alt": "Preview page: vehicle profile"
+        },
+        {
+          "file": "printable-car-maintenance-log-preview-2-service-log",
+          "alt": "Preview page: service log"
+        },
+        {
+          "file": "printable-car-maintenance-log-preview-3-tire-and-fluid-check",
+          "alt": "Preview page: tire and fluid check"
+        }
+      ],
+      "shop_ticks": [
+        "5 fillable pages plus a one-page guide, in US Letter and A4",
+        "Type on screen or print as many copies as you need",
+        "Excerpted from a $9 planner, for a fraction of the price"
+      ],
+      "buy_ticks": [
+        "Fillable PDF: vehicle profile, service log and tire and fluid check sheet",
+        "Both US Letter and A4 sizes in one ZIP",
+        "One-page how-to-use guide",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "What you get",
+          "paragraphs": [
+            "A short, practical printable: vehicle profile, service log and tire and fluid check sheet. Every page has clear boxes and lines you can type into on screen or fill in by hand, and the pages print cleanly on a home printer, in color or black and white.",
+            "The pages come from The Home Maintenance Planner & Car Service Log, our full planner, so they are the same carefully laid-out sheets, without the extras. If you only need this one job done, this is the quick and inexpensive way to do it."
+          ]
+        },
+        {
+          "heading": "How it works",
+          "paragraphs": [
+            "Open the PDF in Adobe Acrobat Reader (free) or another form-capable PDF reader and type straight into the fields, or print it. Print more copies whenever a page fills up.",
+            "Pay once and keep the file for good: no subscription, no login, nothing that expires."
+          ]
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Car Maintenance Log, US Letter",
+          "detail": "6 pages including a one-page guide, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Car Maintenance Log, A4",
+          "detail": "6 pages including a one-page guide, 210 × 297 mm, same content"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside": [],
+      "good_for": [
+        "Keeping every service and repair for one or more cars in one place",
+        "Having a record to show a mechanic, a buyer or an insurer",
+        "New drivers and anyone who keeps forgetting when the last service was",
+        "A glove-box log you can print again whenever the pages fill up"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF in two paper sizes, delivered as one ZIP"
+        ],
+        [
+          "Pages",
+          "5 fillable pages plus a one-page guide, per paper size"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$3"
+        ],
+        [
+          "License",
+          "Personal and household use, not for resale or sharing"
+        ]
+      ],
+      "please_note": [
+        "This is a record-keeping tool, not a substitute for the manufacturer's manual or a qualified mechanic.",
+        "These pages are excerpted from The Home Maintenance Planner & Car Service Log. If you already own it, you do not need this file.",
+        "Files are delivered by email as a ZIP, usually within 15 minutes of payment. Save the attachment and unzip it (double-click on most computers).",
+        "Personal and household license: print as many copies as you need, but do not share, upload or resell the file."
+      ],
+      "zip": "Printable-Car-Maintenance-Log.zip",
+      "whats_inside": [
+        "Car Maintenance Log, US Letter size (fillable PDF)",
+        "Car Maintenance Log, A4 size (fillable PDF)"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Open the Letter or A4 PDF, whichever matches your paper: the first page explains how to use it, and the rest are fillable."
+    },
+    {
+      "slug": "job-application-tracker-pdf",
+      "kind": "mini",
+      "related": [
+        {
+          "slug": "job-search-tracker-career-planner",
+          "blurb": "Want more? The full Job Search Tracker & Career Planner adds goals, weekly planning, company research, interview story prep, a networking log, an offer comparison and a spreadsheet."
+        }
+      ],
+      "title": "Job Application Tracker PDF: Printable Job Search Log",
+      "subtitle": "Fillable application log, pipeline board, interview log and follow-up checklist, in US Letter and A4",
+      "nav_label": "Job Application Tracker",
+      "price_usd": 4,
+      "status": "for_sale",
+      "released": "2026-11-27",
+      "short": "A printable, fillable job application tracker: three pages of application log with follow-up dates, a one-page pipeline board, an interview log and a follow-up checklist. US Letter and A4.",
+      "description": "A printable, fillable job application tracker: three pages of application log with follow-up dates, a one-page pipeline board, an interview log and a follow-up checklist. US Letter and A4. $4, paid with PayPal, or USDC or USDT. Delivered by email.",
+      "format_blurb": "Digital download (fillable PDF, Letter + A4)",
+      "og_image": "assets/img/og-job-application-tracker-pdf.jpg",
+      "og_alt": "Job Application Tracker PDF: Printable Job Search Log: a printable fillable PDF for $4",
+      "images": [
+        {
+          "file": "job-application-tracker-pdf-cover",
+          "alt": "Cover of Job Application Tracker PDF: Printable Job Search Log: a printable PDF, $4"
+        },
+        {
+          "file": "job-application-tracker-pdf-preview-1-application-log",
+          "alt": "Preview page: application log"
+        },
+        {
+          "file": "job-application-tracker-pdf-preview-2-pipeline-board",
+          "alt": "Preview page: pipeline board"
+        },
+        {
+          "file": "job-application-tracker-pdf-preview-3-interview-log",
+          "alt": "Preview page: interview log"
+        }
+      ],
+      "shop_ticks": [
+        "6 fillable pages plus a one-page guide, in US Letter and A4",
+        "Type on screen or print as many copies as you need",
+        "Excerpted from a $9 planner, for a fraction of the price"
+      ],
+      "buy_ticks": [
+        "Fillable PDF: application log, pipeline board, interview log and follow-up checklist",
+        "Both US Letter and A4 sizes in one ZIP",
+        "One-page how-to-use guide",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "What you get",
+          "paragraphs": [
+            "A short, practical printable: application log, pipeline board, interview log and follow-up checklist. Every page has clear boxes and lines you can type into on screen or fill in by hand, and the pages print cleanly on a home printer, in color or black and white.",
+            "The pages come from The Job Search Tracker & Career Planner, our full planner, so they are the same carefully laid-out sheets, without the extras. If you only need this one job done, this is the quick and inexpensive way to do it."
+          ]
+        },
+        {
+          "heading": "How it works",
+          "paragraphs": [
+            "Open the PDF in Adobe Acrobat Reader (free) or another form-capable PDF reader and type straight into the fields, or print it. Print more copies whenever a page fills up.",
+            "Pay once and keep the file for good: no subscription, no login, nothing that expires."
+          ]
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Job Application Tracker, US Letter",
+          "detail": "7 pages including a one-page guide, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Job Application Tracker, A4",
+          "detail": "7 pages including a one-page guide, 210 × 297 mm, same content"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside": [],
+      "good_for": [
+        "Anyone applying to more than a handful of jobs at once",
+        "Career changers and new graduates who want a simple, printable system",
+        "People who think better on paper than in a spreadsheet",
+        "Keeping follow-up dates so no application goes quiet by accident"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF in two paper sizes, delivered as one ZIP"
+        ],
+        [
+          "Pages",
+          "6 fillable pages plus a one-page guide, per paper size"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$4"
+        ],
+        [
+          "License",
+          "Personal and household use, not for resale or sharing"
+        ]
+      ],
+      "please_note": [
+        "This is an organizing tool, not legal, immigration, tax or salary advice.",
+        "These pages are excerpted from The Job Search Tracker & Career Planner. If you already own it, you do not need this file.",
+        "Files are delivered by email as a ZIP, usually within 15 minutes of payment. Save the attachment and unzip it (double-click on most computers).",
+        "Personal and household license: print as many copies as you need, but do not share, upload or resell the file."
+      ],
+      "zip": "Job-Application-Tracker.zip",
+      "whats_inside": [
+        "Job Application Tracker, US Letter size (fillable PDF)",
+        "Job Application Tracker, A4 size (fillable PDF)"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Open the Letter or A4 PDF, whichever matches your paper: the first page explains how to use it, and the rest are fillable."
+    },
+    {
+      "slug": "weekly-meal-plan-grocery-list-printable",
+      "kind": "mini",
+      "related": [
+        {
+          "slug": "home-household-starter-bundle",
+          "blurb": "Want the whole home covered? The meal planner is part of the Home & Household Starter Bundle: 5 planners for one price."
+        },
+        {
+          "slug": "plan-ahead-meal-grocery-planner",
+          "blurb": "Want more? The full Plan-Ahead Meal & Grocery Planner adds four weeks, a fridge and freezer inventory, prep sessions, recipe cards, a spend log and a spreadsheet that writes your grocery list."
+        }
+      ],
+      "title": "Weekly Meal Plan & Grocery List Printable PDF",
+      "subtitle": "Fillable weekly meal plans with matching grocery lists, a pantry checklist and a go-to meals list, in US Letter and A4",
+      "nav_label": "Weekly Meal Plan Printable",
+      "price_usd": 3,
+      "status": "for_sale",
+      "released": "2026-11-27",
+      "short": "A printable, fillable weekly meal plan with a matching grocery list sorted by store section, plus a pantry staples checklist and a go-to meals list. US Letter and A4.",
+      "description": "A printable, fillable weekly meal plan with a matching grocery list sorted by store section, plus a pantry staples checklist and a go-to meals list. US Letter and A4. $3, paid with PayPal, or USDC or USDT. Delivered by email.",
+      "format_blurb": "Digital download (fillable PDF, Letter + A4)",
+      "og_image": "assets/img/og-weekly-meal-plan-grocery-list-printable.jpg",
+      "og_alt": "Weekly Meal Plan & Grocery List Printable PDF: a printable fillable PDF for $3",
+      "images": [
+        {
+          "file": "weekly-meal-plan-grocery-list-printable-cover",
+          "alt": "Cover of Weekly Meal Plan & Grocery List Printable PDF: a printable PDF, $3"
+        },
+        {
+          "file": "weekly-meal-plan-grocery-list-printable-preview-1-weekly-meal-plan",
+          "alt": "Preview page: weekly meal plan"
+        },
+        {
+          "file": "weekly-meal-plan-grocery-list-printable-preview-2-grocery-list",
+          "alt": "Preview page: grocery list"
+        },
+        {
+          "file": "weekly-meal-plan-grocery-list-printable-preview-3-go-to-meals",
+          "alt": "Preview page: go to meals"
+        }
+      ],
+      "shop_ticks": [
+        "6 fillable pages plus a one-page guide, in US Letter and A4",
+        "Type on screen or print as many copies as you need",
+        "Excerpted from a $9 planner, for a fraction of the price"
+      ],
+      "buy_ticks": [
+        "Fillable PDF: go-to meals list, pantry staples checklist, weekly meal plan and grocery list",
+        "Both US Letter and A4 sizes in one ZIP",
+        "One-page how-to-use guide",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "What you get",
+          "paragraphs": [
+            "A short, practical printable: go-to meals list, pantry staples checklist, weekly meal plan and grocery list. Every page has clear boxes and lines you can type into on screen or fill in by hand, and the pages print cleanly on a home printer, in color or black and white.",
+            "The pages come from The Plan-Ahead Meal & Grocery Planner, our full planner, so they are the same carefully laid-out sheets, without the extras. If you only need this one job done, this is the quick and inexpensive way to do it."
+          ]
+        },
+        {
+          "heading": "How it works",
+          "paragraphs": [
+            "Open the PDF in Adobe Acrobat Reader (free) or another form-capable PDF reader and type straight into the fields, or print it. Print more copies whenever a page fills up.",
+            "Pay once and keep the file for good: no subscription, no login, nothing that expires."
+          ]
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Weekly Meal Plan Printable, US Letter",
+          "detail": "7 pages including a one-page guide, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Weekly Meal Plan Printable, A4",
+          "detail": "7 pages including a one-page guide, 210 × 297 mm, same content"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside": [],
+      "good_for": [
+        "Households that want to stop asking \"what's for dinner?\" every day",
+        "Cutting food waste and last-minute takeout",
+        "Anyone who likes a paper plan on the fridge",
+        "Shopping once a week with a list sorted by store section"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF in two paper sizes, delivered as one ZIP"
+        ],
+        [
+          "Pages",
+          "6 fillable pages plus a one-page guide, per paper size"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$3"
+        ],
+        [
+          "License",
+          "Personal and household use, not for resale or sharing"
+        ]
+      ],
+      "please_note": [
+        "This is a planning tool, not nutrition or dietary advice.",
+        "These pages are excerpted from The Plan-Ahead Meal & Grocery Planner. If you already own it, you do not need this file.",
+        "Files are delivered by email as a ZIP, usually within 15 minutes of payment. Save the attachment and unzip it (double-click on most computers).",
+        "Personal and household license: print as many copies as you need, but do not share, upload or resell the file."
+      ],
+      "zip": "Weekly-Meal-Plan-and-Grocery-List.zip",
+      "whats_inside": [
+        "Weekly Meal Plan Printable, US Letter size (fillable PDF)",
+        "Weekly Meal Plan Printable, A4 size (fillable PDF)"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Open the Letter or A4 PDF, whichever matches your paper: the first page explains how to use it, and the rest are fillable."
     }
   ]
 }
