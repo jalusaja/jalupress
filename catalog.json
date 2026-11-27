@@ -2635,6 +2635,183 @@
         "Read Me First (PDF): how to fill in, print and use the spreadsheet"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the goals page of the Letter or A4 book, whichever matches your paper, and the Setup tab of the spreadsheet: the date your search starts and your weekly goals."
+    },
+    {
+      "slug": "home-maintenance-planner-car-service-log",
+      "title": "The Home Maintenance Planner & Car Service Log",
+      "subtitle": "Seasonal Home Checklist, Repair Log, Appliance Records & Vehicle Maintenance Tracker",
+      "nav_label": "Home & Car Planner",
+      "price_usd": 9,
+      "status": "for_sale",
+      "released": "2026-11-27",
+      "short": "One place to keep a home and its cars in good shape: monthly and seasonal checklists, appliance and repair records, and a vehicle service log, in a fillable book and a spreadsheet that works out what is due next. Any country, km or miles, any currency.",
+      "description": "A 25-page fillable home maintenance planner and car service log (US Letter and A4): home profile, monthly, quarterly and seasonal checklists, a yearly maintenance calendar, appliance records, a smoke alarm test log, repair and improvement log, contractor contacts, project planner, yearly cost summary, vehicle profile, vehicle service logs and a tyre (tire) and fluid check sheet, plus an Excel / Google Sheets tool that works out each next due date, flags OVERDUE and DUE SOON, adds up costs by area and month, and shows a dashboard with charts. Intervals are yours to type. $9, paid in USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-home-maintenance-planner-car-service-log.jpg",
+      "og_alt": "The Home Maintenance Planner & Car Service Log: a monthly checklist, a seasonal checklist and a spreadsheet dashboard on a deep green background",
+      "images": [
+        {
+          "file": "home-maintenance-planner-car-service-log-cover",
+          "alt": "Cover of The Home Maintenance Planner & Car Service Log, with a spring checklist, appliance record cards, a tyre and fluid check sheet and a spreadsheet dashboard beside a house-and-tick mark"
+        },
+        {
+          "file": "home-maintenance-planner-car-service-log-preview-1-whats-inside",
+          "alt": "What's inside: home profile, monthly checklist, seasonal checklist, yearly calendar, appliance records, repair log, vehicle profile and tyre and fluid check pages"
+        },
+        {
+          "file": "home-maintenance-planner-car-service-log-preview-2-checklists",
+          "alt": "A monthly checklist, a spring checklist and a quarterly checklist page, each with tick boxes"
+        },
+        {
+          "file": "home-maintenance-planner-car-service-log-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet: a dashboard with overdue and due-soon lists and charts, and the Recurring Tasks tab with next-due dates and status flags"
+        },
+        {
+          "file": "home-maintenance-planner-car-service-log-preview-4-vehicles",
+          "alt": "A vehicle service log, a vehicle profile and a tyre and fluid check sheet, with the Vehicle Log tab of the spreadsheet"
+        }
+      ],
+      "shop_ticks": [
+        "25-page fillable PDF, in US Letter and A4",
+        "Spreadsheet that works out each next due date, flags OVERDUE and DUE SOON, totals costs and shows a dashboard (Excel or Google Sheets)",
+        "Any country and climate, km or miles, any currency"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 25 pages, US Letter + A4",
+        "Home maintenance and car service tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "Know what is due, and what was done",
+          "paragraphs": [
+            "Filters, smoke alarm tests, gutters, the boiler, the car's next service: most of us remember a job only when something stops working, and then cannot find the model number, the warranty date or the name of the person who fixed it last time. This planner keeps the whole picture in one place: what to check each month and season, when each appliance and vehicle was last serviced, what repairs cost and what is due next.",
+            "The book starts with a home profile and an appliance index, then monthly and quarterly checklists with a tick box for every month or quarter, and four seasonal checklists (spring, summer, autumn and winter) that you can rename for your own climate. A yearly calendar, appliance record cards, a smoke and carbon monoxide alarm test log, a repair and improvement log, a contractor and handyperson contact list and a project planner follow.",
+            "For vehicles there is a profile page for up to three cars, service logs, and a tyre (tire) and fluid check sheet. A yearly cost summary pulls the home and vehicle spending together. Everything is fillable on screen and prints cleanly in Letter or A4."
+          ]
+        },
+        {
+          "heading": "A spreadsheet that works out what is due",
+          "paragraphs": [
+            "On Setup, choose your home type, km or miles, your currency and how many days ahead you want a warning, then name up to three vehicles and type their current odometer readings.",
+            "Recurring Tasks has a drop-down for how often a job repeats (Monthly, Quarterly, Twice a year, Yearly or Custom days). Type the date you last did it and the next due date appears, with a status of OVERDUE, DUE SOON or On track. Appliances works the same way from the service interval you type, and Vehicle Log reminds you by date, by distance or both, using the intervals from your own owner's manual.",
+            "The Repair Log and Vehicle Log feed a Cost Summary by area, vehicle and month, and the Dashboard lists everything overdue or due in the next days you chose, with charts. Rows marked “Example” are made up to show how it works; type over them or clear them."
+          ],
+          "note_html": "<strong>This planner is a reminder and record-keeping tool, not a substitute for the manufacturer's manual or a qualified electrician, plumber, gas engineer or mechanic.</strong> It gives no safety guarantees or professional advice, and the service intervals are yours: check your owner's manual."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Home Maintenance Planner & Car Service Log, US Letter",
+          "detail": "25 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Home Maintenance Planner & Car Service Log, A4",
+          "detail": "25 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Home maintenance and car service tool",
+          "detail": "How to use, Setup, Recurring Tasks, Repair Log, Appliances, Vehicle Log, Cost Summary and Dashboard tabs (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the planner",
+      "inside": [
+        {
+          "strong": "Getting started:",
+          "rest": "how to use the book, a home profile that records where the shut-offs and spares are, and an appliance and system index"
+        },
+        {
+          "strong": "Checklists:",
+          "rest": "a monthly checklist and a quarterly checklist with tick boxes, four seasonal checklists for the home and the vehicle, and a yearly maintenance calendar"
+        },
+        {
+          "strong": "Records:",
+          "rest": "two pages of appliance record cards, a smoke and carbon monoxide alarm test log, two repair and improvement log sheets and a contractor and handyperson contact list"
+        },
+        {
+          "strong": "Projects and costs:",
+          "rest": "two project planner pages and a yearly cost summary for the home and up to three vehicles"
+        },
+        {
+          "strong": "Vehicles:",
+          "rest": "a vehicle profile for up to three vehicles, three vehicle service log sheets and a tyre (tire) and fluid check sheet"
+        },
+        {
+          "strong": "Notes:",
+          "rest": "a page of lined notes"
+        }
+      ],
+      "good_for": [
+        "Homeowners and first-time buyers who want one place for jobs, records and costs",
+        "Renters who look after their own space and want a record to show a landlord",
+        "Households with one to three cars who like to keep service dates in one place",
+        "A housewarming or new-home gift"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "25 per PDF, 3,000+ fillable fields and checkboxes"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Spreadsheet",
+          "Recurring tasks with next-due dates and OVERDUE flags, repair log, appliance records, vehicle service log for up to three vehicles, cost summary by area, vehicle and month, dashboard with charts"
+        ],
+        [
+          "Units and currency",
+          "Kilometres or miles, any currency; costs are plain numbers"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$9"
+        ],
+        [
+          "License",
+          "Personal and household use, for your own home and vehicles. Print as many copies as you need. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This planner is a reminder and record-keeping tool, not a substitute for the manufacturer's manual or a qualified electrician, plumber, gas engineer or mechanic. It gives no safety guarantees or professional advice, and the tasks are general suggestions, not rules for every home or vehicle.",
+        "Service intervals are blank for you to fill in from each owner's manual or a qualified professional. The planner contains no service schedules for any appliance or vehicle.",
+        "Smoke alarms: test them every month, replace 9-volt batteries at least once a year, replace the whole alarm every 10 years, and follow the manufacturer's instructions.",
+        "The planner does not connect to, import from or sync with any bank, calendar or email. Its dates and totals are a simple summary of what you type.",
+        "The example rows in the spreadsheet are made up to show how it works; replace them with your own."
+      ],
+      "zip": "The-Home-Maintenance-Planner-and-Car-Service-Log.zip",
+      "whats_inside": [
+        "The Home Maintenance Planner & Car Service Log, US Letter size (fillable PDF)",
+        "The Home Maintenance Planner & Car Service Log, A4 size (fillable PDF)",
+        "Home Maintenance Planner Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the home profile of the Letter or A4 book, whichever matches your paper, and the Setup tab of the spreadsheet: your units, currency and vehicles."
     }
   ]
 }
