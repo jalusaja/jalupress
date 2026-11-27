@@ -17,6 +17,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE / "docs"
 SITE = "https://jalupress.com"
+PAYPAL_BUSINESS = "jalurahadi@gmail.com"
 YEAR = "2026"
 OG_DEFAULT = "assets/img/og-default.jpg"
 OG_W, OG_H = 1200, 630
@@ -40,7 +41,38 @@ def usd(p):
 
 def money_line(p, lead="Paid as"):
     u = usd(p)
-    return f"${u} <small>{lead} {u} USDC (Solana or Polygon) or {u} USDT (TRC20 or Polygon)</small>"
+    return f"${u} <small>{lead} PayPal, or {u} USDC (Solana or Polygon) or {u} USDT (TRC20 or Polygon)</small>"
+
+
+def paypal_form(p, cancel_path=None, button_label=None):
+    """Standard PayPal Buy Now (_xclick) form. Invoice/custom are filled on submit by paypal-buy.js."""
+    u = usd(p)
+    slug = p["slug"]
+    title = p["title"]
+    cancel = cancel_path or f"products/{slug}/"
+    label = button_label or f"Pay ${u} with PayPal"
+    ret = f"{SITE}/thank-you/?p={html.escape(slug, quote=True)}"
+    cancel_url = f"{SITE}/{cancel.lstrip('/')}"
+    biz = html.escape(PAYPAL_BUSINESS, quote=True)
+    return (
+        f'<form class="paypal-buy" action="https://www.paypal.com/cgi-bin/webscr" method="post">'
+        f'<input type="hidden" name="cmd" value="_xclick">'
+        f'<input type="hidden" name="business" value="{biz}">'
+        f'<input type="hidden" name="item_name" value="{html.escape(title, quote=True)}">'
+        f'<input type="hidden" name="item_number" value="{html.escape(slug, quote=True)}">'
+        f'<input type="hidden" name="amount" value="{html.escape(u, quote=True)}">'
+        f'<input type="hidden" name="currency_code" value="USD">'
+        f'<input type="hidden" name="no_shipping" value="1">'
+        f'<input type="hidden" name="no_note" value="1">'
+        f'<input type="hidden" name="charset" value="utf-8">'
+        f'<input type="hidden" name="rm" value="1">'
+        f'<input type="hidden" name="return" value="{html.escape(ret, quote=True)}">'
+        f'<input type="hidden" name="cancel_return" value="{html.escape(cancel_url, quote=True)}">'
+        f'<input type="hidden" name="invoice" value="">'
+        f'<input type="hidden" name="custom" value="">'
+        f'<button class="btn paypal" type="submit">{html.escape(label)}</button>'
+        f'</form>'
+    )
 
 
 def og_abs(rel_or_default):
@@ -117,7 +149,7 @@ def page(path, title, desc, body, active="", depth=None, extra_head="", scripts=
 <footer class="site-foot"><div class="wrap">
 <div class="foot-grid">
 <div><a class="brand" href="{r}" style="margin-bottom:12px">{LOGO}<span class="brand-name">Jalu Press</span></a>
-<p>Practical English ebooks and light tools, sold as instant digital downloads. Paid in USDC (Solana or Polygon) or USDT (TRC20 or Polygon) only. Nothing physical is shipped.</p></div>
+<p>Practical English ebooks and light tools, sold as instant digital downloads. Paid with PayPal, or USDC (Solana or Polygon) or USDT (TRC20 or Polygon). Nothing physical is shipped.</p></div>
 <div><h3>Shop</h3><ul>
 {shop_links}
 <li><a href="{r}how-to-buy/">How to buy</a></li>
@@ -145,6 +177,7 @@ def img(stem, alt, cls="shot", w=1600, h=1200, eager=False, sizes="(max-width: 9
 
 
 PAY_BADGES = '''<ul class="pay-badges" aria-label="Accepted payment">
+<li class="badge"><span class="dot"></span>PayPal</li>
 <li class="badge"><span class="dot"></span>USDC on Solana</li>
 <li class="badge"><span class="dot"></span>USDC on Polygon</li>
 <li class="badge"><span class="dot"></span>USDT on TRC20 (Tron)</li>
@@ -215,7 +248,7 @@ home = f'''
 <div class="grid3" style="margin-top:22px">
 <div class="card"><h3>Made to be used</h3><p>Every product is built around a job you actually need to do, with clear fields, sensible order and pages that print cleanly at home.</p></div>
 <div class="card"><h3>Written for anywhere</h3><p>Plain English for readers worldwide. No single-country defaults where they would get in your way, and both metric and imperial where it matters.</p></div>
-<div class="card"><h3>Simple crypto checkout</h3><p>Pay with a stablecoin you already hold: USDC on Solana or Polygon, or USDT on TRC20 or Polygon. No cards, no accounts, no subscription.</p></div>
+<div class="card"><h3>Simple checkout</h3><p>Pay with PayPal, or with a stablecoin you already hold: USDC on Solana or Polygon, or USDT on TRC20 or Polygon. No subscription.</p></div>
 </div></div></section>
 
 <section class="band"><div class="wrap">
@@ -223,14 +256,14 @@ home = f'''
 <h2>Buying takes three steps</h2>
 <div class="grid3" style="margin-top:22px">
 <div class="card"><div class="step-n">1</div><h3>Choose a product</h3><p>Read the details and preview pages, and check it suits you before you pay.</p></div>
-<div class="card"><div class="step-n">2</div><h3>Pay in USDC or USDT</h3><p>Checkout shows the exact amount for your order, the network and the receive address.</p></div>
-<div class="card"><div class="step-n">3</div><h3>Get your files</h3><p>Once the payment is confirmed on-chain, your files are emailed to you automatically.</p></div>
+<div class="card"><div class="step-n">2</div><h3>Pay with PayPal or crypto</h3><p>Pay with PayPal in USD, or send USDC or USDT from checkout. Checkout shows the exact amount and, for crypto, the network and receive address.</p></div>
+<div class="card"><div class="step-n">3</div><h3>Get your files</h3><p>PayPal orders are emailed within a few hours. Crypto orders are emailed automatically once the payment is confirmed on-chain.</p></div>
 </div>
 <p style="margin-top:22px"><a href="{{R}}how-to-buy/">Read the full buying guide &rarr;</a></p>
 </div></section>
 '''
 page("index.html", "Jalu Press",
-     "Jalu Press makes practical English ebooks and light tools, sold as digital downloads and paid in USDC or USDT on Solana, TRC20 or Polygon.",
+     "Jalu Press makes practical English ebooks and light tools, sold as digital downloads and paid with PayPal, or USDC or USDT on Solana, TRC20 or Polygon.",
      home, "home", depth=0, og_image=og_for(), og_alt="Jalu Press: practical English ebooks and light tools")
 
 # ---------- PRODUCT PAGES ----------
@@ -287,12 +320,12 @@ def product_page(p):
     seen_price = False
     for row in p.get("specs") or []:
         if row[0] == "Price":
-            specs.append(("Price", f"${u}, paid as {u} USDC (Solana or Polygon) or {u} USDT (TRC20 or Polygon)"))
+            specs.append(("Price", f"${u}, paid with PayPal, or as {u} USDC (Solana or Polygon) or {u} USDT (TRC20 or Polygon)"))
             seen_price = True
         else:
             specs.append((row[0], row[1]))
     if not seen_price:
-        specs.append(("Price", f"${u}, paid as {u} USDC (Solana or Polygon) or {u} USDT (TRC20 or Polygon)"))
+        specs.append(("Price", f"${u}, paid with PayPal, or as {u} USDC (Solana or Polygon) or {u} USDT (TRC20 or Polygon)"))
     spec_rows = "".join(f'<tr><th>{esc(k)}</th><td>{esc(v)}</td></tr>' for k, v in specs)
     notes = "".join(f'<li>{esc(n)}</li>' for n in p.get("please_note") or [])
     crumbs_label = esc(p.get("nav_label") or p["title"])
@@ -310,8 +343,8 @@ def product_page(p):
 <p class="price">{money_line(p, lead="Pay")}</p>
 <ul class="ticks" style="margin-top:16px">
 {buy_ticks}</ul>
-<div class="btn-row"><a class="btn rust" href="{{R}}checkout/?p={esc(p["slug"], quote=True)}">Buy for ${u}</a><a class="btn alt" href="#included">What's included</a></div>
-<p class="small" style="margin-top:14px">Files are delivered by email after your payment is confirmed. Nothing physical is shipped.</p>
+<div class="btn-row"><a class="btn rust" href="{{R}}checkout/?p={esc(p["slug"], quote=True)}">Buy for ${u}</a>{paypal_form(p, cancel_path="products/" + p["slug"] + "/")}<a class="btn alt" href="#included">What's included</a></div>
+<p class="small" style="margin-top:14px">Pay with PayPal, or continue to checkout to pay with USDC or USDT. Files are delivered by email. Nothing physical is shipped.</p>
 </div></aside>
 </div>
 {story}
@@ -334,11 +367,12 @@ def product_page(p):
 <ul>
 {notes}
 </ul>
-<div class="btn-row" style="margin-top:20px"><a class="btn rust" href="{{R}}checkout/?p={esc(p["slug"], quote=True)}">Buy for ${u}</a><a class="btn alt" href="{{R}}how-to-buy/">How buying works</a></div>
+<div class="btn-row" style="margin-top:20px"><a class="btn rust" href="{{R}}checkout/?p={esc(p["slug"], quote=True)}">Buy for ${u}</a>{paypal_form(p, cancel_path="products/" + p["slug"] + "/")}<a class="btn alt" href="{{R}}how-to-buy/">How buying works</a></div>
 </div></section>
 '''
     page(f"products/{p['slug']}/index.html", p["title"], p.get("description") or p.get("short") or p["title"],
-         body, "home", og_image=og_for(p), og_alt=p.get("og_alt") or p["title"], scripts=gallery_js)
+         body, "home", og_image=og_for(p), og_alt=p.get("og_alt") or p["title"],
+         scripts=gallery_js + '<script src="{R}assets/paypal-buy.js" defer></script>')
 
 
 for prod in PRODUCTS:
@@ -349,9 +383,18 @@ how = f'''
 <section><div class="wrap prose">
 <p class="eyebrow">Buying guide</p>
 <h1>How to buy</h1>
-<p class="lead">Jalu Press accepts two stablecoins only: <strong>USDC</strong> and <strong>USDT</strong>. USDC can be sent on Solana or Polygon, and USDT on TRC20 (Tron) or Polygon. Prices are in US dollars and you pay the same number of tokens, plus a few unique hundredths of a cent that identify your order (for example, $12 = 12.0347 USDC).</p>
+<p class="lead">Jalu Press accepts <strong>PayPal</strong> (in US dollars) and two stablecoins: <strong>USDC</strong> and <strong>USDT</strong>. USDC can be sent on Solana or Polygon, and USDT on TRC20 (Tron) or Polygon. Prices are in US dollars.</p>
 
-<h2>Step by step</h2>
+<h2>Pay with PayPal</h2>
+<ol>
+<li><strong>Pick your product</strong> and click <strong>Pay with PayPal</strong> on the product page, or choose PayPal at checkout.</li>
+<li><strong>Pay on PayPal's site</strong> in USD, using your PayPal balance or the payment methods PayPal offers you there.</li>
+<li><strong>Receive your files.</strong> After you pay, you will see a thank-you page. Your files are emailed within a few hours to the email address on your PayPal account (or the delivery email you entered at checkout). Please check your spam folder if you don't see them.</li>
+</ol>
+<p>You do not need to email us first for a PayPal order. If the files have not arrived after a few hours, write to <a href="mailto:hallo@jalupublishing.com">hallo@jalupublishing.com</a> with your PayPal transaction details or order reference.</p>
+
+<h2>Pay with USDC or USDT</h2>
+<p>For crypto, you pay the same number of tokens as the dollar price, plus a few unique hundredths of a cent that identify your order (for example, $12 = 12.0347 USDC).</p>
 <ol>
 <li><strong>Pick your product</strong> and open its checkout.</li>
 <li><strong>Enter your email</strong> so we know where to send your files. A name is optional.</li>
@@ -373,14 +416,14 @@ how = f'''
 <p class="small">Our receive addresses are shown only on the checkout page of this website. Jalu Press will never message you first with a payment address, and never asks for a seed phrase, private key or password.</p>
 
 <h2>What we do not accept</h2>
-<p>Credit or debit cards, PayPal, bank transfers and other coins or networks are not accepted.</p>
+<p>We do not accept credit or debit cards or bank transfers directly on this site (you can pay by card through PayPal). Other coins or networks are not accepted.</p>
 
 <h2>Questions</h2>
 <p>See <a href="{{R}}terms/">Help, license &amp; refunds</a> for delivery, license and refund details.</p>
 <div class="btn-row" style="margin-top:20px"><a class="btn" href="{{R}}index.html#shop">Browse the shop</a></div>
 </div></section>
 '''
-page("how-to-buy/index.html", "How to buy", "How to buy from Jalu Press with USDC or USDT on Solana, TRC20 or Polygon.", how, "how")
+page("how-to-buy/index.html", "How to buy", "How to buy from Jalu Press with PayPal, or USDC or USDT on Solana, TRC20 or Polygon.", how, "how")
 
 # ---------- ABOUT ----------
 about = '''
@@ -392,7 +435,7 @@ about = '''
 <h2>How we work</h2>
 <ul>
 <li><strong>Digital only.</strong> Every product is a download. Nothing physical is shipped.</li>
-<li><strong>Crypto checkout.</strong> We accept USDC on Solana or Polygon, and USDT on TRC20 or Polygon only.</li>
+<li><strong>Simple checkout.</strong> We accept PayPal, plus USDC on Solana or Polygon and USDT on TRC20 or Polygon.</li>
 <li><strong>Light on data.</strong> No accounts, no tracking scripts, no advertising cookies. See <a href="{R}privacy/">Privacy</a>.</li>
 <li><strong>For readers worldwide.</strong> Products are written in plain English and avoid single-country assumptions wherever they can.</li>
 </ul>
@@ -408,15 +451,19 @@ terms = '''
 <p class="eyebrow">Help</p>
 <h1>Help, license &amp; refunds</h1>
 <h2>Delivery</h2>
-<p>All Jalu Press products are digital files. After your payment is confirmed on-chain and we have your order email, your files are emailed automatically, as an attachment, to the address you gave at checkout. Please check your spam folder if it has not arrived. Nothing physical is shipped.</p>
+<p>All Jalu Press products are digital files. Nothing physical is shipped. Please check your spam folder if your email has not arrived.</p>
+<ul>
+<li><strong>PayPal.</strong> After you pay, your files are emailed within a few hours to the email address on your PayPal account, or the delivery email you entered at checkout.</li>
+<li><strong>USDC or USDT.</strong> After your payment is confirmed on-chain and we have your order email, your files are emailed automatically, as an attachment, to the address you gave at checkout, usually within 30 minutes.</li>
+</ul>
 <h2>Payment</h2>
-<p>We accept USDC on Solana or Polygon, and USDT on TRC20 (Tron) or Polygon only. Prices are in US dollars, paid as the same number of tokens. Network fees are paid by the sender. Blockchain payments cannot be reversed by us or by you, so please check the amount, network and address before sending. See <a href="{R}how-to-buy/">How to buy</a>.</p>
+<p>We accept PayPal in US dollars, plus USDC on Solana or Polygon and USDT on TRC20 (Tron) or Polygon. Crypto prices are paid as the same number of tokens; network fees are paid by the sender. Blockchain payments cannot be reversed by us or by you, so please check the amount, network and address before sending. PayPal payments are processed by PayPal. See <a href="{R}how-to-buy/">How to buy</a>.</p>
 <h2>Refunds and problems</h2>
 <ul>
 <li>If a file is faulty or will not open, tell us and we will fix it or send a replacement.</li>
-<li>If we cannot deliver your order, we refund the amount you paid in the same token, to a wallet address on the same network that you give us.</li>
+<li>If we cannot deliver your order, we refund a PayPal payment through PayPal, or a crypto payment in the same token to a wallet address on the same network that you give us.</li>
 <li>Because files can be kept once downloaded, completed orders are otherwise not refundable. Please read the product page and previews before you buy.</li>
-<li>Payments sent on the wrong network, in the wrong token or to an address not shown on our checkout page cannot be recovered by us.</li>
+<li>Crypto payments sent on the wrong network, in the wrong token or to an address not shown on our checkout page cannot be recovered by us.</li>
 </ul>
 <h2>License</h2>
 <p>Your purchase gives you a personal, non-transferable license to use the files for yourself and your household. You may print as many copies as your household needs. You may not resell, share, upload or redistribute the files, or include them in other products.</p>
@@ -437,10 +484,11 @@ priv = '''
 <ul>
 <li><strong>No tracking.</strong> This site uses no analytics, advertising or social tracking scripts and sets no cookies.</li>
 <li><strong>Hosting.</strong> The site is a static website hosted on GitHub Pages. GitHub may log basic technical data such as IP addresses for security, under its own privacy statement.</li>
-<li><strong>Checkout.</strong> The details you type on the checkout page stay in your browser. They are only sent to us if you choose to email us your order, and we use them only to deliver your files and answer you.</li>
-<li><strong>Payments.</strong> Blockchain transactions are public by nature. We see the sending address, amount and time of your payment, as anyone can.</li>
+<li><strong>Checkout.</strong> The details you type on the checkout page stay in your browser. For a crypto order they are only sent to us if you choose to email us your order. For a PayPal order, the product, amount and (if you entered one) delivery email are sent to PayPal to complete payment. We use this information only to deliver your files and answer you.</li>
+<li><strong>PayPal.</strong> If you pay with PayPal you are taken to PayPal's website. PayPal processes your payment under its own privacy policy. We receive a payment notice with your PayPal name, email, amount and item, and use it only to deliver your files and for order support.</li>
+<li><strong>Crypto payments.</strong> Blockchain transactions are public by nature. We see the sending address, amount and time of your payment, as anyone can.</li>
 <li><strong>Never shared or sold.</strong> We do not sell or share your details, and we do not send marketing email unless you ask for it.</li>
-<li><strong>What we never ask for:</strong> passwords, card numbers, private keys or seed phrases.</li>
+<li><strong>What we never ask for on this site:</strong> passwords, card numbers, private keys or seed phrases. If you pay by card, you enter those details on PayPal's site, not on ours.</li>
 </ul>
 <p>You can ask us to delete your order emails at any time using the support address shown on the checkout page.</p>
 </div></section>
@@ -460,7 +508,7 @@ co = '''
 <div class="price" style="font-size:1.5rem;margin-top:8px" id="co-price" data-price=""></div></div>
 </div>
 <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
-<p class="small" style="margin:0">Pay with USDC (Solana or Polygon) or USDT (TRC20 or Polygon). The price is paid as the same number of tokens, plus a few unique hundredths of a cent that identify your order. Network fees are paid by the sender.</p>
+<p class="small" style="margin:0">Pay with PayPal in USD, or with USDC (Solana or Polygon) or USDT (TRC20 or Polygon). For crypto, the price is paid as the same number of tokens, plus a few unique hundredths of a cent that identify your order. Network fees are paid by the sender.</p>
 </div>
 <p class="small" style="margin-top:14px"><a href="{R}how-to-buy/">How buying works</a> &middot; <a href="{R}terms/">Refunds &amp; license</a></p>
 </div>
@@ -493,8 +541,26 @@ co = '''
 <fieldset class="field" style="border:0;padding:0;margin:0 0 16px"><legend style="font-weight:600;color:var(--ink);margin-bottom:8px">Pay with</legend>
 <div class="radio-cards" id="methods"></div></fieldset>
 <p class="small" id="co-err" role="alert" style="color:#a23b16"></p>
-<button class="btn" type="submit">Show payment details</button>
-<p class="small" style="margin-top:12px">Nothing is charged or sent from this page. We never ask for passwords, card numbers, private keys or seed phrases.</p>
+<button class="btn" type="submit" id="co-submit">Show payment details</button>
+<p class="small" style="margin-top:12px" id="co-submit-hint">Nothing is charged or sent from this page. We never ask for passwords, card numbers, private keys or seed phrases.</p>
+</form>
+<form class="hidden" id="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="jalurahadi@gmail.com">
+<input type="hidden" name="item_name" value="">
+<input type="hidden" name="item_number" value="">
+<input type="hidden" name="amount" value="">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="no_shipping" value="1">
+<input type="hidden" name="no_note" value="1">
+<input type="hidden" name="charset" value="utf-8">
+<input type="hidden" name="rm" value="1">
+<input type="hidden" name="return" value="">
+<input type="hidden" name="cancel_return" value="">
+<input type="hidden" name="invoice" value="">
+<input type="hidden" name="custom" value="">
+<input type="hidden" name="on0" value="Delivery email">
+<input type="hidden" name="os0" value="">
 </form>
 
 <div class="card hidden" id="co-resume">
@@ -535,7 +601,32 @@ co = '''
 </div>
 '''
 co_js = '<script src="{R}assets/checkout.js" defer></script>'
-page("checkout/index.html", "Checkout", "Jalu Press checkout: pay with USDC or USDT on Solana, TRC20 or Polygon.", co, "", extra_head='<meta name="robots" content="noindex">\n', scripts=co_js)
+page("checkout/index.html", "Checkout", "Jalu Press checkout: pay with PayPal, or USDC or USDT on Solana, TRC20 or Polygon.", co, "", extra_head='<meta name="robots" content="noindex">\n', scripts=co_js)
+
+# ---------- THANK YOU (PayPal return) ----------
+thanks = """
+<section><div class="wrap prose">
+<p class="eyebrow">Thank you</p>
+<h1>Thank you for your order</h1>
+<p class="lead">If you paid with PayPal, your payment is being processed. Your files will be emailed within a few hours.</p>
+<p>We send the files to the email address on your PayPal account, and to the delivery email you entered at checkout if you used that option. Please check your spam or junk folder if you do not see the email.</p>
+<p class="hidden" id="ty-ref"></p>
+<div class="note">You do not need to email us first. If the files have not arrived after a few hours, write to <a href="mailto:hallo@jalupublishing.com">hallo@jalupublishing.com</a> with your PayPal transaction details or order reference, and we will help.</div>
+<div class="btn-row" style="margin-top:20px"><a class="btn" href="{R}index.html#shop">Back to the shop</a><a class="btn alt" href="{R}terms/">Help &amp; refunds</a></div>
+</div></section>
+"""
+thanks_js = """<script>
+(function(){
+  var q = new URLSearchParams(location.search);
+  var ref = (q.get("ref") || q.get("cm") || q.get("invoice") || "").trim();
+  var el = document.getElementById("ty-ref");
+  if (el && ref) {
+    el.textContent = "Your order reference is " + ref + ". Please keep it in case you need to contact us.";
+    el.classList.remove("hidden");
+  }
+})();
+</script>"""
+page("thank-you/index.html", "Thank you", "Thank you for your Jalu Press order. Your files will be emailed within a few hours.", thanks, "", extra_head='<meta name="robots" content="noindex">\n', scripts=thanks_js)
 
 # ---------- 404 (served at any depth, so it computes its own base) ----------
 nf_body = '''

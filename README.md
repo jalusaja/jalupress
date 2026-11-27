@@ -33,17 +33,30 @@ Every page has `og:url`, `og:image` (plus width, height and alt), and
   file. A helper lives at `tools/make_og.py` if you need a starting composition;
   always open the result and check the title is legible.
 
-## Payments (USDC / USDT)
+## Payments (PayPal, USDC / USDT)
 
-Checkout reads `docs/assets/payment-config.json`. It stays closed (and shows no
-address) until that file exists with at least one valid receive address and an
-order email. Accepted networks: USDC on Solana or Polygon, and USDT on TRC20
-(Tron) or Polygon. See `payment-config.example.json` for the key names.
+The store accepts **PayPal** (USD, via a standard PayPal Buy Now `_xclick` form
+to the merchant email in the form; no API keys) as well as USDC and USDT.
 
-The unique per-order amount and automatic delivery both need the product slug
-and price from `catalog.json`. New order emails use the subject
-`Jalu Press order JP-XXXXXX <slug>`. Older binder orders that omit the slug
-are still accepted and mapped to `grab-and-go-household-binder`.
+Checkout reads `docs/assets/payment-config.json` for crypto receive addresses.
+Crypto checkout stays closed (and shows no address) until that file exists with
+at least one valid receive address and an order email. PayPal remains available
+even if crypto addresses are missing. Accepted crypto networks: USDC on Solana
+or Polygon, and USDT on TRC20 (Tron) or Polygon. See
+`payment-config.example.json` for the key names.
+
+PayPal buttons on product pages and at checkout post to
+`https://www.paypal.com/cgi-bin/webscr` with `item_name`, the catalog USD
+`amount`, `currency_code=USD`, `invoice`/`custom` set to a `JP-XXXXXX` order
+id, and `return` to `/thank-you/`. PayPal payment notices go to the PayPal
+account email, not to the Zoho inbox that autodeliver watches, so PayPal
+orders are fulfilled from those notices (or by hand) rather than by the
+on-chain matcher.
+
+The unique per-order crypto amount and automatic crypto delivery both need the
+product slug and price from `catalog.json`. New crypto order emails use the
+subject `Jalu Press order JP-XXXXXX <slug>`. Older binder orders that omit the
+slug are still accepted and mapped to `grab-and-go-household-binder`.
 
 ## Product files
 

@@ -2,11 +2,13 @@
    Receive addresses come from assets/payment-config.json (see
    payment-config.example.json in the repo root). That file does not exist until
    the real wallet addresses and order email are ready. If it is missing, or an
-   address or the email is malformed, checkout stays closed and shows no address.
+   address or the email is malformed, crypto checkout stays closed and shows no
+   address. PayPal remains available from the Buy Now form on this page.
    The product and price come from assets/catalog.json and ?p=<slug>. */
 (function () {
   var root = document.getElementById('checkout');
   if (!root) return;
+  var SITE = 'https://jalupress.com';
   var B58 = /^[1-9A-HJ-NP-Za-km-z]+$/;
   var HEX40 = /^0x[0-9a-fA-F]{40}$/;
   var METHODS = {
@@ -31,6 +33,7 @@
   var LEGACY_SLUG = 'grab-and-go-household-binder';
   var $ = function (id) { return document.getElementById(id); };
   var slug = (new URLSearchParams(location.search).get('p') || '').trim();
+  var preferPaypal = (new URLSearchParams(location.search).get('pay') || '').toLowerCase() === 'paypal';
 
   var catalogUrl = root.dataset.catalog;
   var configUrl = root.dataset.config;
@@ -95,20 +98,77 @@
       return a && METHODS[k].valid(a);
     });
     var support = (cfg.orderEmail || '').trim();
-    if (!available.length || !EMAIL.test(support)) return;
+    var cryptoOk = available.length && EMAIL.test(support);
+    /* PayPal Buy Now does not depend on crypto addresses. Always offer it. */
     var box = $('methods');
     box.innerHTML = '';
-    available.forEach(function (k, i) {
-      var l = document.createElement('label');
-      l.innerHTML = '<input type="radio" name="method" value="' + k + '"' + (i === 0 ? ' checked' : '') +
-        '><span><strong>' + METHODS[k].label + '</strong><br><span class="small">Pay about ' + priceLabel + ' ' + METHODS[k].token + ' (exact amount shown next)</span></span>';
-      box.appendChild(l);
-    });
+    var paypalLabel = document.createElement('label');
+    paypalLabel.className = 'span-2';
+    var paypalChecked = preferPaypal || !cryptoOk;
+    paypalLabel.innerHTML = '<input type="radio" name="method" value="paypal"' + (paypalChecked ? ' checked' : '') +
+      '><span><strong>PayPal</strong><br><span class="small">Pay $' + priceLabel +
+      ' USD on PayPal. Files are emailed within a few hours.</span></span>';
+    box.appendChild(paypalLabel);
+    if (cryptoOk) {
+      available.forEach(function (k, i) {
+        var l = document.createElement('label');
+        l.innerHTML = '<input type="radio" name="method" value="' + k + '"' + (!paypalChecked && i === 0 ? ' checked' : '') +
+          '><span><strong>' + METHODS[k].label + '</strong><br><span class="small">Pay about ' + priceLabel + ' ' + METHODS[k].token + ' (exact amount shown next)</span></span>';
+        box.appendChild(l);
+      });
+    }
     $('co-closed').classList.add('hidden');
     $('co-form').classList.remove('hidden');
 
+    var syncPayMethod = function () {
+      var k = (document.querySelector('input[name=method]:checked') || {}).value;
+      var btn = $('co-submit');
+      var hint = $('co-submit-hint');
+      if (k === 'paypal') {
+        if (btn) {
+          btn.textContent = 'Pay $' + priceLabel + ' with PayPal';
+          btn.classList.add('paypal');
+        }
+        if (hint) hint.textContent = 'You will be taken to PayPal to pay $' + priceLabel +
+          ' USD. Your files will be emailed within a few hours to the email on your PayPal account, and to the delivery email you enter above.';
+      } else {
+        if (btn) {
+          btn.textContent = 'Show payment details';
+          btn.classList.remove('paypal');
+        }
+        if (hint) hint.textContent = 'Nothing is charged or sent from this page. We never ask for passwords, card numbers, private keys or seed phrases.';
+      }
+    };
+    box.addEventListener('change', syncPayMethod);
+    syncPayMethod();
+
     var KEY = 'jp_order_v2_' + slug;
     var LEGACY_KEY = 'jp_order_v2';
+
+    var makeRef = function () {
+      var rnd = new Uint32Array(2);
+      (window.crypto || window.msCrypto).getRandomValues(rnd);
+      var A = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+      var ref = 'JP-';
+      var i;
+      for (i = 0; i < 6; i++) ref += A.charAt((rnd[0] >>> (i * 5)) & 31);
+      return { ref: ref, rnd: rnd };
+    };
+
+    var fillAndSubmitPaypal = function (o) {
+      var f = $('paypal-form');
+      if (!f) return;
+      f.item_name.value = product.title;
+      f.item_number.value = slug;
+      f.amount.value = priceLabel;
+      f.invoice.value = o.ref;
+      f.custom.value = o.ref;
+      if (f.os0) f.os0.value = o.email || '';
+      f.return.value = SITE + '/thank-you/?p=' + encodeURIComponent(slug) + '&ref=' + encodeURIComponent(o.ref);
+      f.cancel_return.value = SITE + '/checkout/?p=' + encodeURIComponent(slug);
+      f.submit();
+    };
+
     var show = function (o) {
       var m = METHODS[o.k]; var addr = cfg[m.key].trim();
       var amt = o.amount + ' ' + m.token;
@@ -154,12 +214,20 @@
         if (legacy && (!legacy.slug || legacy.slug === LEGACY_SLUG)) saved = legacy;
       } catch (e) { /* ignore */ }
     }
-    if (saved && saved.ref && METHODS[saved.k] && available.indexOf(saved.k) >= 0 &&
-        Date.now() - saved.created < 72 * 3600 * 1000) {
+    var savedOk = saved && saved.ref && saved.k && (Date.now() - saved.created < 72 * 3600 * 1000) &&
+      (saved.k === 'paypal' || (METHODS[saved.k] && cryptoOk && available.indexOf(saved.k) >= 0));
+    if (savedOk) {
       $('r-ref').textContent = saved.ref;
-      $('r-amount').textContent = saved.amount + ' ' + METHODS[saved.k].token + ' (' + METHODS[saved.k].net + ')';
+      if (saved.k === 'paypal') {
+        $('r-amount').textContent = (saved.amount || priceLabel) + ' USD via PayPal';
+      } else {
+        $('r-amount').textContent = saved.amount + ' ' + METHODS[saved.k].token + ' (' + METHODS[saved.k].net + ')';
+      }
       $('co-resume').classList.remove('hidden');
-      $('r-open').addEventListener('click', function () { show(saved); });
+      $('r-open').addEventListener('click', function () {
+        if (saved.k === 'paypal') fillAndSubmitPaypal(saved);
+        else show(saved);
+      });
       $('r-new').addEventListener('click', function () {
         try { localStorage.removeItem(KEY); localStorage.removeItem(LEGACY_KEY); } catch (e) {}
         $('co-resume').classList.add('hidden');
@@ -172,15 +240,23 @@
       if (!EMAIL.test(email)) { $('co-err').textContent = 'Please enter a valid email address for delivery.'; $('email').focus(); return; }
       $('co-err').textContent = '';
       var k = (document.querySelector('input[name=method]:checked') || {}).value;
-      var rnd = new Uint32Array(2);
-      (window.crypto || window.msCrypto).getRandomValues(rnd);
-      var A = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
-      var ref = 'JP-';
-      for (var i = 0; i < 6; i++) ref += A.charAt((rnd[0] >>> (i * 5)) & 31);
-      var cents = 1 + (rnd[1] % 999); /* 0.0001 to 0.0999 */
+      if (k === 'paypal') {
+        var made = makeRef();
+        var po = { ref: made.ref, k: 'paypal', slug: slug, email: email, name: $('name').value.trim(), created: Date.now(),
+          amount: priceLabel };
+        try { localStorage.setItem(KEY, JSON.stringify(po)); } catch (err) {}
+        fillAndSubmitPaypal(po);
+        return;
+      }
+      if (!cryptoOk || !METHODS[k]) {
+        $('co-err').textContent = 'Please choose a payment method.';
+        return;
+      }
+      var rndPair = makeRef();
+      var cents = 1 + (rndPair.rnd[1] % 999); /* 0.0001 to 0.0999 */
       var base = Math.round(Number(price) * 10000);
       var units = base + cents;
-      var o = { ref: ref, k: k, slug: slug, email: email, name: $('name').value.trim(), created: Date.now(),
+      var o = { ref: rndPair.ref, k: k, slug: slug, email: email, name: $('name').value.trim(), created: Date.now(),
         amount: Math.floor(units / 10000) + '.' + ('000' + (units % 10000)).slice(-4) };
       try { localStorage.setItem(KEY, JSON.stringify(o)); } catch (err) {}
       show(o);
