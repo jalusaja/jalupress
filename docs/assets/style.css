@@ -155,3 +155,21 @@ input:focus{border-color:var(--ink);outline:none}
   .btn-row{align-items:stretch}
   .btn-row .btn,.btn-row .paypal-buy,.btn-row .paypal-buy .btn{width:100%;text-align:center;box-sizing:border-box}
 }
+/* bundles, savings, delivery note, signup (added) */
+.was{color:var(--muted);font-weight:400;font-size:.62em;margin-right:4px;text-decoration:line-through}
+.savebox{background:#eef5ee;border:1px solid #cfe2d3;border-radius:8px;padding:10px 14px;font-size:.92rem;margin:14px 0 0;color:var(--ink)}
+.savebox s{color:var(--muted)}
+.delivery-note{background:#f3f6f6;border:1px solid #d3dcdc;border-radius:8px;padding:10px 14px;font-size:.88rem;line-height:1.5;color:var(--ink);margin:14px 0 0}
+.bundle-card{display:grid;grid-template-columns:1fr 1.1fr;gap:32px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;margin-bottom:22px}
+.inc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.inc-card{display:flex;flex-direction:column;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-decoration:none;color:var(--text)}
+.inc-card:hover{border-color:var(--ink)}
+.inc-card span{display:flex;flex-direction:column;gap:3px}
+.inc-card strong{color:var(--ink)}
+.signup label{color:inherit}
+.signup-row{display:flex;gap:10px;flex-wrap:wrap}
+.signup-row input[type=email]{flex:1 1 220px;width:auto}
+.signup .small{margin:10px 0 0}
+@media (max-width:760px){.bundle-card{grid-template-columns:1fr}}
+.band .signup-card{background:var(--card);border-color:var(--line)}
+.signup-card a,.signup a{color:var(--rust-d)}

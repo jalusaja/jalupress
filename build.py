@@ -39,9 +39,71 @@ def usd(p):
     return str(int(n)) if float(n) == int(float(n)) else f"{float(n):.2f}"
 
 
+SUPPORT = "hallo@jalupublishing.com"
+FORM_ENDPOINT = "https://formsubmit.co/hallo@jalupublishing.com"
+
+
+def kind(p):
+    return p.get("kind") or "single"
+
+
+def fmtn(n):
+    return str(int(n)) if float(n) == int(float(n)) else f"{float(n):.2f}"
+
+
+def list_usd(p):
+    """Honest reference price: only for bundles, the sum of the separate prices."""
+    v = p.get("list_price_usd")
+    if kind(p) == "bundle" and v and float(v) > float(p["price_usd"]):
+        return fmtn(v)
+    return None
+
+
+def save_usd(p):
+    lp = list_usd(p)
+    return fmtn(float(lp) - float(p["price_usd"])) if lp else None
+
+
+def save_pct(p):
+    lp = list_usd(p)
+    return int(round((float(lp) - float(p["price_usd"])) / float(lp) * 100)) if lp else None
+
+
 def money_line(p, lead="Paid as"):
     u = usd(p)
-    return f"${u} <small>{lead} PayPal, or {u} USDC (Solana or Polygon) or {u} USDT (TRC20 or Polygon)</small>"
+    lp = list_usd(p)
+    was = f'<s class="was" aria-label="Regular price if bought separately">${lp}</s> ' if lp else ""
+    return f"{was}${u} <small>{lead} PayPal, or {u} USDC (Solana or Polygon) or {u} USDT (TRC20 or Polygon)</small>"
+
+
+# Honest delivery wording, from the real pipeline: payment notices are checked every 10 minutes
+# (PayPal notice reaches our inbox in a minute or two; crypto is checked once final on-chain).
+DELIVERY_NOTE = (
+    '<p class="delivery-note"><strong>When you get it:</strong> your files are emailed to you, usually within '
+    '15 minutes after payment. It is not instant: we check for new payments every 10 minutes. '
+    'If nothing has arrived after 30 minutes, check your spam folder, then write to '
+    f'<a href="mailto:{SUPPORT}">{SUPPORT}</a> with your order reference.</p>'
+)
+DELIVERY_NOTE_SMALL = (
+    'Emailed after payment, usually within 15 minutes (not instant). '
+    f'Nothing after 30 minutes? Check spam, then <a href="mailto:{SUPPORT}">email us</a>.'
+)
+
+
+def signup_form(source, uid):
+    return f'''<form class="signup" action="{FORM_ENDPOINT}" method="post">
+<input type="hidden" name="_subject" value="Jalu Press free sample signup">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="{SITE}/free/thanks/">
+<input type="hidden" name="source" value="{source}">
+<input type="hidden" name="ref" value="">
+<input type="text" name="_honey" value="" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+<label for="em-{uid}">Your email</label>
+<div class="signup-row"><input type="email" id="em-{uid}" name="email" required autocomplete="email" placeholder="you@example.com" maxlength="120">
+<button class="btn rust" type="submit">Send me the free pack</button></div>
+<p class="small">We use your email only to send the free pack and one short follow-up about the bundle. No spam, never shared or sold, and every email has an unsubscribe link. Form delivery is handled by FormSubmit and your address is kept on our own computer. See our <a href="{{R}}privacy/">privacy notice</a>.</p>
+</form>'''
 
 
 def paypal_form(p, cancel_path=None, button_label=None):
@@ -149,9 +211,10 @@ def page(path, title, desc, body, active="", depth=None, extra_head="", scripts=
 <footer class="site-foot"><div class="wrap">
 <div class="foot-grid">
 <div><a class="brand" href="{r}" style="margin-bottom:12px">{LOGO}<span class="brand-name">Jalu Press</span></a>
-<p>Practical English ebooks and light tools, sold as instant digital downloads. Paid with PayPal, or USDC (Solana or Polygon) or USDT (TRC20 or Polygon). Nothing physical is shipped.</p></div>
+<p>Practical English ebooks and light tools, sold as digital downloads that are emailed after payment. Paid with PayPal, or USDC (Solana or Polygon) or USDT (TRC20 or Polygon). Nothing physical is shipped.</p></div>
 <div><h3>Shop</h3><ul>
 {shop_links}
+<li><a href="{r}free/">Free sample pack</a></li>
 <li><a href="{r}how-to-buy/">How to buy</a></li>
 <li><a href="{r}checkout/">Checkout</a></li></ul></div>
 <div><h3>Info</h3><ul>
@@ -182,37 +245,26 @@ PAY_BADGES = '''<ul class="pay-badges" aria-label="Accepted payment">
 <li class="badge"><span class="dot"></span>USDC on Polygon</li>
 <li class="badge"><span class="dot"></span>USDT on TRC20 (Tron)</li>
 <li class="badge"><span class="dot"></span>USDT on Polygon</li>
-<li class="badge">Instant digital download</li></ul>'''
+<li class="badge">Emailed within about 15 minutes</li></ul>'''
 
 # ---------- HOME ----------
 if not PRODUCTS:
     raise SystemExit("catalog.json has no for_sale products")
 
-featured = PRODUCTS[0]
-if len(PRODUCTS) == 1:
-    hero_cta = f'<a class="btn" href="{{R}}products/{featured["slug"]}/">See the {html.escape(featured.get("nav_label") or featured["title"])}</a>'
-    shop_eyebrow = "First release"
-    ticks = "".join(f'<li>{html.escape(t)}</li>' for t in featured.get("shop_ticks") or [])
-    shop_block = f'''<div class="product-card">
-<a href="{{R}}products/{featured["slug"]}/">{img((featured["images"][1] if len(featured["images"])>1 else featured["images"][0])["file"], (featured["images"][1] if len(featured["images"])>1 else featured["images"][0])["alt"])}</a>
-<div>
-<h3 style="font-size:1.6rem">{html.escape(featured["title"])}</h3>
-<p class="meta">{html.escape(featured.get("subtitle") or "")}</p>
-<p>{html.escape(featured.get("short") or featured.get("description") or "")}</p>
-<ul class="ticks">
-{ticks}</ul>
-<p class="price">{money_line(featured)}</p>
-<div class="btn-row" style="margin-top:16px"><a class="btn" href="{{R}}products/{featured["slug"]}/">View details</a></div>
-</div></div>'''
-else:
-    hero_cta = '<a class="btn" href="{R}index.html#shop">Browse the shop</a>'
-    shop_eyebrow = "Shop"
-    teasers = []
-    for p in PRODUCTS:
-        cover = p["images"][0]
-        ticks = "".join(f'<li>{html.escape(t)}</li>' for t in (p.get("shop_ticks") or [])[:3])
-        teasers.append(
-            f'''<article class="product-teaser">
+SINGLES = [p for p in PRODUCTS if kind(p) == "single"]
+MINIS = [p for p in PRODUCTS if kind(p) == "mini"]
+BUNDLES = [p for p in PRODUCTS if kind(p) == "bundle"]
+PM = {p["slug"]: p for p in CATALOG["products"]}
+
+featured = SINGLES[0]
+hero_cta = '<a class="btn" href="{R}index.html#bundles">See the bundles</a>'
+
+
+def teaser(p, label="View details"):
+    cover = p["images"][0]
+    ticks = "".join(f'<li>{html.escape(t)}</li>' for t in (p.get("shop_ticks") or [])[:3])
+    return (
+        f'''<article class="product-teaser">
 <a href="{{R}}products/{p["slug"]}/">{img(cover["file"], cover["alt"], sizes="(max-width: 900px) 100vw, 400px")}</a>
 <div class="teaser-body">
 <h3>{html.escape(p["title"])}</h3>
@@ -220,9 +272,30 @@ else:
 <p>{html.escape(p.get("short") or p.get("description") or "")}</p>
 <ul class="ticks">{ticks}</ul>
 <p class="price">{money_line(p)}</p>
-<div class="btn-row" style="margin-top:16px"><a class="btn" href="{{R}}products/{p["slug"]}/">View details</a></div>
+<div class="btn-row" style="margin-top:16px"><a class="btn" href="{{R}}products/{p["slug"]}/">{label}</a></div>
 </div></article>''')
-    shop_block = '<div class="product-grid">' + "".join(teasers) + "</div>"
+
+
+def bundle_card(p):
+    cover = p["images"][0]
+    items = "".join(
+        f'<li>{html.escape(PM[s]["title"])} <span class="small">(${usd(PM[s])})</span></li>' for s in p.get("includes") or [])
+    return f'''<article class="bundle-card">
+<a href="{{R}}products/{p["slug"]}/">{img(cover["file"], cover["alt"], sizes="(max-width: 900px) 100vw, 520px")}</a>
+<div>
+<p class="eyebrow">Bundle &middot; save ${save_usd(p)} ({save_pct(p)}% off)</p>
+<h3 style="font-size:1.6rem">{html.escape(p["title"])}</h3>
+<p class="price">{money_line(p, lead="Pay")}</p>
+<p class="small" style="margin:6px 0 12px">Regular price if bought separately: ${list_usd(p)}. Lifetime access: pay once, keep the files for good.</p>
+<ul class="ticks">{items}</ul>
+<div class="btn-row"><a class="btn rust" href="{{R}}products/{p["slug"]}/">See what's inside</a>{paypal_form(p, cancel_path="index.html")}</div>
+<p class="small" style="margin-top:12px">{DELIVERY_NOTE_SMALL}</p>
+</div></article>'''
+
+
+bundle_block = "".join(bundle_card(p) for p in BUNDLES)
+mini_block = '<div class="product-grid">' + "".join(teaser(p) for p in MINIS) + "</div>"
+shop_block = '<div class="product-grid">' + "".join(teaser(p) for p in SINGLES) + "</div>"
 
 cover0 = featured["images"][0]
 home = f'''
@@ -232,14 +305,39 @@ home = f'''
 <h1>Practical English ebooks and light tools for real life.</h1>
 <p class="lead">Clear, well-made printables, workbooks and trackers that help you get one thing in order, then keep it that way. Original work, delivered as digital files.</p>
 {PAY_BADGES}
-<div class="btn-row">{hero_cta}<a class="btn alt" href="{{R}}how-to-buy/">How buying works</a></div>
+<div class="btn-row">{hero_cta}<a class="btn alt" href="{{R}}free/">Get a free sample pack</a></div>
 </div>
 <div>{img(cover0["file"], cover0["alt"], eager=True)}</div>
 </div></section>
 
+<section class="paper2" id="bundles"><div class="wrap">
+<p class="eyebrow">Best value</p>
+<h2>Bundles</h2>
+<p class="lead" style="margin-bottom:22px">Several planners in one download, for far less than buying them one by one. Pay once, keep the files for good.</p>
+{bundle_block}
+</div></section>
+
+<section class="band" id="free"><div class="wrap grid2" style="align-items:center">
+<div>
+<p class="eyebrow">Free</p>
+<h2>Try before you buy: the Home Starter Pack</h2>
+<p>Seven free, fillable pages from our planners: a household-at-a-glance sheet, a water and food planner, a 3-day supplies checklist, a winter home checklist, a moving timeline and a weekly meal plan with grocery list. Enter your email and we send it to you.</p>
+<p class="small" style="color:#cfdbd8"><a href="{{R}}free/">See what is inside &rarr;</a></p>
+</div>
+<div class="card signup-card" style="color:var(--text)">
+{signup_form("home", "home")}
+</div></div></section>
+
+<section><div class="wrap">
+<p class="eyebrow">Quick printables</p>
+<h2>Just need one thing done? $3 to $4</h2>
+<p class="lead">Single-purpose printable PDFs, excerpted from our full planners.</p>
+{mini_block}
+</div></section>
+
 <section class="paper2" id="shop"><div class="wrap">
-<p class="eyebrow">{shop_eyebrow}</p>
-<h2>Shop</h2>
+<p class="eyebrow">Shop</p>
+<h2>Full planners</h2>
 {shop_block}
 </div></section>
 
@@ -257,14 +355,16 @@ home = f'''
 <div class="grid3" style="margin-top:22px">
 <div class="card"><div class="step-n">1</div><h3>Choose a product</h3><p>Read the details and preview pages, and check it suits you before you pay.</p></div>
 <div class="card"><div class="step-n">2</div><h3>Pay with PayPal or crypto</h3><p>Pay with PayPal in USD, or send USDC or USDT from checkout. Checkout shows the exact amount and, for crypto, the network and receive address.</p></div>
-<div class="card"><div class="step-n">3</div><h3>Get your files</h3><p>PayPal orders are emailed within a few hours. Crypto orders are emailed automatically once the payment is confirmed on-chain.</p></div>
+<div class="card"><div class="step-n">3</div><h3>Get your files by email</h3><p>Usually within 15 minutes after payment. It is not instant: we check for new payments every 10 minutes. If nothing has arrived after 30 minutes, check your spam folder, then email us.</p></div>
 </div>
 <p style="margin-top:22px"><a href="{{R}}how-to-buy/">Read the full buying guide &rarr;</a></p>
 </div></section>
 '''
 page("index.html", "Jalu Press",
      "Jalu Press makes practical English ebooks and light tools, sold as digital downloads and paid with PayPal, or USDC or USDT on Solana, TRC20 or Polygon.",
-     home, "home", depth=0, og_image=og_for(), og_alt="Jalu Press: practical English ebooks and light tools")
+     home, "home", depth=0, og_image=og_for(), og_alt="Jalu Press: practical English ebooks and light tools",
+     scripts='<script src="{R}assets/paypal-buy.js" defer></script><script src="{R}assets/signup.js" defer></script>')
+
 
 # ---------- PRODUCT PAGES ----------
 gallery_js = '''<script>
@@ -273,6 +373,18 @@ t.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)re
 m.removeAttribute('srcset');m.src=b.dataset.src;m.alt=b.dataset.alt;
 t.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});});})();
 </script>'''
+
+
+BLURB = {
+    "grab-and-go-household-binder": "Emergency plan, important papers, medical details and an expiry tracker.",
+    "home-maintenance-planner-car-service-log": "Monthly and seasonal checklists, appliance and repair records, car service log.",
+    "moving-day-relocation-planner": "Timeline, moving budget, box inventory and address-change tracker.",
+    "plan-ahead-meal-grocery-planner": "Weekly meal plans, grocery lists, pantry inventory and a spreadsheet.",
+    "pet-care-record-book": "Vet visits, vaccines, medicine, daily care and pet-sitter pages.",
+    "holiday-gift-budget-planner": "Gift lists, spending against your budget, card list and countdown.",
+    "holiday-hosting-dinner-planner": "Guest list, menu, grocery list, prep countdown and seating plan.",
+    "new-year-goal-habit-planner": "Year review, goal plans, habit trackers and check-ins.",
+}
 
 
 def product_page(p):
@@ -329,6 +441,30 @@ def product_page(p):
     spec_rows = "".join(f'<tr><th>{esc(k)}</th><td>{esc(v)}</td></tr>' for k, v in specs)
     notes = "".join(f'<li>{esc(n)}</li>' for n in p.get("please_note") or [])
     crumbs_label = esc(p.get("nav_label") or p["title"])
+    lp = list_usd(p)
+    savebox = (f'<p class="savebox">Regular price if bought separately: <s>${lp}</s><br>'
+               f'<strong>You save ${save_usd(p)} ({save_pct(p)}% off)</strong> &middot; lifetime access, pay once</p>') if lp else ""
+    bundle_items = ""
+    if kind(p) == "bundle":
+        cards = "".join(
+            f'''<a class="inc-card" href="{{R}}products/{s_}/">{img(PM[s_]["images"][0]["file"], PM[s_]["images"][0]["alt"], sizes="(max-width: 700px) 100vw, 260px")}
+<span><strong>{esc(PM[s_]["title"])}</strong><span class="small">{esc(BLURB.get(s_, ""))}</span><span class="small">Sold separately for ${usd(PM[s_])}</span></span></a>'''
+            for s_ in p.get("includes") or [])
+        bundle_items = f'''<section id="in-the-bundle"><div class="wrap">
+<h2>What's in the bundle</h2>
+<p class="lead" style="margin-bottom:18px">{len(p.get("includes") or [])} complete planners, worth ${lp} if bought one by one. You pay ${u}.</p>
+<div class="inc-grid">{cards}</div>
+</div></section>'''
+    related = ""
+    if p.get("related"):
+        rc = "".join(
+            f'''<a class="inc-card" href="{{R}}products/{r_["slug"]}/">{img(PM[r_["slug"]]["images"][0]["file"], PM[r_["slug"]]["images"][0]["alt"], sizes="(max-width: 700px) 100vw, 260px")}
+<span><strong>{esc(PM[r_["slug"]]["title"])}</strong><span class="small">{esc(r_["blurb"])}</span><span class="small">{"<s class=\'was\'>$" + list_usd(PM[r_["slug"]]) + "</s> " if list_usd(PM[r_["slug"]]) else ""}${usd(PM[r_["slug"]])}</span></span></a>'''
+            for r_ in p["related"])
+        related = f'''<section class="paper2"><div class="wrap">
+<h2>You might also like</h2>
+<div class="inc-grid" style="margin-top:18px">{rc}</div>
+</div></section>'''
     body = f'''
 <div class="wrap"><p class="crumbs"><a href="{{R}}">Home</a> / <a href="{{R}}index.html#shop">Shop</a> / {crumbs_label}</p></div>
 <div class="wrap pp">
@@ -341,13 +477,16 @@ def product_page(p):
 <h1 style="font-size:clamp(1.7rem,3.2vw,2.3rem)">{esc(p["title"])}</h1>
 <p class="meta">{esc(p.get("subtitle") or "")}</p>
 <p class="price">{money_line(p, lead="Pay")}</p>
+{savebox}
 <ul class="ticks" style="margin-top:16px">
 {buy_ticks}</ul>
 <div class="btn-row"><a class="btn rust" href="{{R}}checkout/?p={esc(p["slug"], quote=True)}">Buy for ${u}</a>{paypal_form(p, cancel_path="products/" + p["slug"] + "/")}<a class="btn alt" href="#included">What's included</a></div>
 <p class="small" style="margin-top:14px">Pay with PayPal, or continue to checkout to pay with USDC or USDT. Files are delivered by email. Nothing physical is shipped.</p>
+{DELIVERY_NOTE}
 </div></aside>
 </div>
 {story}
+{bundle_items}
 {included}
 <section class="paper2"><div class="wrap grid2">
 <div>
@@ -368,7 +507,9 @@ def product_page(p):
 {notes}
 </ul>
 <div class="btn-row" style="margin-top:20px"><a class="btn rust" href="{{R}}checkout/?p={esc(p["slug"], quote=True)}">Buy for ${u}</a>{paypal_form(p, cancel_path="products/" + p["slug"] + "/")}<a class="btn alt" href="{{R}}how-to-buy/">How buying works</a></div>
+<p class="small" style="margin-top:12px">{DELIVERY_NOTE_SMALL}</p>
 </div></section>
+{related}
 '''
     page(f"products/{p['slug']}/index.html", p["title"], p.get("description") or p.get("short") or p["title"],
          body, "home", og_image=og_for(p), og_alt=p.get("og_alt") or p["title"],
@@ -389,9 +530,9 @@ how = f'''
 <ol>
 <li><strong>Pick your product</strong> and click <strong>Pay with PayPal</strong> on the product page, or choose PayPal at checkout.</li>
 <li><strong>Pay on PayPal's site</strong> in USD, using your PayPal balance or the payment methods PayPal offers you there.</li>
-<li><strong>Receive your files.</strong> After you pay, you will see a thank-you page. Your files are emailed within a few hours to the email address on your PayPal account (or the delivery email you entered at checkout). Please check your spam folder if you don't see them.</li>
+<li><strong>Receive your files.</strong> After you pay, you will see a thank-you page. Your files are emailed to the email address on your PayPal account (or the delivery email you entered at checkout), usually within 15 minutes after payment. It is not instant: we check for new payments every 10 minutes. Please check your spam folder if you don't see them.</li>
 </ol>
-<p>You do not need to email us first for a PayPal order. If the files have not arrived after a few hours, write to <a href="mailto:hallo@jalupublishing.com">hallo@jalupublishing.com</a> with your PayPal transaction details or order reference.</p>
+<p>You do not need to email us first for a PayPal order. If the files have not arrived after 30 minutes, check your spam folder, then write to <a href="mailto:hallo@jalupublishing.com">hallo@jalupublishing.com</a> with your PayPal transaction details or order reference. (If PayPal holds a payment as pending, for example an eCheck, delivery waits until it clears.)</p>
 
 <h2>Pay with USDC or USDT</h2>
 <p>For crypto, you pay the same number of tokens as the dollar price, plus a few unique hundredths of a cent that identify your order (for example, $12 = 12.0347 USDC).</p>
@@ -401,7 +542,7 @@ how = f'''
 <li><strong>Choose a network:</strong> USDC on Solana or Polygon, or USDT on TRC20 or Polygon.</li>
 <li><strong>Email us your order</strong> with the button on the checkout page. This step is required: it tells us which payment is yours.</li>
 <li><strong>Send the exact amount</strong> shown (for example 12.0347 USDC), to the address shown, on the network shown. The last digits are unique to your order. Network fees are paid by the sender and are on top of the price.</li>
-<li><strong>Receive your files.</strong> Our system checks the blockchain every few minutes. Once your payment is final, your files are emailed to you automatically as an attachment, usually within 30 minutes.</li>
+<li><strong>Receive your files.</strong> Our system checks the blockchain every few minutes. Once your payment is final, your files are emailed to you automatically as an attachment, usually within 20 minutes after your payment is final on the blockchain and your order email has reached us. If nothing has arrived after 40 minutes, check spam, then write to us.</li>
 </ol>
 
 <div class="note"><strong>Check the network before you send.</strong> Send only the token and network shown at checkout: USDC on <strong>Solana</strong> or <strong>Polygon</strong>, or USDT on <strong>Tron (TRC20)</strong> or <strong>Polygon</strong>. Tokens sent on another network (such as Ethereum or BNB Chain) or a different coin cannot be recovered. On Polygon, send native USDC, not the older bridged USDC.e. If you pay from an exchange, choose the matching network in its withdrawal screen.</div>
@@ -453,8 +594,8 @@ terms = '''
 <h2>Delivery</h2>
 <p>All Jalu Press products are digital files. Nothing physical is shipped. Please check your spam folder if your email has not arrived.</p>
 <ul>
-<li><strong>PayPal.</strong> After you pay, your files are emailed within a few hours to the email address on your PayPal account, or the delivery email you entered at checkout.</li>
-<li><strong>USDC or USDT.</strong> After your payment is confirmed on-chain and we have your order email, your files are emailed automatically, as an attachment, to the address you gave at checkout, usually within 30 minutes.</li>
+<li><strong>PayPal.</strong> After you pay, your files are emailed to the email address on your PayPal account, or the delivery email you entered at checkout, usually within 15 minutes. It is not instant: we check for new payments every 10 minutes. If nothing has arrived after 30 minutes, check your spam folder, then write to us.</li>
+<li><strong>USDC or USDT.</strong> After your payment is confirmed on-chain and we have your order email, your files are emailed automatically, as an attachment, to the address you gave at checkout, usually within 20 minutes after the payment is final on the blockchain.</li>
 </ul>
 <h2>Payment</h2>
 <p>We accept PayPal in US dollars, plus USDC on Solana or Polygon and USDT on TRC20 (Tron) or Polygon. Crypto prices are paid as the same number of tokens; network fees are paid by the sender. Blockchain payments cannot be reversed by us or by you, so please check the amount, network and address before sending. PayPal payments are processed by PayPal. See <a href="{R}how-to-buy/">How to buy</a>.</p>
@@ -488,6 +629,7 @@ priv = '''
 <li><strong>PayPal.</strong> If you pay with PayPal you are taken to PayPal's website. PayPal processes your payment under its own privacy policy. We receive a payment notice with your PayPal name, email, amount and item, and use it only to deliver your files and for order support.</li>
 <li><strong>Crypto payments.</strong> Blockchain transactions are public by nature. We see the sending address, amount and time of your payment, as anyone can.</li>
 <li><strong>Never shared or sold.</strong> We do not sell or share your details, and we do not send marketing email unless you ask for it.</li>
+<li><strong>Free sample pack.</strong> If you enter your email to get the free pack, the form is delivered to us by FormSubmit (formsubmit.co), a free form service. We keep your address, the date and the page you signed up on in a private file on our own computer, send you the pack and one short follow-up about our bundle, and nothing else. Every email has an unsubscribe link (reply with \"Unsubscribe\" in the subject) and we remove you on request. We never share or sell the list.</li>
 <li><strong>What we never ask for on this site:</strong> passwords, card numbers, private keys or seed phrases. If you pay by card, you enter those details on PayPal's site, not on ours.</li>
 </ul>
 <p>You can ask us to delete your order emails at any time using the support address shown on the checkout page.</p>
@@ -509,6 +651,7 @@ co = '''
 </div>
 <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
 <p class="small" style="margin:0">Pay with PayPal in USD, or with USDC (Solana or Polygon) or USDT (TRC20 or Polygon). For crypto, the price is paid as the same number of tokens, plus a few unique hundredths of a cent that identify your order. Network fees are paid by the sender.</p>
+<p class="delivery-note" style="margin-top:14px"><strong>When you get it:</strong> by email, usually within 15 minutes after a PayPal payment, or about 20 minutes after a crypto payment is final on the blockchain. It is not instant. Nothing after 30 minutes (40 for crypto)? Check spam, then write to <a href="mailto:hallo@jalupublishing.com">hallo@jalupublishing.com</a>.</p>
 </div>
 <p class="small" style="margin-top:14px"><a href="{R}how-to-buy/">How buying works</a> &middot; <a href="{R}terms/">Refunds &amp; license</a></p>
 </div>
@@ -595,7 +738,7 @@ co = '''
 <div class="field"><label for="txid">Transaction ID <span class="small">(optional, add it before emailing if you already paid)</span></label><input type="text" id="txid" autocomplete="off" spellcheck="false"></div>
 
 <h3 style="margin-top:20px">Then</h3>
-<p>We check the blockchain every few minutes. Once your payment is final and your order email is in, your files arrive by email, usually within 30 minutes. Check your spam folder if you don't see it. Keep your order reference; it is valid for 72 hours.</p>
+<p>We check the blockchain every 10 minutes. Once your payment is final and your order email is in, your files arrive by email, usually within 20 minutes (not instant). If nothing has arrived after 40 minutes, check your spam folder, then write to us. Keep your order reference; it is valid for 72 hours.</p>
 </div>
 </div>
 </div>
@@ -608,10 +751,11 @@ thanks = """
 <section><div class="wrap prose">
 <p class="eyebrow">Thank you</p>
 <h1>Thank you for your order</h1>
-<p class="lead">If you paid with PayPal, your payment is being processed. Your files will be emailed within a few hours.</p>
+<p class="lead">If you paid with PayPal, your files will be emailed to you, usually within 15 minutes. It is not instant.</p>
+<ol><li><strong>Now:</strong> PayPal confirms your payment and sends us a notice, usually within a minute or two.</li><li><strong>Every 10 minutes:</strong> our system checks for new payments and emails your files as a ZIP attachment.</li><li><strong>If nothing has arrived after 30 minutes:</strong> check your spam or junk folder, then write to <a href="mailto:hallo@jalupublishing.com">hallo@jalupublishing.com</a> with your order reference.</li></ol>
 <p>We send the files to the email address on your PayPal account, and to the delivery email you entered at checkout if you used that option. Please check your spam or junk folder if you do not see the email.</p>
 <p class="hidden" id="ty-ref"></p>
-<div class="note">You do not need to email us first. If the files have not arrived after a few hours, write to <a href="mailto:hallo@jalupublishing.com">hallo@jalupublishing.com</a> with your PayPal transaction details or order reference, and we will help.</div>
+<div class="note">You do not need to email us first. If the files have not arrived after 30 minutes and they are not in your spam folder, write to <a href="mailto:hallo@jalupublishing.com">hallo@jalupublishing.com</a> with your PayPal transaction details or order reference, and we will help. (If PayPal marks your payment as pending, for example an eCheck, delivery waits until it clears.)</div>
 <div class="btn-row" style="margin-top:20px"><a class="btn" href="{R}index.html#shop">Back to the shop</a><a class="btn alt" href="{R}terms/">Help &amp; refunds</a></div>
 </div></section>
 """
@@ -626,7 +770,65 @@ thanks_js = """<script>
   }
 })();
 </script>"""
-page("thank-you/index.html", "Thank you", "Thank you for your Jalu Press order. Your files will be emailed within a few hours.", thanks, "", extra_head='<meta name="robots" content="noindex">\n', scripts=thanks_js)
+page("thank-you/index.html", "Thank you", "Thank you for your Jalu Press order. Your files will be emailed to you, usually within 15 minutes.", thanks, "", extra_head='<meta name="robots" content="noindex">\n', scripts=thanks_js)
+
+# ---------- FREE SAMPLE ----------
+free_body = f"""
+<div class="wrap"><p class="crumbs"><a href="{{R}}">Home</a> / Free sample pack</p></div>
+<div class="wrap pp">
+<div><div class="gallery-main"><img class="shot" src="{{R}}assets/img/free-home-starter-pack-cover.webp" srcset="{{R}}assets/img/free-home-starter-pack-cover-800.webp 800w, {{R}}assets/img/free-home-starter-pack-cover.webp 1600w" sizes="(max-width: 900px) 100vw, 640px" width="1600" height="1200" alt="The Home Starter Pack: seven free fillable pages from Jalu Press planners" decoding="async"></div></div>
+<aside class="buybox"><div class="card">
+<p class="eyebrow">Free download</p>
+<h1 style="font-size:clamp(1.7rem,3.2vw,2.3rem)">The Home Starter Pack</h1>
+<p class="meta">7 fillable pages to get your household in order</p>
+<p>Enter your email and we send you the pack as a PDF. Print it, or type into it on screen.</p>
+{signup_form("free-page", "free")}
+<p class="delivery-note"><strong>When you get it:</strong> by email, usually within 15 minutes (not instant). If it has not arrived after 30 minutes, check your spam folder, then write to <a href="mailto:{SUPPORT}">{SUPPORT}</a>.</p>
+</div></aside>
+</div>
+<section class="paper2"><div class="wrap grid2">
+<div class="prose">
+<h2>What is inside</h2>
+<ul class="ticks">
+<li><strong>Household at a glance</strong>: who lives here, pets, and the key details someone would need in a hurry.</li>
+<li><strong>Water and food planner</strong>: how much to store for your household, in liters and US gallons.</li>
+<li><strong>3-day home supplies checklist</strong>: the essentials to have ready if the power or water goes out.</li>
+<li><strong>Winter home checklist</strong>: the jobs worth doing before the cold sets in.</li>
+<li><strong>Moving timeline, 8 to 5 weeks before</strong>: what to do early when a move is coming.</li>
+<li><strong>Weekly meal plan and grocery list</strong>: plan the week once and shop in one pass.</li>
+</ul>
+<p>Plus a one-page guide. Every page is a real page from one of our paid planners, so you can see exactly what you would get.</p>
+</div>
+<div class="prose">
+<h2>How it works</h2>
+<ol>
+<li><strong>Enter your email</strong> above and press the button.</li>
+<li><strong>We email you the PDF</strong>, usually within 15 minutes, as an attachment.</li>
+<li><strong>Fill it in</strong> on screen (Adobe Acrobat Reader is free) or print it.</li>
+</ol>
+<p>A few days later we send one short email about the Home &amp; Household Starter Bundle, which has all five complete planners for $24 instead of $48. That is the only follow-up, and you can unsubscribe at any time.</p>
+<div class="note"><strong>Your privacy.</strong> We use your email only to send the pack and that one follow-up. We never share or sell it, and every email has an unsubscribe link. See the <a href="{{R}}privacy/">privacy notice</a>.</div>
+</div>
+</div></section>
+"""
+page("free/index.html", "Free Home Starter Pack: 7 printable pages",
+     "Get The Home Starter Pack free: seven fillable pages from Jalu Press planners (household info, water and food, 3-day supplies, winter checklist, moving timeline, meal plan). Sent by email.",
+     free_body, "", og_image=og_abs("assets/img/og-free.jpg"),
+     og_alt="The Home Starter Pack: seven free fillable pages from Jalu Press planners",
+     scripts='<script src="{R}assets/signup.js" defer></script>')
+
+free_thanks = """
+<section><div class="wrap prose">
+<p class="eyebrow">Almost there</p>
+<h1>Check your email</h1>
+<p class="lead">Your free Home Starter Pack is on its way. It usually arrives within 15 minutes. It is not instant.</p>
+<p>If it has not arrived after 30 minutes, check your spam or junk folder, then write to <a href="mailto:hallo@jalupublishing.com">hallo@jalupublishing.com</a>.</p>
+<p>While you wait, see the <a href="{R}products/home-household-starter-bundle/">Home &amp; Household Starter Bundle</a>: five complete planners for $24 instead of $48.</p>
+<div class="btn-row" style="margin-top:20px"><a class="btn" href="{R}index.html#bundles">See the bundles</a><a class="btn alt" href="{R}">Back to the shop</a></div>
+</div></section>
+"""
+page("free/thanks/index.html", "Check your email", "Your free Home Starter Pack is on its way.", free_thanks, "",
+     extra_head='<meta name="robots" content="noindex">\n')
 
 # ---------- 404 (served at any depth, so it computes its own base) ----------
 nf_body = '''

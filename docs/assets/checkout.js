@@ -91,7 +91,13 @@
     $('co-title').textContent = product.title;
     $('co-format').textContent = product.format_blurb || 'Digital download';
     $('co-price').dataset.price = price;
-    $('co-price').innerHTML = '$' + priceLabel;
+    var listPrice = Number(product.list_price_usd);
+    var listLabel = listPrice === parseInt(listPrice, 10) ? String(parseInt(listPrice, 10)) : listPrice.toFixed(2);
+    $('co-price').innerHTML = (product.kind === 'bundle' && listPrice > Number(product.price_usd))
+      ? '<s style="color:var(--muted);font-weight:400;font-size:.7em">$' + listLabel + '</s> $' + priceLabel +
+        '<div class="small" style="font-family:var(--sans);font-weight:500;margin-top:4px">Regular price if bought separately: $' + listLabel +
+        '. You save $' + (listPrice - Number(product.price_usd)).toFixed(listPrice === parseInt(listPrice, 10) ? 0 : 2) + '.</div>'
+      : '$' + priceLabel;
 
     var available = Object.keys(METHODS).filter(function (k) {
       var a = (cfg[METHODS[k].key] || '').trim();
@@ -107,7 +113,7 @@
     var paypalChecked = preferPaypal || !cryptoOk;
     paypalLabel.innerHTML = '<input type="radio" name="method" value="paypal"' + (paypalChecked ? ' checked' : '') +
       '><span><strong>PayPal</strong><br><span class="small">Pay $' + priceLabel +
-      ' USD on PayPal. Files are emailed within a few hours.</span></span>';
+      ' USD on PayPal. Files are emailed, usually within 15 minutes (not instant).</span></span>';
     box.appendChild(paypalLabel);
     if (cryptoOk) {
       available.forEach(function (k, i) {
@@ -130,7 +136,7 @@
           btn.classList.add('paypal');
         }
         if (hint) hint.textContent = 'You will be taken to PayPal to pay $' + priceLabel +
-          ' USD. Your files will be emailed within a few hours to the email on your PayPal account, and to the delivery email you enter above.';
+          ' USD. Your files will be emailed, usually within 15 minutes (not instant), to the email on your PayPal account and to the delivery email you enter above.';
       } else {
         if (btn) {
           btn.textContent = 'Show payment details';
