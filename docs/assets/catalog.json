@@ -3504,6 +3504,183 @@
         "Weekly Meal Plan Printable, A4 size (fillable PDF)"
       ],
       "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Open the Letter or A4 PDF, whichever matches your paper: the first page explains how to use it, and the rest are fillable."
+    },
+    {
+      "slug": "kids-chore-chart-family-routine-planner",
+      "title": "The Kids Chore Chart & Family Routine Planner",
+      "subtitle": "Printable Chore Charts, Reward Tracker, Morning & Bedtime Routine Cards and Weekly Family Schedule",
+      "nav_label": "Chore & Routine Planner",
+      "price_usd": 9,
+      "status": "for_sale",
+      "released": "2026-11-28",
+      "short": "Chore charts kids can tick themselves, routine cards for mornings, after school and bedtime, a reward menu and star tracker, and a weekly family schedule, in a fillable book and a spreadsheet that adds up the points. For up to six children, any reward system.",
+      "description": "A 25-page fillable kids chore chart and family routine planner (US Letter and A4): family page, chore ideas by age, a who-does-what list, weekly chore charts with points, a family chore chart, a big-box star chart for little ones, morning, after-school, evening and weekend routine cards, a Sunday reset checklist, weekly family schedule, monthly calendar, activities tracker, reward menu, 50-star tracker, points bank log, family meeting notes, skill builder, family agreement, tidy checklists and certificates, plus an Excel / Google Sheets tool that adds up ticks and points for up to six children, tracks weekly goals and a points bank, and shows when a reward is ready. $9, paid with PayPal, or USDC or USDT.",
+      "format_blurb": "Digital download (PDF + XLSX)",
+      "og_image": "assets/img/og-kids-chore-chart-family-routine-planner.jpg",
+      "og_alt": "The Kids Chore Chart & Family Routine Planner: a weekly chore chart, a star tracker and a spreadsheet dashboard on a deep indigo background",
+      "images": [
+        {
+          "file": "kids-chore-chart-family-routine-planner-cover",
+          "alt": "Cover of The Kids Chore Chart & Family Routine Planner, with a weekly chore chart, morning routine cards, a star tracker and a spreadsheet dashboard beside a star-and-tick mark"
+        },
+        {
+          "file": "kids-chore-chart-family-routine-planner-preview-1-whats-inside",
+          "alt": "What's inside: chore ideas by age, weekly chore chart, little helper chart, routine cards, family schedule, reward menu, star tracker and certificates"
+        },
+        {
+          "file": "kids-chore-chart-family-routine-planner-preview-2-chore-charts",
+          "alt": "A weekly chore chart with points, a family chore chart and a big-box star chart for younger children, each with tick boxes for every day"
+        },
+        {
+          "file": "kids-chore-chart-family-routine-planner-preview-3-spreadsheet",
+          "alt": "The companion spreadsheet: a dashboard with points against each child's goal, balances and charts, and the Chore Chart tab with ticks for each day"
+        },
+        {
+          "file": "kids-chore-chart-family-routine-planner-preview-4-routines",
+          "alt": "Morning and evening routine cards with a tick for every step and day, and a weekly family schedule"
+        }
+      ],
+      "shop_ticks": [
+        "25-page fillable PDF, in US Letter and A4",
+        "Spreadsheet that adds up ticks and points, tracks weekly goals and a points bank, and shows when a reward is ready (Excel or Google Sheets)",
+        "Up to six children, any ages, any reward system"
+      ],
+      "buy_ticks": [
+        "Fillable PDF, 25 pages, US Letter + A4",
+        "Chore chart and points tool (.xlsx, works in Google Sheets)",
+        "Read-me-first guide for filling in, printing and the spreadsheet",
+        "Personal and household license"
+      ],
+      "story": [
+        {
+          "heading": "One system the whole family can see",
+          "paragraphs": [
+            "Who fed the cat? Whose turn is it to clear the table? Is the school bag packed? Most families answer the same questions every day. This planner puts the jobs, the routines and the rewards on paper where everyone can see them, so children can check the chart and tick it off themselves.",
+            "The book starts with a family page, a page of chore ideas grouped by age and a who-does-what list for the whole household. Then come three weekly chore charts with points and a goal, a family chart for the fridge, and a big-box star chart for younger children who are just starting out.",
+            "Routine cards cover mornings, after school, evenings and weekends, with a tick for every step and every day. A reward menu, a 50-star tracker, a points bank log and two well-done certificates make the effort visible, and a weekly schedule, monthly calendar, clubs tracker and family meeting page keep the week organised. Everything is fillable on screen and prints cleanly in Letter or A4."
+          ]
+        },
+        {
+          "heading": "A spreadsheet that adds up the week",
+          "paragraphs": [
+            "On Setup, type the date the week starts, what you call your points (points, stars, coins) and up to six children with a weekly goal.",
+            "On the Chore Chart, list each chore, pick the child and type what it is worth. Each day, pick a tick for done or a cross for not done. The ticks, missed days, points and a done percentage appear for you, and the day headings follow your week-starting date.",
+            "The Points Log is the points bank: add the week's total, bonus points and rewards swapped. The Rewards tab shows each child's balance and READY when they have enough, and the Dashboard shows points against each goal, the balance and charts. Rows marked “Example” are made up to show how it works; type over them or clear them."
+          ],
+          "note_html": "<strong>This planner is a family organising tool with general ideas, not parenting, child-development, medical or professional advice.</strong> The chore ideas are not milestones: every child is different. Show a child how first, and keep anything hot, sharp, heavy or chemical for adults or close supervision."
+        }
+      ],
+      "included": [
+        {
+          "type": "PDF",
+          "name": "Kids Chore Chart & Family Routine Planner, US Letter",
+          "detail": "25 fillable pages, 8.5 × 11 in"
+        },
+        {
+          "type": "PDF",
+          "name": "Kids Chore Chart & Family Routine Planner, A4",
+          "detail": "25 fillable pages, 210 × 297 mm, same content"
+        },
+        {
+          "type": "XLSX",
+          "badge": "x",
+          "name": "Chore chart and points tool",
+          "detail": "How to use, Setup, Chore Chart, Points Log, Rewards and Dashboard tabs (Excel or Google Sheets)"
+        },
+        {
+          "type": "PDF",
+          "badge": "i",
+          "name": "Read me first",
+          "detail": "How to fill in, print and use the spreadsheet"
+        }
+      ],
+      "included_note": "Delivered together as one ZIP download.",
+      "inside_heading": "Inside the planner",
+      "inside": [
+        {
+          "strong": "Getting started:",
+          "rest": "how to use the book, a family page, chore ideas grouped by age and a who-does-what list for the whole household"
+        },
+        {
+          "strong": "Chore charts:",
+          "rest": "three weekly chore charts with points and a goal, a family chore chart and a big-box little helper star chart"
+        },
+        {
+          "strong": "Routines:",
+          "rest": "morning, after-school, evening and bedtime routine cards (two per page), a weekend routine card and a Sunday reset checklist"
+        },
+        {
+          "strong": "Family week:",
+          "rest": "a weekly family schedule, a monthly family calendar and an activities and clubs tracker"
+        },
+        {
+          "strong": "Rewards:",
+          "rest": "a reward menu in three sizes, a 50-star tracker for two children, a points bank log and two well-done certificates"
+        },
+        {
+          "strong": "Growing together:",
+          "rest": "family meeting notes, a learning-a-new-skill page, a family agreement, ten-minute tidy checklists and a notes page"
+        }
+      ],
+      "good_for": [
+        "Parents who want chores and routines written down instead of repeated every day",
+        "Families with one to six children of different ages",
+        "Children who like ticking boxes, collecting stars and saving up for a reward",
+        "A fresh start for a new school term or the new year"
+      ],
+      "specs": [
+        [
+          "Format",
+          "Fillable PDF (2 sizes), XLSX spreadsheet, read-me PDF"
+        ],
+        [
+          "Pages",
+          "25 per PDF, 2,800+ fillable fields and checkboxes"
+        ],
+        [
+          "Works in",
+          "Adobe Acrobat Reader (free), Apple Preview and other form-capable PDF readers; Excel or Google Sheets"
+        ],
+        [
+          "Spreadsheet",
+          "Weekly chore chart with ticks and points for up to six children, points bank, reward list with READY flags, dashboard with goals and charts"
+        ],
+        [
+          "Rewards",
+          "Any reward system: points, stars or coins; nothing is tied to money"
+        ],
+        [
+          "Printing",
+          "Color or black and white, home-printer margins"
+        ],
+        [
+          "Language",
+          "English"
+        ],
+        [
+          "Price",
+          "$9"
+        ],
+        [
+          "License",
+          "Personal and household use, for your own family. Print as many copies as you need. Please do not resell or share the files."
+        ]
+      ],
+      "please_note": [
+        "This planner is a family organising tool with general ideas. It is not parenting, child-development, medical or professional advice.",
+        "The chore ideas by age are starting points written for this planner, not milestones or rules. Every child is different; choose what suits yours and show them how first.",
+        "Keep anything hot, sharp, heavy or chemical (cleaning products included) for adults or close supervision.",
+        "The planner does not connect to, import from or sync with any app, calendar or account. Its totals are a simple summary of what you type.",
+        "The example rows in the spreadsheet are made up to show how it works; replace them with your own."
+      ],
+      "zip": "The-Kids-Chore-Chart-and-Family-Routine-Planner.zip",
+      "whats_inside": [
+        "The Kids Chore Chart & Family Routine Planner, US Letter size (fillable PDF)",
+        "The Kids Chore Chart & Family Routine Planner, A4 size (fillable PDF)",
+        "Kids Chore Chart Tool (XLSX spreadsheet for Excel or Google Sheets)",
+        "Read Me First (PDF): how to fill in, print and use the spreadsheet"
+      ],
+      "delivery_note": "To open it, save the attachment and unzip it (double-click on most computers). Start with Read-Me-First.pdf, then fill in the family page of the Letter or A4 book, whichever matches your paper, and the Setup tab of the spreadsheet: the week-starting date and your children's names and goals."
     }
   ]
 }
